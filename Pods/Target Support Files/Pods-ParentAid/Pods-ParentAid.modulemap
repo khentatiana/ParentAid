@@ -1,0 +1,6 @@
+framework module Pods_ParentAid {
+  umbrella header "Pods-ParentAid-umbrella.h"
+
+  export *
+  module * { export * }
+}
