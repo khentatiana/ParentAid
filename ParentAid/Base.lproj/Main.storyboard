@@ -717,22 +717,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="qT1-52-M83">
-                                <rect key="frame" x="20" y="0.0" width="374" height="266"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="qT1-52-M83">
+                                <rect key="frame" x="20" y="2" width="374" height="375"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="W2q-rQ-Ixz" appends="YES" id="Oqt-PM-hDM"/>
                                 </connections>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G9S-qh-q0b">
-                                <rect key="frame" x="20" y="305" width="374" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G9S-qh-q0b">
+                                <rect key="frame" x="20" y="400.5" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QT0-la-NZC">
+                                <rect key="frame" x="20" y="379" width="374" height="19.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p3D-Il-Pwz">
-                                <rect key="frame" x="144" y="389" width="116" height="55"/>
+                                <rect key="frame" x="20" y="735" width="116" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
@@ -742,6 +746,17 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="eBu-xe-xPD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="G9S-qh-q0b" firstAttribute="leading" secondItem="eBu-xe-xPD" secondAttribute="leading" constant="20" id="DJ4-l4-DEr"/>
+                            <constraint firstItem="eBu-xe-xPD" firstAttribute="trailing" secondItem="QT0-la-NZC" secondAttribute="trailing" constant="20" id="Gtt-sd-2tR"/>
+                            <constraint firstItem="QT0-la-NZC" firstAttribute="leading" secondItem="eBu-xe-xPD" secondAttribute="leading" constant="20" id="bHu-gE-Rmm"/>
+                            <constraint firstItem="eBu-xe-xPD" firstAttribute="trailing" secondItem="G9S-qh-q0b" secondAttribute="trailing" constant="20" id="fKb-lX-Scj"/>
+                            <constraint firstItem="eBu-xe-xPD" firstAttribute="trailing" secondItem="qT1-52-M83" secondAttribute="trailing" constant="20" id="gIC-RS-yRO"/>
+                            <constraint firstItem="qT1-52-M83" firstAttribute="top" secondItem="eBu-xe-xPD" secondAttribute="top" constant="2" id="n3f-yB-iIs"/>
+                            <constraint firstItem="QT0-la-NZC" firstAttribute="top" secondItem="qT1-52-M83" secondAttribute="bottom" constant="2" id="t06-Lo-iIi"/>
+                            <constraint firstItem="qT1-52-M83" firstAttribute="leading" secondItem="eBu-xe-xPD" secondAttribute="leading" constant="20" id="umT-ZR-cc2"/>
+                            <constraint firstItem="G9S-qh-q0b" firstAttribute="top" secondItem="QT0-la-NZC" secondAttribute="bottom" constant="2" id="vyd-sQ-dQh"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="eventField" destination="G9S-qh-q0b" id="U8L-cp-ilf"/>
@@ -755,7 +770,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="974" y="660"/>
+            <point key="canvasLocation" x="973.91304347826099" y="659.59821428571422"/>
         </scene>
         <!--Event Details View Controller-->
         <scene sceneID="NEE-07-bu6">
