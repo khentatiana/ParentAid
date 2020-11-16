@@ -11,7 +11,8 @@ import Parse
 
 class CameraViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-    @IBOutlet weak var eventField: UITextField!
+    @IBOutlet weak var eventDescriptionField: UITextField!
+    @IBOutlet weak var eventTitleField: UITextField!
     @IBOutlet weak var imageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,10 +22,13 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         // Create new object "event" that will be stored in table "KidsEvents"
         let event = PFObject(className: "KidsEvents")
         //Create arbitrary key "synopsis", "provider"
-        event["synopsis"] = eventField.text!
+        event["synopsis"] = eventDescriptionField.text!
         //Create provider of the event will be current user
         event["provider"] = PFUser.current()!
-        
+        //Create title of the event
+        event["title"] = eventTitleField.text!
+        //Create date of the event
+       // event["date"] = eventField.text!
         
         let imageData = imageView.image!.pngData()
         let file = PFFileObject(data: imageData!)
