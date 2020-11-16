@@ -63,7 +63,9 @@ class ProviderViewController: UIViewController, UITableViewDelegate, UITableView
                let user = event["provider"] as! PFUser
                cell.providerLabel.text = user.username
                cell.providerLabel.sizeToFit()
-       
+        cell.eventTitleLabel.text = event["title"] as? String
+        cell.eventTitleLabel.sizeToFit()
+        
                cell.synopsisLabel.text = event["synopsis"] as! String
                cell.synopsisLabel.sizeToFit()
        

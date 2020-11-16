@@ -645,15 +645,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="296"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Provider" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wa5-m1-AVF">
-                                                    <rect key="frame" x="28" y="194" width="73" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Provider" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wa5-m1-AVF">
+                                                    <rect key="frame" x="34" y="194" width="73" height="17"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Event synopsis" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N98-7L-0LF">
-                                                    <rect key="frame" x="109" y="194" width="297" height="17"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -663,20 +657,36 @@
                                                         <constraint firstAttribute="width" secondItem="Z4R-GT-F4d" secondAttribute="height" multiplier="199:89" id="Cvm-1J-5Tm"/>
                                                     </constraints>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXY-VT-po1">
+                                                    <rect key="frame" x="115" y="194" width="91" height="21"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" misplaced="YES" text="Event synopsis" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N98-7L-0LF">
+                                                    <rect key="frame" x="34" y="223" width="360" height="62"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Wa5-m1-AVF" firstAttribute="leading" secondItem="iLi-U0-5up" secondAttribute="leadingMargin" constant="8" id="4aL-8f-Xvn"/>
                                                 <constraint firstItem="Z4R-GT-F4d" firstAttribute="leading" secondItem="iLi-U0-5up" secondAttribute="leading" constant="8" id="9vl-BE-DUs"/>
-                                                <constraint firstItem="N98-7L-0LF" firstAttribute="leading" secondItem="Wa5-m1-AVF" secondAttribute="trailing" constant="8" id="Fo3-ix-9no"/>
+                                                <constraint firstItem="Wa5-m1-AVF" firstAttribute="top" secondItem="Z4R-GT-F4d" secondAttribute="bottom" constant="2" id="ARh-JV-JZe"/>
+                                                <constraint firstItem="cXY-VT-po1" firstAttribute="leading" secondItem="Wa5-m1-AVF" secondAttribute="trailing" constant="2" id="Etv-Es-6VA"/>
                                                 <constraint firstItem="N98-7L-0LF" firstAttribute="top" secondItem="Z4R-GT-F4d" secondAttribute="bottom" constant="8" id="GUM-Rz-Llm"/>
                                                 <constraint firstItem="Z4R-GT-F4d" firstAttribute="top" secondItem="iLi-U0-5up" secondAttribute="top" constant="8" id="IpE-JO-Ozl"/>
+                                                <constraint firstItem="Wa5-m1-AVF" firstAttribute="leading" secondItem="iLi-U0-5up" secondAttribute="leadingMargin" constant="20" id="Tib-hY-Otp"/>
                                                 <constraint firstAttribute="trailing" secondItem="N98-7L-0LF" secondAttribute="trailing" constant="8" id="V3A-vv-Plx"/>
-                                                <constraint firstItem="Wa5-m1-AVF" firstAttribute="top" secondItem="Z4R-GT-F4d" secondAttribute="bottom" constant="8" id="hOH-5z-Vot"/>
+                                                <constraint firstItem="N98-7L-0LF" firstAttribute="top" secondItem="Wa5-m1-AVF" secondAttribute="bottom" constant="2" id="g4E-8u-bDA"/>
+                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="cXY-VT-po1" secondAttribute="trailing" constant="20" id="gLP-ze-WFX"/>
+                                                <constraint firstItem="cXY-VT-po1" firstAttribute="top" secondItem="Z4R-GT-F4d" secondAttribute="bottom" constant="8" symbolic="YES" id="gYt-hz-88e"/>
                                                 <constraint firstAttribute="trailing" secondItem="Z4R-GT-F4d" secondAttribute="trailing" constant="8" id="kWh-bi-jaZ"/>
                                                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="N98-7L-0LF" secondAttribute="bottom" constant="8" id="vjz-eu-Egh"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="eventTitleLabel" destination="cXY-VT-po1" id="qhv-nC-SX7"/>
                                             <outlet property="photoViewProvider" destination="Z4R-GT-F4d" id="KZF-3K-sKy"/>
                                             <outlet property="providerLabel" destination="Wa5-m1-AVF" id="N1d-Gu-dYw"/>
                                             <outlet property="synopsisLabel" destination="N98-7L-0LF" id="Zru-Eg-sBV"/>
@@ -707,7 +717,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hKM-HN-sTE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1009" y="-76"/>
+            <point key="canvasLocation" x="1008.6956521739131" y="-76.339285714285708"/>
         </scene>
         <!--Camera View Controller-->
         <scene sceneID="rQ6-Ob-KFl">
