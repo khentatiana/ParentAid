@@ -42,7 +42,8 @@ class ProviderViewController: UIViewController, UITableViewDelegate, UITableView
         super.viewDidAppear(animated)
         let query = PFQuery(className: "KidsEvents")
         query.includeKey("provider")
-        query.limit = 200
+        //This will put limit on number of posts to display to 20. If no limit then skip this line
+       // query.limit = 20
         
         query.findObjectsInBackground{(events, error) in
             if (events != nil){
