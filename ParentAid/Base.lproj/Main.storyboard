@@ -650,7 +650,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="zLd-NA-76f"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                    <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -660,31 +660,31 @@
                                                         <constraint firstAttribute="height" constant="270" id="Yxx-J1-S30"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Event Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXY-VT-po1">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Event Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXY-VT-po1">
                                                     <rect key="frame" x="101" y="220" width="286" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="286" id="jZP-46-2TJ"/>
                                                         <constraint firstAttribute="height" constant="21" id="l7Z-Ky-yKt"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                    <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" text="Event synopsis" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N98-7L-0LF">
-                                                    <rect key="frame" x="8" y="497" width="79" height="14"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                                    <nil key="textColor"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" misplaced="YES" text="Event synopsis" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N98-7L-0LF">
+                                                    <rect key="frame" x="8" y="249" width="386" height="262"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailingMargin" secondItem="cXY-VT-po1" secondAttribute="trailing" constant="8" id="5TM-kL-7QK"/>
                                                 <constraint firstItem="Z4R-GT-F4d" firstAttribute="leading" secondItem="iLi-U0-5up" secondAttribute="leading" id="68r-Np-MpY"/>
+                                                <constraint firstItem="N98-7L-0LF" firstAttribute="top" secondItem="Wa5-m1-AVF" secondAttribute="bottom" constant="8" symbolic="YES" id="FMe-Tu-1dA"/>
                                                 <constraint firstItem="N98-7L-0LF" firstAttribute="leading" secondItem="iLi-U0-5up" secondAttribute="leading" constant="8" id="IPT-im-Apz"/>
                                                 <constraint firstItem="cXY-VT-po1" firstAttribute="top" secondItem="Z4R-GT-F4d" secondAttribute="bottom" constant="8" id="IkR-dD-1UD"/>
                                                 <constraint firstAttribute="trailing" secondItem="Z4R-GT-F4d" secondAttribute="trailing" id="L3n-g1-U2u"/>
                                                 <constraint firstItem="Wa5-m1-AVF" firstAttribute="top" secondItem="Z4R-GT-F4d" secondAttribute="bottom" constant="8" id="LgI-15-2rP"/>
-                                                <constraint firstItem="cXY-VT-po1" firstAttribute="leading" secondItem="Wa5-m1-AVF" secondAttribute="trailing" constant="8" id="Rjp-5p-vlb"/>
+                                                <constraint firstItem="cXY-VT-po1" firstAttribute="leading" secondItem="Wa5-m1-AVF" secondAttribute="trailing" constant="2" id="Rjp-5p-vlb"/>
                                                 <constraint firstItem="N98-7L-0LF" firstAttribute="top" secondItem="cXY-VT-po1" secondAttribute="bottom" constant="8" symbolic="YES" id="UgU-kr-4sB"/>
                                                 <constraint firstItem="Wa5-m1-AVF" firstAttribute="leading" secondItem="iLi-U0-5up" secondAttribute="leading" constant="8" id="eiX-sU-Fjq"/>
                                                 <constraint firstItem="Z4R-GT-F4d" firstAttribute="top" secondItem="iLi-U0-5up" secondAttribute="top" constant="8" id="obc-Qi-3Ji"/>
