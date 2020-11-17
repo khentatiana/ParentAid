@@ -34,7 +34,7 @@ class KidsEventsViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 //        return events.count
-        return 5
+        return 50
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -53,7 +53,7 @@ class KidsEventsViewController: UIViewController, UITableViewDelegate, UITableVi
 //        cell.photoView.af_setImage(withURL: url)
 //
         let cell = UITableViewCell()
-        cell.textLabel?.text = "Hello"
+        cell.textLabel?.text = "row: \(indexPath.row)"
         return cell
     }
 }

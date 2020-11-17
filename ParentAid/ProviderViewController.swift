@@ -42,7 +42,7 @@ class ProviderViewController: UIViewController, UITableViewDelegate, UITableView
         super.viewDidAppear(animated)
         let query = PFQuery(className: "KidsEvents")
         query.includeKey("provider")
-        query.limit = 20
+        query.limit = 200
         
         query.findObjectsInBackground{(events, error) in
             if (events != nil){
