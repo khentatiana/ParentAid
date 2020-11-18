@@ -67,7 +67,7 @@ class ProviderViewController: UIViewController, UITableViewDelegate, UITableView
         cell.eventTitleLabel.text = event["title"] as? String
         cell.eventTitleLabel.sizeToFit()
         
-               cell.synopsisLabel.text = event["synopsis"] as! String
+               cell.synopsisLabel.text = event["synopsis"] as? String
                cell.synopsisLabel.sizeToFit()
        
                let imageFile = event["image"] as! PFFileObject
