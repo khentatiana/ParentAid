@@ -78,6 +78,7 @@ class ProviderViewController: UIViewController, UITableViewDelegate, UITableView
         
 //        let cell = UITableViewCell()
 //        cell.textLabel?.text = "This is Provider"
+        
   return cell
     }
     

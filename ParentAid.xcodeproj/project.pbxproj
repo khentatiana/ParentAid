@@ -12,6 +12,7 @@
 		41674F4425586C2900DFEA6C /* KidsEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41674F4325586C2900DFEA6C /* KidsEventCell.swift */; };
 		4198E1EE2555EE27009F5092 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4198E1ED2555EE27009F5092 /* LoginViewController.swift */; };
 		4198E1F62555F497009F5092 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4198E1F52555F497009F5092 /* Assets.xcassets */; };
+		41CB159A2564F4830087EC74 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CB15992564F4830087EC74 /* CalendarViewController.swift */; };
 		41D36808255CFE5C003D6709 /* ProviderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D36807255CFE5C003D6709 /* ProviderViewController.swift */; };
 		41D3680D255D017A003D6709 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3680C255D017A003D6709 /* EventCell.swift */; };
 		41D36812255D0D36003D6709 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D36811255D0D36003D6709 /* CameraViewController.swift */; };
@@ -54,6 +55,7 @@
 		41674F4325586C2900DFEA6C /* KidsEventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidsEventCell.swift; sourceTree = "<group>"; };
 		4198E1ED2555EE27009F5092 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4198E1F52555F497009F5092 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		41CB15992564F4830087EC74 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		41D36807255CFE5C003D6709 /* ProviderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderViewController.swift; sourceTree = "<group>"; };
 		41D3680C255D017A003D6709 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		41D36811255D0D36003D6709 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				41D3680C255D017A003D6709 /* EventCell.swift */,
 				41D36811255D0D36003D6709 /* CameraViewController.swift */,
 				41D9C21C255E904400091C24 /* EventDetailsViewController.swift */,
+				41CB15992564F4830087EC74 /* CalendarViewController.swift */,
 			);
 			path = ParentAid;
 			sourceTree = "<group>";
@@ -430,6 +433,7 @@
 				41674F3F2558686E00DFEA6C /* KidsEventsViewController.swift in Sources */,
 				4198E1EE2555EE27009F5092 /* LoginViewController.swift in Sources */,
 				D628C5F32551FB6A00BE82A0 /* AppDelegate.swift in Sources */,
+				41CB159A2564F4830087EC74 /* CalendarViewController.swift in Sources */,
 				41D36808255CFE5C003D6709 /* ProviderViewController.swift in Sources */,
 				41D3680D255D017A003D6709 /* EventCell.swift in Sources */,
 				D628C5F52551FB6A00BE82A0 /* SceneDelegate.swift in Sources */,

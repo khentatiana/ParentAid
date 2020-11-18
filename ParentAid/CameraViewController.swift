@@ -11,6 +11,7 @@ import Parse
 
 class CameraViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
+    @IBOutlet weak var eventDateField: UITextField!
     @IBOutlet weak var eventDescriptionField: UITextField!
     @IBOutlet weak var eventTitleField: UITextField!
     @IBOutlet weak var imageView: UIImageView!
@@ -28,7 +29,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         //Create title of the event
         event["title"] = eventTitleField.text!
         //Create date of the event
-       // event["date"] = eventField.text!
+       event["date"] = eventDateField.text!
         
         let imageData = imageView.image!.pngData()
         let file = PFFileObject(data: imageData!)
@@ -63,9 +64,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         let image = info [.editedImage] as! UIImage
         let size = CGSize(width: 300, height: 300)
         let scaledImage = image.af_imageAspectScaled(toFill: size)
-        
-        
-        
+                        
         imageView.image = scaledImage
         //dismiss camera view
         dismiss(animated: true, completion: nil)
