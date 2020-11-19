@@ -229,8 +229,102 @@ https://xd.adobe.com/view/1b06c1ef-23c8-499f-aa3c-b77b1b1570b2-4e55/
 ## Schema 
 [This section will be completed in Unit 9]
 ### Models
-[Add table of models]
+#### User
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | objectId      | String   | unique id for the user (default field) |
+   | username      | String   | username |
+   | password      | String   | password |
+   | email         | String   | email |
+   | image         | File     | image that user posts for the event |
+   
+   
+   
+   
+   
+   
+   
+   | title         | String   | title of the event |
+   | date          | Date     | date of the event |
+   | time.         | Time     | time of the event |
+   | synopsis      | String   | synopsis of the event |
+   | address       | String   | address of the event |
+   | city          | String   | city of the event |
+   | state         | String   | state of the event |
+   | zip code      | Integer  | Zip code of the event |
+   | available_spots| Integer | Available spots code of the event |
+   | COVID-19 Safe | Boolean  | Yes or No |
+   | createdAt     | DateTime | date when event is created (default field) |
+   | updatedAt     | DateTime | date when event is last updated (default field) |
+   
+   #### KidsEvents
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | objectId      | String   | unique id for the user event (default field) |
+   | provider      | Pointer to User| provider of the event |
+   | image         | File     | image that user posts for the event |
+   | title         | String   | title of the event |
+   | date          | Date     | date of the event |
+   | time          | Time     | time of the event |
+   | synopsis      | String   | synopsis of the event |
+   | address       | String   | address of the event |
+   | city          | String   | city of the event |
+   | state         | String   | state of the event |
+   | zip code      | Integer  | Zip code of the event |
+   | available_spots| Integer | Available spots code of the event |
+   | COVID-19 Safe | Boolean  | Yes or No |
+   | createdAt     | DateTime | date when event is created (default field) |
+   | updatedAt     | DateTime | date when event is last updated (default field) |
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+
+#### List of network requests by screen
+   - Home Feed Screen
+      - (Read/GET) Query all posts where user is author
+         ```swift
+         let query = PFQuery(className:"Post")
+         query.whereKey("author", equalTo: currentUser)
+         query.order(byDescending: "createdAt")
+         query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+            if let error = error { 
+               print(error.localizedDescription)
+            } else if let posts = posts {
+               print("Successfully retrieved \(posts.count) posts.")
+           // TODO: Do something with posts...
+            }
+         }
+         ```
+      - (Create/POST) Create a new like on a post
+      - (Delete) Delete existing like
+      - (Create/POST) Create a new comment on a post
+      - (Delete) Delete existing comment
+   - Create Post Screen
+      - (Create/POST) Create a new post object
+   - Profile Screen
+      - (Read/GET) Query logged in user object
+      - (Update/PUT) Update user profile image
+#### [OPTIONAL:] Existing API Endpoints
+##### An API Of Ice And Fire
+- Base URL - [http://www.anapioficeandfire.com/api](http://www.anapioficeandfire.com/api)
+
+   HTTP Verb | Endpoint | Description
+   ----------|----------|------------
+    `GET`    | /characters | get all characters
+    `GET`    | /characters/?name=name | return specific character by name
+    `GET`    | /houses   | get all houses
+    `GET`    | /houses/?name=name | return specific house by name
+
+##### Game of Thrones API
+- Base URL - [https://api.got.show/api](https://api.got.show/api)
+
+   HTTP Verb | Endpoint | Description
+   ----------|----------|------------
+    `GET`    | /cities | gets all cities
+    `GET`    | /cities/byId/:id | gets specific city by :id
+    `GET`    | /continents | gets all continents
+    `GET`    | /continents/byId/:id | gets specific continent by :id
+    `GET`    | /regions | gets all regions
+    `GET`    | /regions/byId/:id | gets specific region by :id
+    `GET`    | /characters/paths/:name | gets a character's path with a given name
+
