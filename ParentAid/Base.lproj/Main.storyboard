@@ -80,7 +80,7 @@
                                     <constraint firstAttribute="height" constant="34" id="RvQ-Pv-fFr"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" spellCheckingType="no"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lvn-Lk-Z8G">
                                 <rect key="frame" x="30" y="451" width="354" height="34"/>
@@ -88,7 +88,7 @@
                                     <constraint firstAttribute="height" constant="34" id="LI7-XO-7GH"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" spellCheckingType="no" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="254" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAk-LE-raL">
                                 <rect key="frame" x="31" y="428" width="80" height="21"/>
@@ -203,7 +203,7 @@
                                     <constraint firstAttribute="height" constant="34" id="pF2-ea-rQf"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" spellCheckingType="no" smartInsertDeleteType="no"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="32W-0p-PUS">
                                 <rect key="frame" x="30" y="386" width="354" height="34"/>
@@ -211,7 +211,7 @@
                                     <constraint firstAttribute="height" constant="34" id="Rky-f1-FWc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2eE-iX-b8V">
                                 <rect key="frame" x="30" y="428" width="354" height="34"/>
@@ -219,16 +219,18 @@
                                     <constraint firstAttribute="height" constant="34" id="tnN-ta-VPd"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" smartInsertDeleteType="no"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="253" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="28y-MZ-oC4">
-                                <rect key="frame" x="174" y="484" width="67" height="34"/>
+                                <rect key="frame" x="173.5" y="484" width="67" height="34"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="onSignUp:" destination="Zmd-hi-SMS" eventType="touchUpInside" id="ybA-IC-5O5"/>
+                                    <action selector="onSignUpAction:" destination="74R-SX-z3Z" eventType="touchUpInside" id="c46-2D-cce"/>
+                                    <segue destination="Wh3-bh-OMG" kind="presentation" identifier="loginFromSignup" id="c8W-BK-0C8"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -257,6 +259,11 @@
                             <constraint firstItem="SPB-sa-bCw" firstAttribute="top" secondItem="GON-JZ-ibu" secondAttribute="bottom" constant="42" id="waw-JR-LAG"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailSignupField" destination="32W-0p-PUS" id="Z6a-g5-DZJ"/>
+                        <outlet property="passwordSignupField" destination="2eE-iX-b8V" id="Z43-RL-DYj"/>
+                        <outlet property="usernameSignupField" destination="SPB-sa-bCw" id="DhW-hn-xXD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kOM-OG-UxL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1285,6 +1292,9 @@
             <point key="canvasLocation" x="-93" y="-3134"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="c8W-BK-0C8"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="EventProviderLogo" width="337" height="337"/>
         <image name="LauchScreen - ParentAidLogo" width="708" height="708"/>
