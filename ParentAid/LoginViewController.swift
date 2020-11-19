@@ -38,6 +38,7 @@ class LoginViewController: UIViewController {
                    }
                    else {
                        print ("Error: \(error?.localizedDescription)")
+                    self.showAlert(title: "Invalid", message: "Invalid username or password. Please try again.")
                    }
                }
 
