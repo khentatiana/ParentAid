@@ -228,14 +228,14 @@ https://xd.adobe.com/view/1b06c1ef-23c8-499f-aa3c-b77b1b1570b2-4e55/
 
 ## Schema 
 ### Models
-#### Post
+#### KidsEvents
 
    | Property      | Type     | Description |
    | ------------- | -------- | ------------|
    | objectId      | String   | unique id for the user post (default field) |
-   | author        | Pointer to User| image author |
-   | image         | File     | image that user posts |
-   | caption       | String   | image caption by author |
+   | provider      | Pointer to User| image provider |
+   | image         | File     | image that user posts for the event |
+   | title         | String   | image caption by author |
    | commentsCount | Number   | number of comments that has been posted to an image |
    | likesCount    | Number   | number of likes for the post |
    | createdAt     | DateTime | date when post is created (default field) |
