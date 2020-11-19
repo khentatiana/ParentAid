@@ -227,7 +227,18 @@ https://xd.adobe.com/view/1b06c1ef-23c8-499f-aa3c-b77b1b1570b2-4e55/
 <img src='http://g.recordit.co/3VvGdl7WDR.gif' width=''/>
 
 ## Schema 
-[This section will be completed in Unit 9]
+Models
+Post
+Property	Type	Description
+objectId	String	unique id for the user post (default field)
+author	Pointer to User	image author
+image	File	image that user posts
+caption	String	image caption by author
+commentsCount	Number	number of comments that has been posted to an image
+likesCount	Number	number of likes for the post
+createdAt	DateTime	date when post is created (default field)
+updatedAt	DateTime	date when post is last updated (default field)
+
 ### Models
 [Add table of models]
 ### Networking
