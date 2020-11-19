@@ -172,7 +172,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KrX-3K-Y9f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-94" y="-3880"/>
+            <point key="canvasLocation" x="-94.20289855072464" y="-3880.5803571428569"/>
         </scene>
         <!--Login Provider View Controller-->
         <scene sceneID="o29-lw-FwM">
@@ -1054,12 +1054,24 @@
                                     <constraint firstAttribute="height" constant="300" id="nFM-Jz-ekC"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lfS-HX-3rr">
+                                <rect key="frame" x="157" y="400.5" width="100" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="QV7-Dh-oFf"/>
+                                    <constraint firstAttribute="height" constant="41" id="S6y-X6-iFZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Submit"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pdu-8c-kiP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="lfS-HX-3rr" firstAttribute="centerX" secondItem="efR-u3-Bft" secondAttribute="centerX" id="1dw-sc-EAf"/>
                             <constraint firstItem="yo7-Rn-cqU" firstAttribute="leading" secondItem="pdu-8c-kiP" secondAttribute="leading" id="CPk-o8-hTv"/>
                             <constraint firstItem="yo7-Rn-cqU" firstAttribute="top" secondItem="pdu-8c-kiP" secondAttribute="top" id="TGS-wK-qLm"/>
+                            <constraint firstItem="lfS-HX-3rr" firstAttribute="centerY" secondItem="efR-u3-Bft" secondAttribute="centerY" id="Vs8-YB-efl"/>
+                            <constraint firstItem="lfS-HX-3rr" firstAttribute="centerX" secondItem="efR-u3-Bft" secondAttribute="centerX" id="ZIH-0X-lxq"/>
                             <constraint firstItem="pdu-8c-kiP" firstAttribute="trailing" secondItem="yo7-Rn-cqU" secondAttribute="trailing" id="xQH-0n-JcH"/>
                         </constraints>
                     </view>
@@ -1070,7 +1082,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cWX-I0-acN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1639" y="1665"/>
+            <point key="canvasLocation" x="1637.68115942029" y="1664.7321428571429"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="bqo-lT-Lbb">
