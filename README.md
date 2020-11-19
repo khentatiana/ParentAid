@@ -236,9 +236,14 @@ https://xd.adobe.com/view/1b06c1ef-23c8-499f-aa3c-b77b1b1570b2-4e55/
    | username      | String   | username |
    | password      | String   | password |
    | email         | String   | email |
-   | username      | Pointer to Provider| image provider |
-   | username      | Pointer to Provider| image provider |
    | image         | File     | image that user posts for the event |
+   
+   
+   
+   
+   
+   
+   
    | title         | String   | title of the event |
    | date          | Date     | date of the event |
    | time.         | Time     | time of the event |
@@ -257,11 +262,11 @@ https://xd.adobe.com/view/1b06c1ef-23c8-499f-aa3c-b77b1b1570b2-4e55/
    | Property      | Type     | Description |
    | ------------- | -------- | ------------|
    | objectId      | String   | unique id for the user event (default field) |
-   | provider      | Pointer to Provider| provider of the event |
+   | provider      | Pointer to User| provider of the event |
    | image         | File     | image that user posts for the event |
    | title         | String   | title of the event |
    | date          | Date     | date of the event |
-   | time.         | Time     | time of the event |
+   | time          | Time     | time of the event |
    | synopsis      | String   | synopsis of the event |
    | address       | String   | address of the event |
    | city          | String   | city of the event |
