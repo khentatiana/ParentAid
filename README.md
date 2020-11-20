@@ -227,7 +227,7 @@ https://xd.adobe.com/view/1b06c1ef-23c8-499f-aa3c-b77b1b1570b2-4e55/
 <img src='http://g.recordit.co/3VvGdl7WDR.gif' width=''/>
 
 ## Schema 
-[This section will be completed in Unit 9]
+
 ### Models
 
    #### User
@@ -259,11 +259,12 @@ https://xd.adobe.com/view/1b06c1ef-23c8-499f-aa3c-b77b1b1570b2-4e55/
    | createdAt     | DateTime | date when provider user is created (default field) |
    | updatedAt     | DateTime | date when provider user is last updated (default field) |
    
-   #### ParentProfile
+   #### FamilyProfile
 
    | Property      | Type     | Description |
    | ------------- | -------- | ------------|
    | objectId      | String   | unique id for the parent user (default field) |
+   | parent      | Pointer to User| parent user |
    | parentFirstName      | String   | parent first name |
    | parentLastName      | String   | parent last name |
    | parentEmail      | String   | parent email |
@@ -284,6 +285,7 @@ https://xd.adobe.com/view/1b06c1ef-23c8-499f-aa3c-b77b1b1570b2-4e55/
    | ------------- | -------- | ------------|
    | objectId      | String   | unique id for the user event (default field) |
    | provider      | Pointer to User| provider of the event |
+   | parent        | Pointer to User| parent user |
    | eventImage         | File     | image that user posts for the event |
    | eventTitle         | String   | title of the event |
    | eventDate          | Date     | date of the event |
@@ -293,7 +295,8 @@ https://xd.adobe.com/view/1b06c1ef-23c8-499f-aa3c-b77b1b1570b2-4e55/
    | eventCity          | String   | city of the event |
    | eventState         | String   | state of the event |
    | eventZipCode      | Integer  | Zip code of the event |
-   | eventAvailableSpots| Integer | Available spots code of the event |
+   | eventAvailableSpots| Integer | Available spots of the event |
+   | eventRegistrants| Integer | Registrated spots  of the event |
    | COVID-19_Safe | Boolean  | Yes or No |
    | createdAt     | DateTime | date when event is created (default field) |
    | updatedAt     | DateTime | date when event is last updated (default field) |
@@ -301,25 +304,38 @@ https://xd.adobe.com/view/1b06c1ef-23c8-499f-aa3c-b77b1b1570b2-4e55/
 ### Networking
 
 #### List of network requests by screen
-   - Home Feed Screen
-      - (Read/GET) Query all posts where user is author
+   - Provider's Kids Events Feed Screen
+      - (Read/GET) Query all kids events where user is provider
          ```swift
-         let query = PFQuery(className:"Post")
-         query.whereKey("author", equalTo: currentUser)
-         query.order(byDescending: "createdAt")
-         query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
-            if let error = error { 
-               print(error.localizedDescription)
-            } else if let posts = posts {
-               print("Successfully retrieved \(posts.count) posts.")
-           // TODO: Do something with posts...
+         let query = PFQuery(className: "KidsEvents")
+        query.includeKey("provider")
+        query.order(byDescending: "createdAt")
+                
+        query.findObjectsInBackground{(events, error) in
+            if (events != nil){
+                self.events = events!
+                self.tableViewProvider.reloadData()
             }
-         }
+        }
          ```
       - (Create/POST) Create a new like on a post
       - (Delete) Delete existing like
       - (Create/POST) Create a new comment on a post
       - (Delete) Delete existing comment
+  - Parent's Kids Events Feed Screen
+      - (Read/GET) Query all kids events where city is family's city   
+         ```swift
+         let query = PFQuery(className: "KidsEvents")
+        query.includeKey("provider")
+        query.order(byDescending: "createdAt")
+                
+        query.findObjectsInBackground{(events, error) in
+            if (events != nil){
+                self.events = events!
+                self.tableViewProvider.reloadData()
+            }
+        }
+         ```
    - Create Post Screen
       - (Create/POST) Create a new post object
    - Profile Screen
@@ -327,7 +343,7 @@ https://xd.adobe.com/view/1b06c1ef-23c8-499f-aa3c-b77b1b1570b2-4e55/
       - (Update/PUT) Update user profile image
 #### [OPTIONAL:] Existing API Endpoints
 ##### An API Of Ice And Fire
-- Base URL - [http://www.anapioficeandfire.com/api](http://www.anapioficeandfire.com/api)
+- Base URL - [https://parse-dashboard.back4app.com/apps/dc82cc29-73ba-4d69-adc0-263de4c30df7/browser](https://parse-dashboard.back4app.com/apps/dc82cc29-73ba-4d69-adc0-263de4c30df7/browser)
 
    HTTP Verb | Endpoint | Description
    ----------|----------|------------
