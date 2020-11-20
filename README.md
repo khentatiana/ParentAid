@@ -352,26 +352,17 @@ https://xd.adobe.com/view/1b06c1ef-23c8-499f-aa3c-b77b1b1570b2-4e55/
          ```
      
    - Registration Screen
-      - (Create/POST) Create a new registration object
-  - Provider Event Details Screen
       - (Read/GET) Query details of the event
-  
- - Post an event Screen
-      - (Create/POST) Create a new event
- - Preview Event Screen
-      - (Read/GET) Query created event object
-      - (Update/PUT) Update created event object
- - Confirmation Event Screen
-      - (Read/GET) Query confirmation message
-        
- - Provider Profile Screen
-      - (Read/GET) Query logged in user object
-      - (Update/PUT) Update provider user profile information
-      - (Update/PUT) Update provider user image
+      - (Create/POST) Create a new registration object
 
- - Profile Screen
+ - Confirmation Registration Screen
+      - (Read/GET) Query confirmation of registration message
+      
+ - Parent Profile Screen
       - (Read/GET) Query logged in user object
-      - (Update/PUT) Update user profile image
+      - (Update/PUT) Update parent user profile information
+      - (Update/PUT) Update parent user image
+
 #### [OPTIONAL:] Existing API Endpoints
 ##### An API Of Ice And Fire
 - Base URL - [https://parse-dashboard.back4app.com/apps/dc82cc29-73ba-4d69-adc0-263de4c30df7/browser](https://parse-dashboard.back4app.com/apps/dc82cc29-73ba-4d69-adc0-263de4c30df7/browser)
