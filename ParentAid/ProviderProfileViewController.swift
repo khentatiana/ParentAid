@@ -56,17 +56,21 @@ class ProviderProfileViewController: UIViewController, UIImagePickerControllerDe
         //save the object ("post")to the table
         providerUser.saveInBackground{(success, error) in
             if success {
-                self.dismiss(animated: true, completion: nil)
+                //self.dismiss(animated: true, completion: nil)
                 print("Saved provider profile!!!")
             } else {
                 print ("Error provider profile !!!")
             }
         }
         
+     
+        self.performSegue(withIdentifier: "SavedProviderProfileViewController", sender: nil)
         
         
     }
-        
+       
+    
+ 
     @IBAction func tappedProviderProfilePhoto(_ sender: UITapGestureRecognizer) {
     
         //instanciate picker conrtroller

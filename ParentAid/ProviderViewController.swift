@@ -42,9 +42,9 @@ class ProviderViewController: UIViewController, UITableViewDelegate, UITableView
         super.viewDidAppear(animated)
         let query = PFQuery(className: "KidsEvents")
         query.includeKey("provider")
-        //This will put limit on number of posts to display to 20. If no limit then skip this line
-        // query.limit = 20
-        
+      // query.whereKey("providerCity", contains: "San Jose")
+        query.order(byDescending: "createdAt")
+                
         query.findObjectsInBackground{(events, error) in
             if (events != nil){
                 self.events = events!
@@ -60,7 +60,12 @@ class ProviderViewController: UIViewController, UITableViewDelegate, UITableView
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableViewProvider.dequeueReusableCell(withIdentifier: "EventCell") as! EventCell
-        let event = events.reversed()[indexPath.row]
+       // To display events in reversed order:
+        //let event = events.reversed()[indexPath.row]
+        //or equivalent:
+      // query.order(byDescending: "createdAt")
+        
+        let event = events[indexPath.row]
         let user = event["provider"] as! PFUser
         cell.providerLabel.text = user.username
         cell.providerLabel.sizeToFit()
