@@ -264,7 +264,7 @@ https://xd.adobe.com/view/1b06c1ef-23c8-499f-aa3c-b77b1b1570b2-4e55/
    | Property      | Type     | Description |
    | ------------- | -------- | ------------|
    | objectId      | String   | unique id for the parent user (default field) |
-   | provider      | Pointer to User| provider user |
+   | parent      | Pointer to User| parent user |
    | parentFirstName      | String   | parent first name |
    | parentLastName      | String   | parent last name |
    | parentEmail      | String   | parent email |
@@ -285,6 +285,7 @@ https://xd.adobe.com/view/1b06c1ef-23c8-499f-aa3c-b77b1b1570b2-4e55/
    | ------------- | -------- | ------------|
    | objectId      | String   | unique id for the user event (default field) |
    | provider      | Pointer to User| provider of the event |
+   | parent        | Pointer to User| parent user |
    | eventImage         | File     | image that user posts for the event |
    | eventTitle         | String   | title of the event |
    | eventDate          | Date     | date of the event |
