@@ -73,5 +73,8 @@ class ProviderProfileViewController: UIViewController, UIImagePickerControllerDe
         //dismiss camera view
         dismiss(animated: true, completion: nil)
     }
-   
+    //dismiss keyboard by clicking outside textbox
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
 }
