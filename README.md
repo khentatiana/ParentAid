@@ -227,7 +227,7 @@ https://xd.adobe.com/view/1b06c1ef-23c8-499f-aa3c-b77b1b1570b2-4e55/
 <img src='http://g.recordit.co/3VvGdl7WDR.gif' width=''/>
 
 ## Schema 
-[This section will be completed in Unit 9]
+
 ### Models
 
    #### User
@@ -264,7 +264,7 @@ https://xd.adobe.com/view/1b06c1ef-23c8-499f-aa3c-b77b1b1570b2-4e55/
    | Property      | Type     | Description |
    | ------------- | -------- | ------------|
    | objectId      | String   | unique id for the parent user (default field) |
-   | parent      | Pointer to User| parent user |
+   | provider      | Pointer to User| provider user |
    | parentFirstName      | String   | parent first name |
    | parentLastName      | String   | parent last name |
    | parentEmail      | String   | parent email |
@@ -285,8 +285,7 @@ https://xd.adobe.com/view/1b06c1ef-23c8-499f-aa3c-b77b1b1570b2-4e55/
    | ------------- | -------- | ------------|
    | objectId      | String   | unique id for the user event (default field) |
    | provider      | Pointer to User| provider of the event |
-   | parent        | Pointer to User| parent user |
-   | eventImage        | File     | image that user posts for the event |
+   | eventImage         | File     | image that user posts for the event |
    | eventTitle         | String   | title of the event |
    | eventDate          | Date     | date of the event |
    | eventTime          | Time     | time of the event |
@@ -296,7 +295,7 @@ https://xd.adobe.com/view/1b06c1ef-23c8-499f-aa3c-b77b1b1570b2-4e55/
    | eventState         | String   | state of the event |
    | eventZipCode      | Integer  | Zip code of the event |
    | eventAvailableSpots| Integer | Available spots of the event |
-   | eventRegistrants| Integer | Registrated spots of the event |
+   | eventRegistrants| Integer | Registrated spots  of the event |
    | COVID-19_Safe | Boolean  | Yes or No |
    | createdAt     | DateTime | date when event is created (default field) |
    | updatedAt     | DateTime | date when event is last updated (default field) |
@@ -304,7 +303,7 @@ https://xd.adobe.com/view/1b06c1ef-23c8-499f-aa3c-b77b1b1570b2-4e55/
 ### Networking
 
 #### List of network requests by screen
-   - Home Feed Screen
+   - Kids Events Feed Screen
       - (Read/GET) Query all posts where user is author
          ```swift
          let query = PFQuery(className:"Post")
