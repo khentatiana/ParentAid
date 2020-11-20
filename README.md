@@ -259,29 +259,24 @@ https://xd.adobe.com/view/1b06c1ef-23c8-499f-aa3c-b77b1b1570b2-4e55/
    | createdAt     | DateTime | date when provider user is created (default field) |
    | updatedAt     | DateTime | date when provider user is last updated (default field) |
    
-   #### User
+   #### ParentProfile
 
    | Property      | Type     | Description |
    | ------------- | -------- | ------------|
-   | objectId      | String   | unique id for the user (default field) |
-   | username      | String   | username |
-   | password      | String   | password |
-   | email         | String   | email |
-   | image         | File     | image that user posts for the event |
-   
-   
-   | title         | String   | title of the event |
-   | date          | Date     | date of the event |
-   | time.         | Time     | time of the event |
-   | synopsis      | String   | synopsis of the event |
-   | address       | String   | address of the event |
-   | city          | String   | city of the event |
-   | state         | String   | state of the event |
-   | zip code      | Integer  | Zip code of the event |
-   | available_spots| Integer | Available spots code of the event |
-   | COVID-19 Safe | Boolean  | Yes or No |
-   | createdAt     | DateTime | date when event is created (default field) |
-   | updatedAt     | DateTime | date when event is last updated (default field) |
+   | objectId      | String   | unique id for the parent user (default field) |
+   | parentFirstName      | String   | parent first name |
+   | parentLastName      | String   | parent last name |
+   | parentEmail      | String   | parent email |
+   | parentZipCode      | String   | parent zip code | 
+   | numberOfKids      | Integer   | number of kids |  
+   | ageOfChildOne      | Integer   | age of child 1 | 
+   | ageOfChildTwo      | Integer   | age of child 2 | 
+   | ageOfChildThree      | Integer   | age of child 3 | 
+   | ageOfChildFour    | Integer   | age of child 4 | 
+   | ageOfChildFive   | Integer   | age of child 5 | 
+   | ageOfChildSix    | Integer   | age of child 6 | 
+   | createdAt     | DateTime | date when parent user is created (default field) |
+   | updatedAt     | DateTime | date when parent user is last updated (default field) |
    
    #### KidsEvents
 
