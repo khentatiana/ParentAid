@@ -111,7 +111,7 @@ class ProviderProfileViewController: UIViewController, UIImagePickerControllerDe
     
     
     @IBAction func kidsEventsTabButton(_ sender: Any) {
-    self.performSegue(withIdentifier: "ProviderViewController", sender: nil)
+    self.performSegue(withIdentifier: "ProviderKidsEventsViewController", sender: nil)
     }
     
 }

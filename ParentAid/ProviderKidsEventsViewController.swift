@@ -9,7 +9,7 @@ import UIKit
 import Parse
 import AlamofireImage
 
-class ProviderViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var events = [PFObject]()
     
     

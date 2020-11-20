@@ -838,7 +838,7 @@
                         <outlet property="providerStateField" destination="CtF-um-e2x" id="2sf-wj-wyK"/>
                         <outlet property="providerWebsiteField" destination="pcI-cr-a3z" id="IFG-p9-Ged"/>
                         <outlet property="providerZipCodeField" destination="He0-VO-5wL" id="pCy-kR-JjO"/>
-                        <segue destination="DCD-da-Ia8" kind="presentation" identifier="ProviderViewController" destinationCreationSelector="ProviderViewController" id="z8C-sB-c7n"/>
+                        <segue destination="DCD-da-Ia8" kind="presentation" identifier="ProviderKidsEventsViewController" destinationCreationSelector="ProviderKidsEventsViewController" id="z8C-sB-c7n"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hQ5-Rv-fhR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -853,7 +853,7 @@
         <!--Kids Events-->
         <scene sceneID="U7n-CJ-cut">
             <objects>
-                <viewController storyboardIdentifier="ProviderViewController" id="8Mk-ba-yW6" customClass="ProviderViewController" customModule="ParentAid" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProviderViewController" id="8Mk-ba-yW6" customClass="ProviderKidsEventsViewController" customModule="ParentAid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PHM-5T-y1b">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1593,7 +1593,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="u7h-h2-kcN"/>
-        <segue reference="z8C-sB-c7n"/>
+        <segue reference="X8i-1c-Nd9"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="EventProviderLogo" width="337" height="337"/>
