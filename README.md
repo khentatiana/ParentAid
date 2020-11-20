@@ -246,11 +246,16 @@ https://xd.adobe.com/view/1b06c1ef-23c8-499f-aa3c-b77b1b1570b2-4e55/
    | Property      | Type     | Description |
    | ------------- | -------- | ------------|
    | objectId      | String   | unique id for the provider user (default field) |
-   | username      | String   | username |
-   | password      | String   | password |
-   | email         | String   | email |
-   | image         | File     | image that user posts for the event |
-   
+   | provider      | Pointer to User| provider user |
+   | profilePhotoImageView         | File     | profile image for provider user |
+   | providerName      | String   | provider name |
+   | providerAddress         | String   | provider address |
+   | providerCity      | String   | provider city |
+   | providerState      | String   | provider state |
+   | providerZipCode      | String   | provider zip code |
+   | providerEmail      | String   | provider email |
+   | providerWebsite      | String   | provider website |
+   | providerPhone      | String   | provider phone |
    | createdAt     | DateTime | date when provider user is created (default field) |
    | updatedAt     | DateTime | date when provider user is last updated (default field) |
    
