@@ -318,10 +318,8 @@ https://xd.adobe.com/view/1b06c1ef-23c8-499f-aa3c-b77b1b1570b2-4e55/
             }
         }
          ```
-      - (Create/POST) Create a new like on a post
-      - (Delete) Delete existing like
-      - (Create/POST) Create a new comment on a post
-      - (Delete) Delete existing comment
+      - (Create/POST) Create a new event
+      
   - Parent's Kids Events Feed Screen
       - (Read/GET) Query all kids events where city is family's city   
          ```swift
