@@ -9,7 +9,7 @@ import UIKit
 import AlamofireImage
 import Parse
 
-class CameraViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class CameraViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
     
     @IBOutlet weak var eventDateField: UITextField!
     @IBOutlet weak var eventDescriptionField: UITextField!
@@ -17,6 +17,9 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     @IBOutlet weak var imageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        eventTitleField.delegate = self
+        eventDescriptionField.delegate = self
+        eventDateField.delegate = self
     }
     
     @IBAction func onSubmitButton(_ sender: Any) {
@@ -69,7 +72,28 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         //dismiss camera view
         dismiss(animated: true, completion: nil)
     }
+    
+    //dismiss keyboard by clicking outside textbox
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    //dismiss keyboard by pressing return key
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+       assignEventDate()
+        eventDateField.resignFirstResponder()
+        return true
+        }
+        func assignEventDate(){
+            guard let text = eventDateField.text, !text.isEmpty else {
+                eventDateField.text = "Please enter the event date"
+                return
+        }
+            eventDateField.text = eventDateField as! String
+    }
+    
 }
+
 
 
 
