@@ -320,17 +320,17 @@ https://xd.adobe.com/view/1b06c1ef-23c8-499f-aa3c-b77b1b1570b2-4e55/
          ```
       
  - Provider Event Details Screen
-      - (Read/GET) Query logged in user object
-      - (Update/PUT) Update user profile image
+      - (Read/GET) Query details of the event
+  
  - Post an event Screen
       - (Create/POST) Create a new event
-   - Preview Event Screen
+ - Preview Event Screen
       - (Read/GET) Query created event object
       - (Update/PUT) Update created event object
-   - Confirmation Event Screen
+ - Confirmation Event Screen
       - (Read/GET) Query confirmation message
         
-   - Provider Profile Screen
+ - Provider Profile Screen
       - (Read/GET) Query logged in user object
       - (Update/PUT) Update provider user profile information
       - (Update/PUT) Update provider user image
@@ -353,7 +353,23 @@ https://xd.adobe.com/view/1b06c1ef-23c8-499f-aa3c-b77b1b1570b2-4e55/
      
    - Registration Screen
       - (Create/POST) Create a new registration object
-   - Profile Screen
+  - Provider Event Details Screen
+      - (Read/GET) Query details of the event
+  
+ - Post an event Screen
+      - (Create/POST) Create a new event
+ - Preview Event Screen
+      - (Read/GET) Query created event object
+      - (Update/PUT) Update created event object
+ - Confirmation Event Screen
+      - (Read/GET) Query confirmation message
+        
+ - Provider Profile Screen
+      - (Read/GET) Query logged in user object
+      - (Update/PUT) Update provider user profile information
+      - (Update/PUT) Update provider user image
+
+ - Profile Screen
       - (Read/GET) Query logged in user object
       - (Update/PUT) Update user profile image
 #### [OPTIONAL:] Existing API Endpoints
