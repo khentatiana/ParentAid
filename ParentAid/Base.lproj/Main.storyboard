@@ -821,7 +821,9 @@
                             <constraint firstItem="CtF-um-e2x" firstAttribute="leading" secondItem="qSl-EA-PFK" secondAttribute="leading" constant="20" id="zxR-cT-vec"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Provider Profile" id="pAu-NF-1ST"/>
+                    <navigationItem key="navigationItem" title="Provider Profile" id="pAu-NF-1ST">
+                        <barButtonItem key="leftBarButtonItem" title="Kids Events" style="plain" id="sNB-ct-Hpl"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="profilePhotoImageView" destination="bf7-S0-3Fh" id="5No-M6-zIH"/>
                         <outlet property="providerAddressField" destination="nG5-Fa-zcl" id="1ea-b1-GN1"/>
