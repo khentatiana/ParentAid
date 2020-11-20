@@ -26,7 +26,7 @@ class ProviderProfileViewController: UIViewController, UIImagePickerControllerDe
         }
     
     
-    @IBAction func addProfilePhotoButton(_ sender: Any) {
+    @IBAction func saveProfileButton(_ sender: Any) {
         // Create new object "ProviderProfile" that will be stored in table "ProviderProfile"
         let providerUser = PFObject(className: "ProviderProfile")
       
@@ -108,4 +108,10 @@ class ProviderProfileViewController: UIViewController, UIImagePickerControllerDe
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
+    
+    
+    @IBAction func kidsEventsTabButton(_ sender: Any) {
+    self.performSegue(withIdentifier: "ProviderViewController", sender: nil)
+    }
+    
 }

@@ -753,7 +753,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="addProfilePhotoButton:" destination="bHo-4Q-Agt" eventType="touchUpInside" id="jpo-Wv-6XI"/>
+                                    <action selector="saveProfileButton:" destination="bHo-4Q-Agt" eventType="touchUpInside" id="jpo-Wv-6XI"/>
                                     <segue destination="RF7-ke-4Iw" kind="show" identifier="SavedProviderProfileViewController" id="r7d-pt-2fw"/>
                                 </connections>
                             </button>
@@ -822,7 +822,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Provider Profile" id="pAu-NF-1ST">
-                        <barButtonItem key="leftBarButtonItem" title="Kids Events" style="plain" id="sNB-ct-Hpl"/>
+                        <barButtonItem key="leftBarButtonItem" title="Kids Events" style="plain" id="sNB-ct-Hpl">
+                            <connections>
+                                <action selector="kidsEventsTabButton:" destination="bHo-4Q-Agt" id="rRT-XR-C6E"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="profilePhotoImageView" destination="bf7-S0-3Fh" id="5No-M6-zIH"/>
@@ -834,6 +838,7 @@
                         <outlet property="providerStateField" destination="CtF-um-e2x" id="2sf-wj-wyK"/>
                         <outlet property="providerWebsiteField" destination="pcI-cr-a3z" id="IFG-p9-Ged"/>
                         <outlet property="providerZipCodeField" destination="He0-VO-5wL" id="pCy-kR-JjO"/>
+                        <segue destination="DCD-da-Ia8" kind="presentation" identifier="ProviderViewController" destinationCreationSelector="ProviderViewController" id="z8C-sB-c7n"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hQ5-Rv-fhR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -845,25 +850,10 @@
             </objects>
             <point key="canvasLocation" x="240.57971014492756" y="-49.553571428571423"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="LVn-hL-gEs">
-            <objects>
-                <viewController id="zLQ-zo-oZi" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="f1T-ba-cnQ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="tq1-11-8q9"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ead-1z-w1x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="946" y="-50"/>
-        </scene>
         <!--Kids Events-->
         <scene sceneID="U7n-CJ-cut">
             <objects>
-                <viewController id="8Mk-ba-yW6" customClass="ProviderViewController" customModule="ParentAid" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProviderViewController" id="8Mk-ba-yW6" customClass="ProviderViewController" customModule="ParentAid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PHM-5T-y1b">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -968,7 +958,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hKM-HN-sTE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2488" y="-89"/>
+            <point key="canvasLocation" x="1564" y="-21"/>
         </scene>
         <!--Saved Provider Profile View Controller-->
         <scene sceneID="Thc-Hd-ysD">
@@ -1568,18 +1558,19 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DCD-da-Ia8" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Post Event" image="plus.square.fill.on.square.fill" catalog="system" id="5di-9p-76Q"/>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="FD2-Mc-9Pg"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dR4-Yl-REj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="8Mk-ba-yW6" kind="relationship" relationship="rootViewController" id="pZu-T8-bZF"/>
+                        <segue destination="8Mk-ba-yW6" kind="relationship" relationship="rootViewController" destinationCreationSelector="ProviderViewController" id="pZu-T8-bZF"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ANY-dG-SLK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1557" y="-783"/>
+            <point key="canvasLocation" x="1051" y="-760"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bxy-mk-I95">
@@ -1602,6 +1593,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="u7h-h2-kcN"/>
+        <segue reference="z8C-sB-c7n"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="EventProviderLogo" width="337" height="337"/>
