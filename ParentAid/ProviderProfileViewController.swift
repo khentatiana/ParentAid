@@ -57,9 +57,9 @@ class ProviderProfileViewController: UIViewController, UIImagePickerControllerDe
         providerUser.saveInBackground{(success, error) in
             if success {
                 self.dismiss(animated: true, completion: nil)
-                print("Saved profile picture!!!")
+                print("Saved provider profile!!!")
             } else {
-                print ("Error profile picture!!!")
+                print ("Error provider profile !!!")
             }
         }
         

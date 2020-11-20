@@ -41,9 +41,9 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         event.saveInBackground{(success, error) in
             if success {
                 self.dismiss(animated: true, completion: nil)
-                print("Saved!!!")
+                print("Saved event!!!")
             } else {
-                print ("Error!!!")
+                print ("Error saving event!!!")
             }
         }
         
