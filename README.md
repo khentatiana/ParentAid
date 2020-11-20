@@ -284,19 +284,20 @@ https://xd.adobe.com/view/1b06c1ef-23c8-499f-aa3c-b77b1b1570b2-4e55/
    | ------------- | -------- | ------------|
    | objectId      | String   | unique id for the user event (default field) |
    | provider      | Pointer to User| provider of the event |
-   | image         | File     | image that user posts for the event |
-   | title         | String   | title of the event |
-   | date          | Date     | date of the event |
-   | time          | Time     | time of the event |
-   | synopsis      | String   | synopsis of the event |
-   | address       | String   | address of the event |
-   | city          | String   | city of the event |
-   | state         | String   | state of the event |
-   | zip code      | Integer  | Zip code of the event |
-   | available_spots| Integer | Available spots code of the event |
-   | COVID-19 Safe | Boolean  | Yes or No |
+   | eventImage         | File     | image that user posts for the event |
+   | eventTitle         | String   | title of the event |
+   | eventDate          | Date     | date of the event |
+   | eventTime          | Time     | time of the event |
+   | eventSynopsis      | String   | synopsis of the event |
+   | eventAddress       | String   | address of the event |
+   | eventCity          | String   | city of the event |
+   | eventState         | String   | state of the event |
+   | eventZipCode      | Integer  | Zip code of the event |
+   | eventAvailableSpots| Integer | Available spots code of the event |
+   | COVID-19_Safe | Boolean  | Yes or No |
    | createdAt     | DateTime | date when event is created (default field) |
    | updatedAt     | DateTime | date when event is last updated (default field) |
+   
 ### Networking
 
 #### List of network requests by screen
