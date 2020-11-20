@@ -227,6 +227,7 @@ https://xd.adobe.com/view/1b06c1ef-23c8-499f-aa3c-b77b1b1570b2-4e55/
 <img src='http://g.recordit.co/3VvGdl7WDR.gif' width=''/>
 
 ## Schema 
+[This section will be completed in Unit 9]
 ### Models
 #### User
 
