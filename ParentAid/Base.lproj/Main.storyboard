@@ -636,22 +636,22 @@
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CtF-um-e2x">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="State" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CtF-um-e2x">
                                 <rect key="frame" x="20" y="451" width="84" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="j8t-Wd-Ds2"/>
                                     <constraint firstAttribute="width" constant="84" id="zqI-fy-12o"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="He0-VO-5wL">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Zip Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="He0-VO-5wL">
                                 <rect key="frame" x="154" y="451" width="84" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="sl1-tx-Cjp"/>
                                     <constraint firstAttribute="width" constant="84" id="yxd-GL-MK2"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hFn-At-AYu">
@@ -660,7 +660,7 @@
                                     <constraint firstAttribute="height" constant="34" id="0OS-o0-z8b"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="255" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1kf-zm-3v5">
                                 <rect key="frame" x="20" y="280" width="68" height="21"/>
@@ -696,11 +696,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wsl-RN-jb6">
-                                <rect key="frame" x="20" y="380" width="374" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="255" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQA-JM-Kjs">
                                 <rect key="frame" x="20" y="493" width="44.5" height="21"/>
                                 <constraints>
@@ -744,7 +739,7 @@
                                     <constraint firstAttribute="height" constant="34" id="RD9-qw-daV"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fUr-qa-4ie">
                                 <rect key="frame" x="148.5" y="718" width="117" height="38"/>
@@ -761,6 +756,11 @@
                                     <action selector="addProfilePhotoButton:" destination="bHo-4Q-Agt" eventType="touchUpInside" id="jpo-Wv-6XI"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wsl-RN-jb6">
+                                <rect key="frame" x="20" y="380" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qSl-EA-PFK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -823,6 +823,14 @@
                     <navigationItem key="navigationItem" title="Provider Profile" id="pAu-NF-1ST"/>
                     <connections>
                         <outlet property="profilePhotoImageView" destination="bf7-S0-3Fh" id="5No-M6-zIH"/>
+                        <outlet property="providerAddressField" destination="nG5-Fa-zcl" id="1ea-b1-GN1"/>
+                        <outlet property="providerCityField" destination="wsl-RN-jb6" id="M03-hv-LLK"/>
+                        <outlet property="providerEmailField" destination="hFn-At-AYu" id="Dc9-FM-Cix"/>
+                        <outlet property="providerNameField" destination="cdg-xI-exN" id="oTq-5j-zuo"/>
+                        <outlet property="providerPhoneField" destination="uQu-dd-Qe0" id="RzT-fK-xRT"/>
+                        <outlet property="providerStateField" destination="CtF-um-e2x" id="2sf-wj-wyK"/>
+                        <outlet property="providerWebsiteField" destination="pcI-cr-a3z" id="IFG-p9-Ged"/>
+                        <outlet property="providerZipCodeField" destination="He0-VO-5wL" id="pCy-kR-JjO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hQ5-Rv-fhR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
