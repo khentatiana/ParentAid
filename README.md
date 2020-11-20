@@ -321,10 +321,10 @@ https://xd.adobe.com/view/1b06c1ef-23c8-499f-aa3c-b77b1b1570b2-4e55/
       - (Create/POST) Create a new event
       
   - Parent's Kids Events Feed Screen
-      - (Read/GET) Query all kids events where city is family's city   
+      - (Read/GET) Query all kids events in family's city   
          ```swift
          let query = PFQuery(className: "KidsEvents")
-        query.includeKey("provider")
+        query.whereKey("providerCity", contains: "San Jose")
         query.order(byDescending: "createdAt")
                 
         query.findObjectsInBackground{(events, error) in
