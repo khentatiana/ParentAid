@@ -319,6 +319,18 @@ https://xd.adobe.com/view/1b06c1ef-23c8-499f-aa3c-b77b1b1570b2-4e55/
         }
          ```
       - (Create/POST) Create a new event
+    - Profile Screen
+      - (Read/GET) Query logged in user object
+      - (Update/PUT) Update user profile image
+    - Profile Screen
+      - (Read/GET) Query logged in user object
+      - (Update/PUT) Update user profile image
+    - Profile Screen
+      - (Read/GET) Query logged in user object
+      - (Update/PUT) Update user profile image
+    - Profile Screen
+      - (Read/GET) Query logged in user object
+      - (Update/PUT) Update user profile image
       
   - Parent's Kids Events Feed Screen
       - (Read/GET) Query all kids events in family's city   
