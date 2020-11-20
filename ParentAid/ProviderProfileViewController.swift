@@ -64,7 +64,7 @@ class ProviderProfileViewController: UIViewController, UIImagePickerControllerDe
         }
         
      
-        self.performSegue(withIdentifier: "SavedProviderProfileViewController", sender: nil)
+     //   self.performSegue(withIdentifier: "SavedProviderProfileViewController", sender: nil)
         
         
     }
