@@ -318,13 +318,12 @@ https://xd.adobe.com/view/1b06c1ef-23c8-499f-aa3c-b77b1b1570b2-4e55/
             }
         }
          ```
+      
+   - Post an event Screen
       - (Create/POST) Create a new event
-   - Profile Screen
-      - (Read/GET) Query logged in user object
       - (Update/PUT) Update user profile image
-   - Profile Screen
+   - Post an event Preview Screen
       - (Read/GET) Query logged in user object
-      - (Update/PUT) Update user profile image
    - Profile Screen
       - (Read/GET) Query logged in user object
       - (Update/PUT) Update user profile image
@@ -346,9 +345,9 @@ https://xd.adobe.com/view/1b06c1ef-23c8-499f-aa3c-b77b1b1570b2-4e55/
             }
         }
          ```
-      - (Create/POST) Register for the event
-   - Create Post Screen
-      - (Create/POST) Create a new post object
+     
+   - Registration Screen
+      - (Create/POST) Create a new registration object
    - Profile Screen
       - (Read/GET) Query logged in user object
       - (Update/PUT) Update user profile image
