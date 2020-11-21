@@ -318,15 +318,29 @@ https://xd.adobe.com/view/1b06c1ef-23c8-499f-aa3c-b77b1b1570b2-4e55/
             }
         }
          ```
-      - (Create/POST) Create a new like on a post
-      - (Delete) Delete existing like
-      - (Create/POST) Create a new comment on a post
-      - (Delete) Delete existing comment
+      
+ - Provider Event Details Screen
+      - (Read/GET) Query details of the event
+  
+ - Post an event Screen
+      - (Create/POST) Create a new event
+ - Preview Event Screen
+      - (Read/GET) Query created event object
+      - (Update/PUT) Update created event object
+ - Confirmation Event Screen
+      - (Read/GET) Query confirmation message
+        
+ - Provider Profile Screen
+      - (Read/GET) Query logged in user object
+      - (Update/PUT) Update provider user profile information
+      - (Update/PUT) Update provider user image
+
+      
   - Parent's Kids Events Feed Screen
-      - (Read/GET) Query all kids events where city is family's city   
+      - (Read/GET) Query all kids events in family's city   
          ```swift
          let query = PFQuery(className: "KidsEvents")
-        query.includeKey("provider")
+        query.whereKey("providerCity", contains: "San Jose")
         query.order(byDescending: "createdAt")
                 
         query.findObjectsInBackground{(events, error) in
@@ -336,32 +350,30 @@ https://xd.adobe.com/view/1b06c1ef-23c8-499f-aa3c-b77b1b1570b2-4e55/
             }
         }
          ```
-   - Create Post Screen
-      - (Create/POST) Create a new post object
-   - Profile Screen
+     
+   - Registration Screen
+      - (Read/GET) Query details of the event
+      - (Create/POST) Create a new registration object
+
+ - Confirmation Registration Screen
+      - (Read/GET) Query confirmation of registration message
+      
+ - Parent Profile Screen
       - (Read/GET) Query logged in user object
-      - (Update/PUT) Update user profile image
+      - (Update/PUT) Update parent user profile information
+      - (Update/PUT) Update parent user image
+
 #### [OPTIONAL:] Existing API Endpoints
 ##### An API Of Ice And Fire
 - Base URL - [https://parse-dashboard.back4app.com/apps/dc82cc29-73ba-4d69-adc0-263de4c30df7/browser](https://parse-dashboard.back4app.com/apps/dc82cc29-73ba-4d69-adc0-263de4c30df7/browser)
 
    HTTP Verb | Endpoint | Description
    ----------|----------|------------
-    `GET`    | /characters | get all characters
-    `GET`    | /characters/?name=name | return specific character by name
-    `GET`    | /houses   | get all houses
-    `GET`    | /houses/?name=name | return specific house by name
+    `GET`    | /KidsEvents | get all kids events
+    `GET`    | /KidsEvents/?eventId=eventId | return specific event by eventId
+    `GET`    | /ProviderProfile | get all provider users
+    `GET`    | /ProviderProfile/?username=username | return specific provider user by username
+    `GET`    | /FamilyProfile |  get all parent users
+    `GET`    | /FamilyProfile/?username=username | return specific parent user by username
 
-##### Game of Thrones API
-- Base URL - [https://api.got.show/api](https://api.got.show/api)
-
-   HTTP Verb | Endpoint | Description
-   ----------|----------|------------
-    `GET`    | /cities | gets all cities
-    `GET`    | /cities/byId/:id | gets specific city by :id
-    `GET`    | /continents | gets all continents
-    `GET`    | /continents/byId/:id | gets specific continent by :id
-    `GET`    | /regions | gets all regions
-    `GET`    | /regions/byId/:id | gets specific region by :id
-    `GET`    | /characters/paths/:name | gets a character's path with a given name
 
