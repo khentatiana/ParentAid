@@ -375,5 +375,3 @@ https://xd.adobe.com/view/1b06c1ef-23c8-499f-aa3c-b77b1b1570b2-4e55/
     `GET`    | /ProviderProfile/?username=username | return specific provider user by username
     `GET`    | /FamilyProfile |  get all parent users
     `GET`    | /FamilyProfile/?username=username | return specific parent user by username
-
-
