@@ -9,13 +9,17 @@ import UIKit
 import AlamofireImage
 import Parse
 
-class CameraViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class CameraViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
     
+    @IBOutlet weak var eventDateField: UITextField!
     @IBOutlet weak var eventDescriptionField: UITextField!
     @IBOutlet weak var eventTitleField: UITextField!
     @IBOutlet weak var imageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        eventTitleField.delegate = self
+        eventDescriptionField.delegate = self
+        eventDateField.delegate = self
     }
     
     @IBAction func onSubmitButton(_ sender: Any) {
@@ -28,7 +32,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         //Create title of the event
         event["title"] = eventTitleField.text!
         //Create date of the event
-       // event["date"] = eventField.text!
+       event["date"] = eventDateField.text!
         
         let imageData = imageView.image!.pngData()
         let file = PFFileObject(data: imageData!)
@@ -37,9 +41,9 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         event.saveInBackground{(success, error) in
             if success {
                 self.dismiss(animated: true, completion: nil)
-                print("Saved!!!")
+                print("Saved event!!!")
             } else {
-                print ("Error!!!")
+                print ("Error saving event!!!")
             }
         }
         
@@ -63,14 +67,33 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         let image = info [.editedImage] as! UIImage
         let size = CGSize(width: 300, height: 300)
         let scaledImage = image.af_imageAspectScaled(toFill: size)
-        
-        
-        
+                        
         imageView.image = scaledImage
         //dismiss camera view
         dismiss(animated: true, completion: nil)
     }
+    
+    //dismiss keyboard by clicking outside textbox
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    //dismiss keyboard by pressing return key
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+       assignEventDate()
+        eventDateField.resignFirstResponder()
+        return true
+        }
+        func assignEventDate(){
+            guard let text = eventDateField.text, !text.isEmpty else {
+                eventDateField.text = "Please enter the event date"
+                return
+        }
+            eventDateField.text = eventDateField as! String
+    }
+    
 }
+
 
 
 

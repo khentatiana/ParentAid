@@ -10,6 +10,7 @@ pod 'AlamofireImage'
 pod 'Parse'
 pod 'youtube-ios-player-helper'
 pod 'MessageInputBar'
+pod 'FSCalendar'
 
   target 'ParentAidTests' do
     inherit! :search_paths

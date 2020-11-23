@@ -12,12 +12,22 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var usernameField: UITextField!
+    
+    var actInd = UIActivityIndicatorView()
+        
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+       setupActivityIndicator()
     }
     
+    func setupActivityIndicator(){
+        actInd.center = self.view.center
+        actInd.hidesWhenStopped = true
+        actInd.style = UIActivityIndicatorView.Style.large
+        actInd.color = UIColor.blue
+              
+        view.addSubview(actInd)
+    }
     @IBAction func onSignIn(_ sender: Any) {
         let username = usernameField.text!
                let password = passwordField.text!
@@ -28,36 +38,26 @@ class LoginViewController: UIViewController {
                    }
                    else {
                        print ("Error: \(error?.localizedDescription)")
+                    self.showAlert(title: "Invalid", message: "Invalid username or password. Please try again.")
                    }
                }
 
     }
     
     @IBAction func onSignUp(_ sender: Any) {
-        var user = PFUser(className: "_User")
-             user.username = usernameField.text
-             user.password = passwordField.text
-             
-             user.signUpInBackground{ (success, error) in
-                 if success {
-                     self.performSegue(withIdentifier: "loginSegue", sender: nil)
-                 } else {
-                     print ("Error: \(error?.localizedDescription)")
-                 }
-     }
-
-    }
+        self.performSegue(withIdentifier: "signupSegue", sender: nil)
+        }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func showAlert(title: String, message: String){
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {(action) in alert.dismiss(animated: true, completion: nil)}))
+            self.present(alert, animated: true, completion: nil)
+   }
+    
+    //dismiss keyboard by clkicking outside textbox
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
-    */
-
 }
 
 // hamida's comment
