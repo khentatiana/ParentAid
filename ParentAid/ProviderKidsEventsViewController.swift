@@ -73,12 +73,17 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
         cell.eventTitleLabel.sizeToFit()
         
         cell.synopsisLabel.text = event["synopsis"] as? String
-        cell.synopsisLabel.sizeToFit()           //cell.synopsisLabel.textAlignment = .justified
+        cell.synopsisLabel.sizeToFit()
+        cell.synopsisLabel.textAlignment = .left
+        //cell.synopsisLabel.textAlignment = .justified
         
         let imageFile = event["image"] as! PFFileObject
         let urlString = imageFile.url!
         let url = URL(string: urlString)!
         cell.photoViewProvider.af_setImage(withURL: url)
+        //To make round corners of the image
+        cell.photoViewProvider.layer.cornerRadius = 10
+        cell.photoViewProvider.clipsToBounds = true
         
         
         //        let cell = UITableViewCell()
