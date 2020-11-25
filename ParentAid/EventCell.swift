@@ -15,7 +15,7 @@ class EventCell: UITableViewCell {
     @IBOutlet weak var photoViewProvider: UIImageView!
     
     // Add Event variable + didset
-    var events = [PFObject]()
+    //var events = [PFObject]()
     
     override func awakeFromNib() {
         super.awakeFromNib()
