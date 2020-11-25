@@ -364,7 +364,7 @@ https://xd.adobe.com/view/1b06c1ef-23c8-499f-aa3c-b77b1b1570b2-4e55/
       - (Update/PUT) Update parent user image
 
 #### [OPTIONAL:] Existing API Endpoints
-##### An API Of Ice And Fire
+
 - Base URL - [https://parse-dashboard.back4app.com/apps/dc82cc29-73ba-4d69-adc0-263de4c30df7/browser](https://parse-dashboard.back4app.com/apps/dc82cc29-73ba-4d69-adc0-263de4c30df7/browser)
 
    HTTP Verb | Endpoint | Description
