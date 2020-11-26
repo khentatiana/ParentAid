@@ -1071,12 +1071,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="profile_tab" translatesAutoresizingMaskIntoConstraints="NO" id="eb9-LO-PX5">
-                                <rect key="frame" x="246" y="56" width="148" height="148"/>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_tab" translatesAutoresizingMaskIntoConstraints="NO" id="eb9-LO-PX5">
+                                <rect key="frame" x="246" y="76" width="148" height="148"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="148" id="7MM-vc-jNS"/>
                                     <constraint firstAttribute="width" constant="148" id="Jpg-MO-dLk"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="148" id="QxF-DJ-UQT"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="148" id="zNo-Rr-1c2"/>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QaH-Rr-TRt">
@@ -1106,7 +1108,9 @@
                             <constraint firstItem="3Q4-Hl-Dtp" firstAttribute="top" secondItem="Hw6-eg-UvN" secondAttribute="bottom" constant="8" id="EqO-Zs-T88"/>
                             <constraint firstItem="TG7-Ap-lki" firstAttribute="top" secondItem="uMt-oj-BBP" secondAttribute="bottom" constant="8" id="J96-hg-fb1"/>
                             <constraint firstItem="avm-ep-sVP" firstAttribute="top" secondItem="2V9-oU-pAS" secondAttribute="bottom" constant="8" id="KYx-DG-idv"/>
+                            <constraint firstItem="4Nh-Ic-6xe" firstAttribute="trailing" secondItem="eb9-LO-PX5" secondAttribute="trailing" constant="20" id="Lec-ZO-A1l"/>
                             <constraint firstItem="M4Y-Ld-3xu" firstAttribute="leading" secondItem="uMt-oj-BBP" secondAttribute="trailing" constant="50" id="Skx-VB-5Cc"/>
+                            <constraint firstItem="eb9-LO-PX5" firstAttribute="top" secondItem="4Nh-Ic-6xe" secondAttribute="top" constant="20" id="UCc-ON-bVB"/>
                             <constraint firstItem="3Q4-Hl-Dtp" firstAttribute="top" secondItem="Hw6-eg-UvN" secondAttribute="bottom" constant="10" id="Zuw-zT-71R"/>
                             <constraint firstItem="cPw-qU-3gx" firstAttribute="top" secondItem="M4Y-Ld-3xu" secondAttribute="bottom" constant="8" id="cdz-cv-CNa"/>
                             <constraint firstItem="gHA-T3-RHQ" firstAttribute="top" secondItem="N1K-j2-q16" secondAttribute="bottom" constant="8" id="dNz-px-ENZ"/>
@@ -1593,7 +1597,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="u7h-h2-kcN"/>
-        <segue reference="X8i-1c-Nd9"/>
+        <segue reference="z8C-sB-c7n"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="EventProviderLogo" width="337" height="337"/>
