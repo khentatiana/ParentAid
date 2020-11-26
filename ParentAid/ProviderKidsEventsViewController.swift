@@ -75,7 +75,7 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
         cell.synopsisLabel.text = event["synopsis"] as? String
         cell.synopsisLabel.sizeToFit()
         cell.synopsisLabel.textAlignment = .left
-        //cell.synopsisLabel.textAlignment = .justified
+        cell.synopsisLabel.textAlignment = .justified
         
         let imageFile = event["image"] as! PFFileObject
         let urlString = imageFile.url!
