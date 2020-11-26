@@ -1396,9 +1396,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z3H-mA-ZT6">
-                                <rect key="frame" x="0.0" y="56" width="414" height="243"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Z3H-mA-ZT6">
+                                <rect key="frame" x="19.5" y="56" width="375" height="243"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tUy-ny-DBq">
                                 <rect key="frame" x="20" y="269" width="137" height="124"/>
@@ -1452,6 +1451,9 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="UDh-ly-zod"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Z3H-mA-ZT6" firstAttribute="centerX" secondItem="Vdr-ar-kny" secondAttribute="centerX" id="zhd-OP-xQe"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="UVh-TE-QUl"/>
                 </viewController>
