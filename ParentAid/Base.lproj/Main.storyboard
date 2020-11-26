@@ -1388,10 +1388,10 @@
             </objects>
             <point key="canvasLocation" x="973.91304347826099" y="760.71428571428567"/>
         </scene>
-        <!--Event Details View Controller-->
+        <!--Provider Event Details View Controller-->
         <scene sceneID="NEE-07-bu6">
             <objects>
-                <viewController id="QaE-kS-ROJ" customClass="EventDetailsViewController" customModule="ParentAid" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="QaE-kS-ROJ" customClass="ProviderEventDetailsViewController" customModule="ParentAid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vdr-ar-kny">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

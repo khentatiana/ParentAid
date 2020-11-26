@@ -8,7 +8,7 @@
 import UIKit
 import Parse
 
-class EventDetailsViewController: UIViewController {
+class ProviderEventDetailsViewController: UIViewController {
     var event : PFObject!
 
     override func viewDidLoad() {
