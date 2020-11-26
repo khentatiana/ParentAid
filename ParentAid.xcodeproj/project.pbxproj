@@ -19,7 +19,7 @@
 		41D36808255CFE5C003D6709 /* ProviderKidsEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D36807255CFE5C003D6709 /* ProviderKidsEventsViewController.swift */; };
 		41D3680D255D017A003D6709 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3680C255D017A003D6709 /* EventCell.swift */; };
 		41D36812255D0D36003D6709 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D36811255D0D36003D6709 /* CameraViewController.swift */; };
-		41D9C21D255E904400091C24 /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D9C21C255E904400091C24 /* EventDetailsViewController.swift */; };
+		41D9C21D255E904400091C24 /* ProviderEventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D9C21C255E904400091C24 /* ProviderEventDetailsViewController.swift */; };
 		6005810F3405F5AA952D7065 /* Pods_ParentAidTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F50FEE1AD4DA0296115AC6F /* Pods_ParentAidTests.framework */; };
 		AACD7217D05172F790692FD8 /* Pods_ParentAid_ParentAidUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A20848A25F4DD09BB3117262 /* Pods_ParentAid_ParentAidUITests.framework */; };
 		B1629612572E7030E455CFF4 /* Pods_ParentAid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2061C507F0C2EA5C2578CCD2 /* Pods_ParentAid.framework */; };
@@ -65,7 +65,7 @@
 		41D36807255CFE5C003D6709 /* ProviderKidsEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderKidsEventsViewController.swift; sourceTree = "<group>"; };
 		41D3680C255D017A003D6709 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		41D36811255D0D36003D6709 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
-		41D9C21C255E904400091C24 /* EventDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsViewController.swift; sourceTree = "<group>"; };
+		41D9C21C255E904400091C24 /* ProviderEventDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderEventDetailsViewController.swift; sourceTree = "<group>"; };
 		95E95D4606E29D2F9F231859 /* Pods-ParentAid-ParentAidUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParentAid-ParentAidUITests.debug.xcconfig"; path = "Target Support Files/Pods-ParentAid-ParentAidUITests/Pods-ParentAid-ParentAidUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A20848A25F4DD09BB3117262 /* Pods_ParentAid_ParentAidUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParentAid_ParentAidUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1E15F6677010AAE307945B1 /* Pods-ParentAid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParentAid.debug.xcconfig"; path = "Target Support Files/Pods-ParentAid/Pods-ParentAid.debug.xcconfig"; sourceTree = "<group>"; };
@@ -176,7 +176,7 @@
 				41CB15BA25686A710087EC74 /* SavedProviderProfileViewController.swift */,
 				41D36811255D0D36003D6709 /* CameraViewController.swift */,
 				41CB15992564F4830087EC74 /* CalendarViewController.swift */,
-				41D9C21C255E904400091C24 /* EventDetailsViewController.swift */,
+				41D9C21C255E904400091C24 /* ProviderEventDetailsViewController.swift */,
 				41674F3E2558686E00DFEA6C /* KidsEventsViewController.swift */,
 				41674F4325586C2900DFEA6C /* KidsEventCell.swift */,
 			);
@@ -448,7 +448,7 @@
 				41D3680D255D017A003D6709 /* EventCell.swift in Sources */,
 				41CB159F256651F50087EC74 /* SignUpViewController.swift in Sources */,
 				D628C5F52551FB6A00BE82A0 /* SceneDelegate.swift in Sources */,
-				41D9C21D255E904400091C24 /* EventDetailsViewController.swift in Sources */,
+				41D9C21D255E904400091C24 /* ProviderEventDetailsViewController.swift in Sources */,
 				41CB15AD25670EB30087EC74 /* ProviderProfileViewController.swift in Sources */,
 				41674F3A255863C500DFEA6C /* HomeViewController.swift in Sources */,
 				41674F4425586C2900DFEA6C /* KidsEventCell.swift in Sources */,
