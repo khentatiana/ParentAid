@@ -378,29 +378,26 @@ https://xd.adobe.com/view/1b06c1ef-23c8-499f-aa3c-b77b1b1570b2-4e55/
 
 ## User Stories
 
-Completed this week:
+### Completed this week:
 The following **required** functionality are completed:
 
 - [x] User stays logged in across restarts.
-- [x] 
+- [x] User can add a profile picture. 
+- [ ] Profile pictures are shown for posts and comments.
 
-
-In-progress this week:
+### In-progress this week:
 The following **required** functionality are in-progress this week:
 
 - [x] User stays logged in across restarts.
-- [x] 
+- [x] User can add a profile picture. 
+- [ ] Profile pictures are shown for posts and comments.
 
-To-do:
+### To-do:
 The following **required** functionality are to be done after:
 
 - [x] User stays logged in across restarts.
-- [x] 
-
-The following **optional** features are implemented:
-
-- [x] User can add a profile picture. (2pts)
-- [ ] Profile pictures are shown for posts and comments. (2pts)
+- [x] User can add a profile picture. 
+- [ ] Profile pictures are shown for posts and comments.
 
 ## Video Walkthrough
 
