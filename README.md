@@ -447,5 +447,5 @@ Following are the **nice-to-have** functionalities that are to be worked on afte
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://g.recordit.co/7uezmsnzUF.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/L1AwnwlLl6.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
