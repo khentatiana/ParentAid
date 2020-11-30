@@ -376,4 +376,76 @@ https://xd.adobe.com/view/1b06c1ef-23c8-499f-aa3c-b77b1b1570b2-4e55/
     `GET`    | /FamilyProfile |  get all parent users
     `GET`    | /FamilyProfile/?username=username | return specific parent user by username
 
+## Build Sprint 1 
+
+### User Stories completed this week:
+Following are the **required completed** functionalities:
+
+- [x] User sees the app icon in home screen and styled launch screen.
+- [x] User is able to log in.
+- [x] User cannot log in with invalid credentials.
+- [x] User is able to sign up.
+- [x] On Sign Up validate email format.
+- [x] On Sign Up check that password has more than 5 characters.
+- [x] On Sign Up check that username has more than 5 characters.
+- [x] User stays logged in across restarts.
+- [x] User can log out.
+- [x] User is able to identify as a Parent or Provider.
+- [x] Provider user is able to add an event to Kids Events.
+- [x] Provider user is able to access their profile.
+
+### User Stories in-progress this week:
+Following are the **required in-progress** functionalities for this week:
+
+- [ ] User is able to swtich between a Parent and Provider.
+- [ ] Provider user is able to access the Kids Events.
+- [ ] Provider user is able to add/register an event to Kids Events.
+- [ ] Provider user is able to preview the added event.
+- [ ] Provider user is able to receive a confirmation message after adding the event.
+- [ ] Provider user is able to search for an event using the Search Bar.
+- [ ] Parent user is able to access their profile.
+- [ ] Parent user is able to add a profile picture.
+- [ ] Parent user is able to access Kids Events.
+- [ ] Parent user is able to view the summary of results (Kids Events).
+- [ ] Parent user is able to select an event from the summary of results (Kids Events).
+- [ ] Illustrations and logo design for the app.
+
+### User Stories to-do:
+Following are the **required to-do** functionalities that are to be worked on after completing the in-progress ones:
+
+- [ ] Parent user is able to view the selected event of choice.
+- [ ] Parent user is able to receive a confirmation for the selected event of choice.
+- [ ] Parent user is able to search for an event using the Search Bar.
+- [ ] Parent user is able to view the registration confirmation.
+- [ ] Parent user is able to pull to refresh.
+- [ ] Provider user is able to add a profile picture.
+- [ ] Provider user is able to load past events infinitely.
+- [ ] Provider user is able to pull to refresh.
+- [ ] Provider user is able to tag a photo, tag it with a location and then see a mp with tagged event photo.
+- [ ] Provider profile pictures are shown for events posted.
+- [ ] Update app logo on homescreen and illustrations across the app.
+
+### User Stories nice-to-have:
+Following are the **nice-to-have** functionalities that are to be worked on after completing the to-do's:
+
+- [ ] User can view the app on various device sizes and orientations
+- [ ] User is able to regain access by clicking on 'Forgot Password' screen.
+- [ ] User is able to conduct advanced event search.
+- [ ] Parent user cannot register when no more spaces are available.
+- [ ] When Parent user is registered for an event, 'Available Spots' countdown is decreased by 1.
+- [ ] Provider user is able to edit the event on Kids Events with Edit button.
+- [ ] Parent user receives confirmation email after registering to an event.
+- [ ] Provider user receives confirmation email after adding an event to Kids Events.
+- [ ] Provider user is able to edit the event on Kids Events with Edit button.
+- [ ] Provider user is able to delete an event on Kids Events with Cancel button.
+- [ ] A generated list of 'upcoming events' in Provider profile is visible.
+- [ ] A generated list of 'expired events' in Provider profile is visible.
+- [ ] A generated list of 'registered events' in Parent profile is visible.
+- [ ] A generated list of 'attended events' in Parent profile is visible.
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+<img src='http://g.recordit.co/L1AwnwlLl6.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
