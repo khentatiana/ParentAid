@@ -9,17 +9,21 @@ import UIKit
 import Parse
 import AlamofireImage
 
-class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
     var events = [PFObject]()
+    //var filteredData = event["title"] as? String
     
     
     @IBOutlet weak var tableViewProvider: UITableView!
     
     
+    @IBOutlet weak var searchBarProvider: UISearchBar!
     override func viewDidLoad() {
         super.viewDidLoad()
         tableViewProvider.delegate = self
         tableViewProvider.dataSource = self
+        searchBarProvider.delegate = self
+      //  filteredData = events
         
         // Do any additional setup after loading the view.
     }
@@ -61,11 +65,11 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableViewProvider.dequeueReusableCell(withIdentifier: "EventCell") as! EventCell
        // To display events in reversed order:
-        //let event = events.reversed()[indexPath.row]
-        //or equivalent:
-      // query.order(byDescending: "createdAt")
+        let event = events.reversed()[indexPath.row]
+      //  or equivalent:
+    //   query.order(byDescending: "createdAt")
         
-        let event = events[indexPath.row]
+   //     let event = filteredData[indexPath.row]
         let user = event["provider"] as! PFUser
         cell.providerLabel.text = user.username
         cell.providerLabel.sizeToFit()
@@ -97,13 +101,22 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
     }
     
     /*
-     // MARK: - Navigation
+     // MARK: - Search Bar Config  */
      
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
+//    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+//        
+//        filteredData = []
+//        if searchText == ""{
+//            filteredData = eventTitleLabel.text
+//        }
+//        else {
+//
+//        for searchedEvent in events{
+//            if searchedEvent{
+//                filteredData.append(searchedEvent)
+//            }
+//        }}
+//        
+//        self.tableViewProvider.reloadData()
+//    }
 }

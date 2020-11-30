@@ -946,6 +946,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="searchBarProvider" destination="4MB-EO-8Vw" id="JGV-Uw-Di8"/>
                         <outlet property="tableViewProvider" destination="P6h-gl-LnI" id="afW-W6-z6a"/>
                     </connections>
                 </viewController>
