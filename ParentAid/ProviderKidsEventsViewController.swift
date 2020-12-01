@@ -181,11 +181,14 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
 //    }
 //
 //}
-   //  Search bar functionality
+    // Search bar functionality
 //    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+//        //reload all events to clear up previous search
+//        filteredEvents = eventsArray
 //        if searchText != "" {
-//            filteredEvents = eventsArray.filter {(event) -> Bool in
-//                return event.title.lowercased().contains(searchText.lowercased())
+//          
+////            filteredEvents = eventsArray.filter {(event) -> Bool in
+////                return event.title.lowercased().contains(searchText.lowercased())
 //            }
 //        }
 //        else {
@@ -195,7 +198,7 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
 //    }
 
     
-    // Show Cancel button when typing
+    // Show Cancel button when typing and animate tableViewProviderTopConstraint
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
         //animate tableViewProviderTopConstraint
         tableViewProviderTopConstraint.constant = 0
@@ -203,7 +206,7 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
             self.view.layoutIfNeeded()
         }
         tableViewProvider.isHidden = false
-        
+        // Show Cancel button when typing
         self.searchBarProvider.showsCancelButton = true
     
 }
