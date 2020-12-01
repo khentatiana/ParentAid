@@ -26,6 +26,10 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
     var events = [PFObject]()
     var eventsArray : [Event] = []
     var filteredEvents : [Event] = []
+   // var refreshControl: UIRefreshControl!
+   var numberOfEvents: Int!
+    
+    //var selectedEvent: PFObject!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,17 +48,17 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
     }
     
 //    @objc func getAPIData() {
-//        API.getEvents() { (restaurants) in
-//            guard let restaurants = restaurants else {
+//        API.getEvents() { (events) in
+//            guard let events = events else {
 //                return
 //            }
-//            self.restaurantsArray = restaurants
-//            self.filteredRestaurants = restaurants
-//            self.tableView.reloadData()
+//            self.eventsArray = events
+//            self.filteredEvents = events
+//            self.tableViewProvider.reloadData()
 //
 //        }
 //    }
-    
+//
     
     @IBAction func onLogoutButton(_ sender: Any) {
         
@@ -71,14 +75,15 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
     
     
     override func viewDidAppear(_ animated: Bool) {
-       var eventArray =  [[String:Any]]()
-        var eventTitle = String.self
-        
+//       var eventArray =  [[String:Any]]()
+//        var eventTitle = String.self
+        numberOfEvents = 10
         super.viewDidAppear(animated)
         let query = PFQuery(className: "KidsEvents")
-        query.includeKey("provider")
+        query.includeKeys(["provider", "synopsis" , "title", "date"])
       // query.whereKey("providerCity", contains: "San Jose")
         query.order(byDescending: "createdAt")
+        query.limit = numberOfEvents
                 
         query.findObjectsInBackground{(events, error) in
             if (events != nil){
