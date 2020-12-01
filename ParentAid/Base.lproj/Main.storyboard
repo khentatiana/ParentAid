@@ -859,7 +859,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="252" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="P6h-gl-LnI">
-                                <rect key="frame" x="0.0" y="412" width="414" height="430"/>
+                                <rect key="frame" x="0.0" y="162" width="414" height="680"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventCell" rowHeight="252" id="d3k-rm-kFH" customClass="EventCell" customModule="ParentAid" customModuleProvider="target">
@@ -935,7 +935,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="P6h-gl-LnI" firstAttribute="trailing" secondItem="vdw-fb-bSb" secondAttribute="trailing" id="DoA-HX-JMK"/>
-                            <constraint firstItem="P6h-gl-LnI" firstAttribute="top" secondItem="DAc-qY-caf" secondAttribute="bottom" constant="300" id="VOW-tX-zVk"/>
+                            <constraint firstItem="P6h-gl-LnI" firstAttribute="top" secondItem="DAc-qY-caf" secondAttribute="bottom" constant="50" id="VOW-tX-zVk"/>
                             <constraint firstItem="DAc-qY-caf" firstAttribute="trailing" secondItem="vdw-fb-bSb" secondAttribute="trailing" id="VgR-ys-GbQ"/>
                             <constraint firstItem="DAc-qY-caf" firstAttribute="top" secondItem="vdw-fb-bSb" secondAttribute="top" id="g9D-zZ-tgG"/>
                             <constraint firstAttribute="bottom" secondItem="P6h-gl-LnI" secondAttribute="bottom" id="jh1-wj-OAW"/>

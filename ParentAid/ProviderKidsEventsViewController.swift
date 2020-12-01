@@ -42,7 +42,8 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
         //Search Bar delegate
         searchBarProvider.delegate = self
         //To hide table view:
-        //tableViewProvider.isHidden = true
+      //  tableViewProvider.isHidden = true
+        filteredEvents = eventsArray
        
         // Get Data from API
        // getAPIData()
@@ -106,7 +107,7 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableViewProvider.dequeueReusableCell(withIdentifier: "EventCell") as! EventCell
+        let cell = tableViewProvider.dequeueReusableCell(withIdentifier: "EventCell", for:indexPath) as! EventCell
        // To display events in reversed order:
         let event = filteredEvents[indexPath.row]
       //  let event = events.reversed()[indexPath.row]
@@ -180,10 +181,10 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
 //    }
 //
 //}
-  //   Search bar functionality
+   //  Search bar functionality
 //    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
 //        if searchText != "" {
-//            filteredEvents = eventsArray.filter {event in
+//            filteredEvents = eventsArray.filter {(event) -> Bool in
 //                return event.title.lowercased().contains(searchText.lowercased())
 //            }
 //        }
@@ -196,9 +197,16 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
     
     // Show Cancel button when typing
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        //animate tableViewProviderTopConstraint
+        tableViewProviderTopConstraint.constant = 0
+        UIView.animate(withDuration: 0.1) {
+            self.view.layoutIfNeeded()
+        }
+        tableViewProvider.isHidden = false
+        
         self.searchBarProvider.showsCancelButton = true
-    }
     
+}
     // Logic for searchBar cancel button
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         searchBarProvider.showsCancelButton = false // remove cancel button
