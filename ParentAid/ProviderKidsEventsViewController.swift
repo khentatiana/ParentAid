@@ -9,23 +9,42 @@ import UIKit
 import Parse
 import AlamofireImage
 
+struct Event:Decodable{
+    let title:String
+    let date:String
+    
+}
+
 class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
     var events = [PFObject]()
-    //var filteredData = event["title"] as? String
     
+
     
     @IBOutlet weak var tableViewProvider: UITableView!
-    
+     
+    @IBOutlet weak var tableViewProviderTopConstraint: NSLayoutConstraint!
     
     @IBOutlet weak var searchBarProvider: UISearchBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableViewProvider.delegate = self
         tableViewProvider.dataSource = self
         searchBarProvider.delegate = self
+        //To hide table view:
+        //tableViewProvider.isHidden = true
+       
+       // let eventArray =  [[String:Any]]()
+        
+        let filteredData : [String] = []
+        
+//        let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
+//        self.events = dataDictionary["title"] as! [[String : Any]]
+//        self.tableViewProvider.reloadData()
       //  filteredData = events
         
-        // Do any additional setup after loading the view.
+        print ("#################")
+        //print(eventArray)
     }
     
     @IBAction func onLogoutButton(_ sender: Any) {
@@ -43,6 +62,9 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
     
     
     override func viewDidAppear(_ animated: Bool) {
+       var eventArray =  [[String:Any]]()
+        var eventTitle = String.self
+        
         super.viewDidAppear(animated)
         let query = PFQuery(className: "KidsEvents")
         query.includeKey("provider")
@@ -52,12 +74,15 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
         query.findObjectsInBackground{(events, error) in
             if (events != nil){
                 self.events = events!
+           //   eventArray.append(eventTitle)
                 self.tableViewProvider.reloadData()
             }
         }
         
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        print ("#################")
+//        print(eventArray)
         return events.count
         
     }
@@ -119,4 +144,5 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
 //        
 //        self.tableViewProvider.reloadData()
 //    }
+    
 }
