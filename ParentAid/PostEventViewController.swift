@@ -9,19 +9,57 @@ import UIKit
 import AlamofireImage
 import Parse
 
-class CameraViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
+class PostEventViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
     
     @IBOutlet weak var eventDateField: UITextField!
+    @IBOutlet weak var eventTimeField: UITextField!
+    
     @IBOutlet weak var eventDescriptionField: UITextField!
     @IBOutlet weak var eventTitleField: UITextField!
     @IBOutlet weak var imageView: UIImageView!
+    
+   var datePicker = UIDatePicker()
+    var timePicker = UIDatePicker()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         eventTitleField.delegate = self
         eventDescriptionField.delegate = self
-        eventDateField.delegate = self
+        //eventDateField.delegate = self
+        datePickerEventDate()
+        datePickerEventTime()
     }
     
+    func datePickerEventDate(){
+        datePicker.datePickerMode = .date
+        eventDateField.inputView = datePicker
+        let eventDate = dateFormatter()
+        eventDateField.text = eventDate.string(from: datePicker.date)
+        eventDateField.textAlignment = .center
+                
+    }
+    
+    func dateFormatter() -> DateFormatter{
+        let format = DateFormatter()
+        format.dateFormat = "EEEE, MMMM d, yyyy"
+    return format
+    }
+    
+    
+    func datePickerEventTime(){
+        let eventTime = Date()
+        let timeFormat = DateFormatter()
+        timeFormat.locale = Locale(identifier: "en_gb")
+        timeFormat.dateFormat = "HH:mm"
+        timePicker.datePickerMode = .time
+        eventTimeField.inputView = timePicker
+        
+        //eventTimeField.text = eventTime.string(from: timePicker.eventTime)
+        
+                
+    }
+    
+ 
     @IBAction func onSubmitButton(_ sender: Any) {
         // Create new object "event" that will be stored in table "KidsEvents"
         let event = PFObject(className: "KidsEvents")

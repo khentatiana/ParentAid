@@ -1132,10 +1132,10 @@
             </objects>
             <point key="canvasLocation" x="241" y="660"/>
         </scene>
-        <!--Camera View Controller-->
+        <!--Post Event View Controller-->
         <scene sceneID="rQ6-Ob-KFl">
             <objects>
-                <viewController id="3Ya-03-ctZ" customClass="CameraViewController" customModule="ParentAid" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3Ya-03-ctZ" customClass="PostEventViewController" customModule="ParentAid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fLB-I7-ne6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1146"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1382,6 +1382,7 @@
                     <connections>
                         <outlet property="eventDateField" destination="FhB-LD-FSC" id="aBY-5K-6WI"/>
                         <outlet property="eventDescriptionField" destination="rva-Lk-XIz" id="Ncd-b0-O30"/>
+                        <outlet property="eventTimeField" destination="2sx-4c-acJ" id="fl1-kl-3uq"/>
                         <outlet property="eventTitleField" destination="G9S-qh-q0b" id="jwY-SE-cM7"/>
                         <outlet property="imageView" destination="qT1-52-M83" id="03K-oI-ZW1"/>
                         <segue destination="fMp-c5-3yH" kind="custom" id="8ch-At-lSF"/>
