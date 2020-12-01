@@ -15,6 +15,7 @@ class Event {
     var title : String
     var date : Date
     var image : URL?
+    var url : URL?
   // var mainCategory : String
     
 
