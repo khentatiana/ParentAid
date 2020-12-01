@@ -10,6 +10,7 @@
 		41674F3A255863C500DFEA6C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41674F39255863C500DFEA6C /* HomeViewController.swift */; };
 		41674F3F2558686E00DFEA6C /* KidsEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41674F3E2558686E00DFEA6C /* KidsEventsViewController.swift */; };
 		41674F4425586C2900DFEA6C /* KidsEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41674F4325586C2900DFEA6C /* KidsEventCell.swift */; };
+		418EB4492575EC7C00797D28 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418EB4482575EC7C00797D28 /* Event.swift */; };
 		4198E1EE2555EE27009F5092 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4198E1ED2555EE27009F5092 /* LoginViewController.swift */; };
 		4198E1F62555F497009F5092 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4198E1F52555F497009F5092 /* Assets.xcassets */; };
 		41CB159A2564F4830087EC74 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CB15992564F4830087EC74 /* CalendarViewController.swift */; };
@@ -56,6 +57,7 @@
 		41674F39255863C500DFEA6C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		41674F3E2558686E00DFEA6C /* KidsEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidsEventsViewController.swift; sourceTree = "<group>"; };
 		41674F4325586C2900DFEA6C /* KidsEventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidsEventCell.swift; sourceTree = "<group>"; };
+		418EB4482575EC7C00797D28 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		4198E1ED2555EE27009F5092 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4198E1F52555F497009F5092 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41CB15992564F4830087EC74 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				4198E1F52555F497009F5092 /* Assets.xcassets */,
 				D628C5FD2551FB6B00BE82A0 /* LaunchScreen.storyboard */,
 				D628C6002551FB6B00BE82A0 /* Info.plist */,
+				418EB4482575EC7C00797D28 /* Event.swift */,
 				4198E1ED2555EE27009F5092 /* LoginViewController.swift */,
 				41CB159E256651F40087EC74 /* SignUpViewController.swift */,
 				41674F39255863C500DFEA6C /* HomeViewController.swift */,
@@ -443,6 +446,7 @@
 				41CB15BB25686A710087EC74 /* SavedProviderProfileViewController.swift in Sources */,
 				4198E1EE2555EE27009F5092 /* LoginViewController.swift in Sources */,
 				D628C5F32551FB6A00BE82A0 /* AppDelegate.swift in Sources */,
+				418EB4492575EC7C00797D28 /* Event.swift in Sources */,
 				41CB159A2564F4830087EC74 /* CalendarViewController.swift in Sources */,
 				41D36808255CFE5C003D6709 /* ProviderKidsEventsViewController.swift in Sources */,
 				41D3680D255D017A003D6709 /* EventCell.swift in Sources */,

@@ -9,11 +9,11 @@ import UIKit
 import Parse
 import AlamofireImage
 
-struct Event:Decodable{
-    let title:String
-    let date:String
-    
-}
+//struct Event:Decodable{
+//    let title:String
+//    let date:String
+//    
+//}
 
 class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
     var events = [PFObject]()
