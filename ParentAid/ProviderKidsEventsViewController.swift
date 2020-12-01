@@ -16,36 +16,45 @@ import AlamofireImage
 //}
 
 class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
-    var events = [PFObject]()
-    
-
-    
+      
+    //Outlets
     @IBOutlet weak var tableViewProvider: UITableView!
-     
     @IBOutlet weak var tableViewProviderTopConstraint: NSLayoutConstraint!
-    
     @IBOutlet weak var searchBarProvider: UISearchBar!
+    
+    //Initiliazers
+    var events = [PFObject]()
+    var eventsArray : [Event] = []
+    var filteredEvents : [Event] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Table View delegate
         tableViewProvider.delegate = self
         tableViewProvider.dataSource = self
+        //Search Bar delegate
         searchBarProvider.delegate = self
         //To hide table view:
         //tableViewProvider.isHidden = true
        
-       // let eventArray =  [[String:Any]]()
-        
-        let filteredData : [String] = []
-        
-//        let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
-//        self.events = dataDictionary["title"] as! [[String : Any]]
-//        self.tableViewProvider.reloadData()
-      //  filteredData = events
-        
-        print ("#################")
-        //print(eventArray)
+        // Get Data from API
+       // getAPIData()
+              
+       
     }
+    
+//    @objc func getAPIData() {
+//        API.getEvents() { (restaurants) in
+//            guard let restaurants = restaurants else {
+//                return
+//            }
+//            self.restaurantsArray = restaurants
+//            self.filteredRestaurants = restaurants
+//            self.tableView.reloadData()
+//
+//        }
+//    }
+    
     
     @IBAction func onLogoutButton(_ sender: Any) {
         

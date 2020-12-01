@@ -8,6 +8,8 @@
 import Foundation
 import Parse
 
+//var events = [PFObject]()
+
 class Event {
     //Establish properties
     var synopsis : String
