@@ -24,8 +24,11 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
     
     //Initiliazers
     var events = [PFObject]()
-    var eventsArray : [Event] = []
-    var filteredEvents : [Event] = []
+    var eventsArray = [PFObject]()
+  //  var eventsArray : [Event] = []
+    var filteredEvents = [PFObject]()
+   // var filteredEvents : [Event] = []
+    
    // var refreshControl: UIRefreshControl!
    var numberOfEvents: Int!
     
@@ -85,26 +88,27 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
         query.order(byDescending: "createdAt")
         query.limit = numberOfEvents
                 
-        query.findObjectsInBackground{(events, error) in
+        query.findObjectsInBackground{ (events, error) in
             if (events != nil){
                 self.events = events!
-           //   eventArray.append(eventTitle)
+                self.eventsArray = events!
+                self.filteredEvents = events!
+                                             
                 self.tableViewProvider.reloadData()
             }
         }
         
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        print ("#################")
-//        print(eventArray)
-        return events.count
+
+        return filteredEvents.count
         
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableViewProvider.dequeueReusableCell(withIdentifier: "EventCell") as! EventCell
        // To display events in reversed order:
-        let event = events[indexPath.row]
+        let event = filteredEvents[indexPath.row]
       //  let event = events.reversed()[indexPath.row]
       //  or equivalent:
     //   query.order(byDescending: "createdAt")
@@ -135,6 +139,21 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
         
         return cell
     }
+    
+    /*
+     MARK: - Navigation
+
+     In a storyboard-based application, you will often want to do a little preparation before navigation */
+    
+   // override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        // Get the new view controller using segue.destination.
+         //Pass the selected object to the new view controller.
+        
+        
+    
+    
+    
     //dismiss keyboard by clicking outside textbox
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
@@ -142,10 +161,10 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
     
     /*
      // MARK: - Search Bar Config  */
-     
+//
 //    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-//        
-//        filteredData = []
+//        //  var eventsArray : [Event] = []
+//        var filteredData = []
 //        if searchText == ""{
 //            filteredData = eventTitleLabel.text
 //        }
@@ -156,8 +175,38 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
 //                filteredData.append(searchedEvent)
 //            }
 //        }}
-//        
+//
 //        self.tableViewProvider.reloadData()
 //    }
+//
+//}
+  //   Search bar functionality
+//    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+//        if searchText != "" {
+//            filteredEvents = eventsArray.filter {event in
+//                return event.title.lowercased().contains(searchText.lowercased())
+//            }
+//        }
+//        else {
+//            filteredEvents = eventsArray
+//        }
+//        tableViewProvider.reloadData()
+//    }
+
+    
+    // Show Cancel button when typing
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        self.searchBarProvider.showsCancelButton = true
+    }
+    
+    // Logic for searchBar cancel button
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchBarProvider.showsCancelButton = false // remove cancel button
+        searchBarProvider.text = "" // reset search text
+        searchBarProvider.resignFirstResponder() // remove keyboard
+        filteredEvents = eventsArray // reset results to display
+        tableViewProvider.reloadData()
+    }
     
 }
+
