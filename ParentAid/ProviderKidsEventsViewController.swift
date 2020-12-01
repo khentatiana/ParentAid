@@ -90,7 +90,8 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableViewProvider.dequeueReusableCell(withIdentifier: "EventCell") as! EventCell
        // To display events in reversed order:
-        let event = events.reversed()[indexPath.row]
+        let event = events[indexPath.row]
+      //  let event = events.reversed()[indexPath.row]
       //  or equivalent:
     //   query.order(byDescending: "createdAt")
         
