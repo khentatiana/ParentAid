@@ -84,7 +84,7 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
         numberOfEvents = 10
         super.viewDidAppear(animated)
         let query = PFQuery(className: "KidsEvents")
-        query.includeKeys(["provider", "synopsis" , "title", "date"])
+        query.includeKeys(["provider.username", "synopsis" , "title", "date"])
       // query.whereKey("providerCity", contains: "San Jose")
         query.order(byDescending: "createdAt")
         query.limit = numberOfEvents

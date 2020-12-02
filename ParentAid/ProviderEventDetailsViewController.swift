@@ -25,11 +25,15 @@ class ProviderEventDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        providerName.text = event["provider.username"] as? String
+      //  providerName.sizeToFit()
         eventTitle.text = event["title"] as? String
         eventTitle.sizeToFit()
         synopsisLabel.text = event["synopsis"] as? String
         synopsisLabel.sizeToFit()
+        eventDate.text = event["date"] as? String
+        eventDate.sizeToFit()
+        
         
     }
     

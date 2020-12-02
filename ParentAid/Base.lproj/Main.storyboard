@@ -1430,10 +1430,10 @@
                                                     <constraint firstAttribute="height" constant="142" id="U9M-I4-URK"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WnE-Wi-Tco">
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Date" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WnE-Wi-Tco">
                                                 <rect key="frame" x="164" y="332" width="235" height="41"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -1519,6 +1519,7 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
+                                            <constraint firstItem="jCw-IH-cYe" firstAttribute="top" secondItem="tUy-ny-DBq" secondAttribute="bottom" constant="8" symbolic="YES" id="4qW-Vk-QIF"/>
                                             <constraint firstAttribute="bottom" secondItem="806-H5-veu" secondAttribute="bottom" constant="200" id="Dfp-Sp-Glw"/>
                                             <constraint firstItem="hFw-Ps-W9C" firstAttribute="leading" secondItem="mGu-fa-vhr" secondAttribute="leading" constant="20" id="F2M-ZT-m8x"/>
                                             <constraint firstItem="jLB-Hj-zjq" firstAttribute="top" secondItem="jCw-IH-cYe" secondAttribute="bottom" constant="8" id="GzI-0l-xu3"/>
