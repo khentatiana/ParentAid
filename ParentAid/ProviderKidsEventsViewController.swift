@@ -128,13 +128,13 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
         cell.synopsisLabel.textAlignment = .justified
         
         cell.eventDateLabel.text = event["date"] as? String
-        cell.eventDateLabel.sizeToFit()
+        //cell.eventDateLabel.sizeToFit()
         
               
         let imageFile = event["image"] as! PFFileObject
         let urlString = imageFile.url!
         let url = URL(string: urlString)!
-        cell.photoViewProvider.af_setImage(withURL: url)
+        cell.photoViewProvider.af.setImage(withURL: url)
         //To make round corners of the image
         cell.photoViewProvider.layer.cornerRadius = 10
         cell.photoViewProvider.clipsToBounds = true
@@ -224,7 +224,7 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
         //Find the selected event
         let cell = sender as! UITableViewCell // Sender is the cell that was tapped
         let indexPath = tableViewProvider.indexPath(for: cell)! //Index of the cell was tapped
-        let event = events[indexPath.row] //event from selected cell
+        let event = filteredEvents[indexPath.row] //event from selected cell
         
         //Pass the selected movie to the details view controller
         let detailsViewController = segue.destination as! ProviderEventDetailsViewController //Variable "detailsViewController" is a destination where selected movie is segue
