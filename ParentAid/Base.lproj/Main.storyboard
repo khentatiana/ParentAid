@@ -896,9 +896,9 @@
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="N98-7L-0LF">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N98-7L-0LF">
                                                     <rect key="frame" x="169" y="81" width="225" height="160"/>
-                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
                                                     <string key="text">Event synopsis Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <nil key="highlightedColor"/>
@@ -1190,9 +1190,6 @@
                                                 <gestureRecognizers/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
-                                                <connections>
-                                                    <outletCollection property="gestureRecognizers" destination="S0b-Y8-Vxr" appends="YES" id="BEr-di-7oQ"/>
-                                                </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z37-F0-WIr">
                                                 <rect key="frame" x="20" y="540.5" width="366" height="19.5"/>
@@ -1380,9 +1377,9 @@
                     </view>
                     <size key="freeformSize" width="414" height="1200"/>
                     <connections>
-                        <outlet property="eventDateField" destination="FhB-LD-FSC" id="aBY-5K-6WI"/>
+                        <outlet property="eventDateField" destination="FhB-LD-FSC" id="aJy-fJ-Dgt"/>
                         <outlet property="eventDescriptionField" destination="rva-Lk-XIz" id="Ncd-b0-O30"/>
-                        <outlet property="eventTimeField" destination="2sx-4c-acJ" id="fl1-kl-3uq"/>
+                        <outlet property="eventTimeField" destination="2sx-4c-acJ" id="VXw-GY-k8K"/>
                         <outlet property="eventTitleField" destination="G9S-qh-q0b" id="jwY-SE-cM7"/>
                         <outlet property="imageView" destination="qT1-52-M83" id="03K-oI-ZW1"/>
                         <segue destination="fMp-c5-3yH" kind="custom" id="8ch-At-lSF"/>
@@ -1392,11 +1389,6 @@
                 <tapGestureRecognizer id="W2q-rQ-Ixz">
                     <connections>
                         <action selector="onCameraButton:" destination="3Ya-03-ctZ" id="jeY-HI-WgW"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="S0b-Y8-Vxr">
-                    <connections>
-                        <segue destination="9oo-eg-ruA" kind="show" id="S8e-ZH-TQv"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -1568,18 +1560,18 @@
             <objects>
                 <viewController id="9oo-eg-ruA" customClass="CalendarViewController" customModule="ParentAid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="efR-u3-Bft">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yo7-Rn-cqU" customClass="FSCalendar">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="300"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="nFM-Jz-ekC"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lfS-HX-3rr">
-                                <rect key="frame" x="157" y="400.5" width="100" height="41"/>
+                                <rect key="frame" x="157" y="427.5" width="100" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="QV7-Dh-oFf"/>
                                     <constraint firstAttribute="height" constant="41" id="S6y-X6-iFZ"/>
@@ -1600,13 +1592,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="LhG-mn-wqf"/>
-                    <connections>
-                        <outlet property="calendar" destination="yo7-Rn-cqU" id="eaA-3r-p1t"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cWX-I0-acN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1637.68115942029" y="1664.7321428571429"/>
+            <point key="canvasLocation" x="2228" y="1665"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="bqo-lT-Lbb">

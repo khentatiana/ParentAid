@@ -11,52 +11,62 @@ import Parse
 
 class PostEventViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
     
-    @IBOutlet weak var eventDateField: UITextField!
+
+
     @IBOutlet weak var eventTimeField: UITextField!
     
+    @IBOutlet weak var eventDateField: UITextField!
     @IBOutlet weak var eventDescriptionField: UITextField!
     @IBOutlet weak var eventTitleField: UITextField!
     @IBOutlet weak var imageView: UIImageView!
     
-   var datePicker = UIDatePicker()
+    var datePicker = UIDatePicker()
     var timePicker = UIDatePicker()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         eventTitleField.delegate = self
         eventDescriptionField.delegate = self
-        //eventDateField.delegate = self
         datePickerEventDate()
         datePickerEventTime()
     }
     
     func datePickerEventDate(){
         datePicker.datePickerMode = .date
+        datePicker.addTarget(self, action: #selector(PostEventViewController.dateChanged(datePicker:)), for:  .valueChanged)
         eventDateField.inputView = datePicker
-        let eventDate = dateFormatter()
-        eventDateField.text = eventDate.string(from: datePicker.date)
-        eventDateField.textAlignment = .center
-                
     }
     
-    func dateFormatter() -> DateFormatter{
-        let format = DateFormatter()
-        format.dateFormat = "EEEE, MMMM d, yyyy"
-    return format
+    @objc func dateChanged(datePicker : UIDatePicker){
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "EEEE, MMMM d, yyyy"
+        eventDateField.text = dateFormatter.string(from: datePicker.date)
+        view.endEditing(true)
+    
     }
     
     
     func datePickerEventTime(){
-        let eventTime = Date()
-        let timeFormat = DateFormatter()
-        timeFormat.locale = Locale(identifier: "en_gb")
-        timeFormat.dateFormat = "HH:mm"
+//        let eventTime = Date()
+//        let timeFormat = DateFormatter()
+//        timeFormat.locale = Locale(identifier: "en_gb")
+//        timeFormat.dateFormat = "HH:mm"
+//        timePicker.datePickerMode = .time
+//        eventTimeField.inputView = timePicker
+//        view.endEditing(true)
         timePicker.datePickerMode = .time
+        timePicker.addTarget(self, action: #selector(PostEventViewController.timeChanged(timePicker:)), for:  .valueChanged)
         eventTimeField.inputView = timePicker
         
-        //eventTimeField.text = eventTime.string(from: timePicker.eventTime)
-        
                 
+    }
+    @objc func timeChanged(timePicker : UIDatePicker){
+        let timeFormatter = DateFormatter()
+        timeFormatter.locale = Locale(identifier: "en_gb")
+        timeFormatter.dateFormat = "HH:mm"
+        eventTimeField.text = timeFormatter.string(from: timePicker.date)
+        view.endEditing(true)
+    
     }
     
  

@@ -14,7 +14,6 @@
 		418EB45725760B9300797D28 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418EB45625760B9300797D28 /* API.swift */; };
 		4198E1EE2555EE27009F5092 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4198E1ED2555EE27009F5092 /* LoginViewController.swift */; };
 		4198E1F62555F497009F5092 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4198E1F52555F497009F5092 /* Assets.xcassets */; };
-		41CB159A2564F4830087EC74 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CB15992564F4830087EC74 /* CalendarViewController.swift */; };
 		41CB159F256651F50087EC74 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CB159E256651F40087EC74 /* SignUpViewController.swift */; };
 		41CB15AD25670EB30087EC74 /* ProviderProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CB15AC25670EB20087EC74 /* ProviderProfileViewController.swift */; };
 		41CB15BB25686A710087EC74 /* SavedProviderProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CB15BA25686A710087EC74 /* SavedProviderProfileViewController.swift */; };
@@ -62,7 +61,6 @@
 		418EB45625760B9300797D28 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		4198E1ED2555EE27009F5092 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4198E1F52555F497009F5092 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		41CB15992564F4830087EC74 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		41CB159E256651F40087EC74 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		41CB15AC25670EB20087EC74 /* ProviderProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderProfileViewController.swift; sourceTree = "<group>"; };
 		41CB15BA25686A710087EC74 /* SavedProviderProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedProviderProfileViewController.swift; sourceTree = "<group>"; };
@@ -181,7 +179,6 @@
 				41CB15AC25670EB20087EC74 /* ProviderProfileViewController.swift */,
 				41CB15BA25686A710087EC74 /* SavedProviderProfileViewController.swift */,
 				41D36811255D0D36003D6709 /* PostEventViewController.swift */,
-				41CB15992564F4830087EC74 /* CalendarViewController.swift */,
 				41D9C21C255E904400091C24 /* ProviderEventDetailsViewController.swift */,
 				41674F3E2558686E00DFEA6C /* KidsEventsViewController.swift */,
 				41674F4325586C2900DFEA6C /* KidsEventCell.swift */,
@@ -450,7 +447,6 @@
 				4198E1EE2555EE27009F5092 /* LoginViewController.swift in Sources */,
 				D628C5F32551FB6A00BE82A0 /* AppDelegate.swift in Sources */,
 				418EB4492575EC7C00797D28 /* Event.swift in Sources */,
-				41CB159A2564F4830087EC74 /* CalendarViewController.swift in Sources */,
 				41D36808255CFE5C003D6709 /* ProviderKidsEventsViewController.swift in Sources */,
 				41D3680D255D017A003D6709 /* EventCell.swift in Sources */,
 				41CB159F256651F50087EC74 /* SignUpViewController.swift in Sources */,
