@@ -25,6 +25,7 @@ class ProviderEventDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         let user = event["provider"] as! PFUser
          providerName.text = user.username
       
@@ -33,6 +34,7 @@ class ProviderEventDetailsViewController: UIViewController {
         
         synopsisLabel.text = event["synopsis"] as? String
         synopsisLabel.sizeToFit()
+        
         eventDate.text = event["date"] as? String
         eventDate.sizeToFit()
         
