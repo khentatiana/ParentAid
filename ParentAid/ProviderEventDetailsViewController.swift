@@ -7,6 +7,7 @@
 
 import UIKit
 import Parse
+import AlamofireImage
 
 class ProviderEventDetailsViewController: UIViewController {
     //store selected event
@@ -16,14 +17,20 @@ class ProviderEventDetailsViewController: UIViewController {
     @IBOutlet weak var providerProfilePhoto: UIImageView!
     @IBOutlet weak var synopsisLabel: UILabel!
     @IBOutlet weak var providerName: UILabel!
-    
-    
-    
+    @IBOutlet weak var eventDate: UILabel!
+    @IBOutlet weak var eventTitle: UILabel!
+    @IBOutlet weak var checkboxCOVIDsafe: UILabel!
+    @IBOutlet weak var eventRegistrants: UILabel!
+    @IBOutlet weak var availableSpots: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        eventTitle.text = event["title"] as? String
+        eventTitle.sizeToFit()
+        synopsisLabel.text = event["synopsis"] as? String
+        synopsisLabel.sizeToFit()
+        
     }
     
 
