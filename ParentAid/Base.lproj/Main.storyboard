@@ -896,19 +896,23 @@
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N98-7L-0LF">
-                                                    <rect key="frame" x="169" y="81" width="225" height="160"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="N98-7L-0LF">
+                                                    <rect key="frame" x="169" y="81" width="270" height="109"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <string key="text">Event synopsis Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <nil key="highlightedColor"/>
                                                     <size key="shadowOffset" width="0.0" height="0.0"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="N98-7L-0LF" firstAttribute="bottom" secondItem="iLi-U0-5up" secondAttribute="bottomMargin" constant="8" id="0Qn-Iq-LSz"/>
+                                                <constraint firstItem="N98-7L-0LF" firstAttribute="leading" secondItem="Z4R-GT-F4d" secondAttribute="trailing" constant="8" id="57u-mg-8A9"/>
                                                 <constraint firstItem="Wa5-m1-AVF" firstAttribute="leading" secondItem="iLi-U0-5up" secondAttribute="leading" constant="20" id="CM1-nQ-y9Y"/>
                                                 <constraint firstItem="Z4R-GT-F4d" firstAttribute="top" secondItem="iLi-U0-5up" secondAttribute="top" constant="8" id="CXl-LY-45H"/>
                                                 <constraint firstItem="Z4R-GT-F4d" firstAttribute="leading" secondItem="iLi-U0-5up" secondAttribute="leading" constant="8" id="FKc-pi-pEk"/>
+                                                <constraint firstItem="N98-7L-0LF" firstAttribute="top" secondItem="yqk-NJ-3MW" secondAttribute="bottom" constant="8" id="IFE-JZ-HFU"/>
+                                                <constraint firstItem="N98-7L-0LF" firstAttribute="trailing" secondItem="iLi-U0-5up" secondAttribute="trailingMargin" constant="8" id="Kxd-dh-Gx6"/>
                                                 <constraint firstItem="Wa5-m1-AVF" firstAttribute="top" secondItem="Z4R-GT-F4d" secondAttribute="bottom" constant="8" id="ixc-Jh-zwI"/>
                                                 <constraint firstItem="cXY-VT-po1" firstAttribute="leading" secondItem="Z4R-GT-F4d" secondAttribute="trailing" constant="8" id="sfI-hj-Sby"/>
                                             </constraints>

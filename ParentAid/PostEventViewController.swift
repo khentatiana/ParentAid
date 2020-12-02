@@ -81,6 +81,8 @@ class PostEventViewController: UIViewController, UIImagePickerControllerDelegate
         event["title"] = eventTitleField.text!
         //Create date of the event
        event["date"] = eventDateField.text!
+        //Create time of the event
+       event["time"] = eventTimeField.text!
         
         let imageData = imageView.image!.pngData()
         let file = PFFileObject(data: imageData!)
