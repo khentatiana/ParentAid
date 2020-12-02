@@ -25,7 +25,7 @@ class ProviderEventDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //display provider name
         let user = event["provider"] as! PFUser
          providerName.text = user.username
       
