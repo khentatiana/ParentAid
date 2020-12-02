@@ -892,7 +892,7 @@
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="225" id="yqk-NJ-3MW">
                                                     <rect key="frame" x="169" y="46" width="225" height="27"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -918,6 +918,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="eventDateLabel" destination="yqk-NJ-3MW" id="fWq-WM-mUk"/>
                                             <outlet property="eventTitleLabel" destination="cXY-VT-po1" id="qhv-nC-SX7"/>
                                             <outlet property="photoViewProvider" destination="Z4R-GT-F4d" id="KZF-3K-sKy"/>
                                             <outlet property="providerLabel" destination="Wa5-m1-AVF" id="N1d-Gu-dYw"/>

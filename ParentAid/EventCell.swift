@@ -14,8 +14,9 @@ class EventCell: UITableViewCell {
     @IBOutlet weak var synopsisLabel: UILabel!
     @IBOutlet weak var providerLabel: UILabel!
     @IBOutlet weak var photoViewProvider: UIImageView!
+    @IBOutlet weak var eventDateLabel: UILabel!
     
-  //  Add Event variable + didset
+    //  Add Event variable + didset
     var event: Event!{
         didSet{
             eventTitleLabel.text = event.title

@@ -118,6 +118,7 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
         let user = event["provider"] as! PFUser
         cell.providerLabel.text = user.username
         cell.providerLabel.sizeToFit()
+        
         cell.eventTitleLabel.text = event["title"] as? String
         cell.eventTitleLabel.sizeToFit()
         
@@ -126,6 +127,10 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
         cell.synopsisLabel.textAlignment = .left
         cell.synopsisLabel.textAlignment = .justified
         
+        cell.eventDateLabel.text = event["date"] as? String
+        cell.eventDateLabel.sizeToFit()
+        
+              
         let imageFile = event["image"] as! PFFileObject
         let urlString = imageFile.url!
         let url = URL(string: urlString)!
@@ -216,7 +221,7 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
       //   Pass the selected object to the new view controller.
         print("########### Loading up the details screen")
         
-        //Find the selected movie
+        //Find the selected event
         let cell = sender as! UITableViewCell // Sender is the cell that was tapped
         let indexPath = tableViewProvider.indexPath(for: cell)! //Index of the cell was tapped
         let event = events[indexPath.row] //event from selected cell
