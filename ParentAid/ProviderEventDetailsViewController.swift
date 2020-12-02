@@ -9,8 +9,17 @@ import UIKit
 import Parse
 
 class ProviderEventDetailsViewController: UIViewController {
+    //store selected event
     var event : PFObject!
 
+    @IBOutlet weak var eventImageView: UIImageView!
+    @IBOutlet weak var providerProfilePhoto: UIImageView!
+    @IBOutlet weak var synopsisLabel: UILabel!
+    @IBOutlet weak var providerName: UILabel!
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

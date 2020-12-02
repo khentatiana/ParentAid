@@ -141,19 +141,7 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
         return cell
     }
     
-    /*
-     MARK: - Navigation
-
-     In a storyboard-based application, you will often want to do a little preparation before navigation */
-    
-   // override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        // Get the new view controller using segue.destination.
-         //Pass the selected object to the new view controller.
-        
-        
-    
-    
+  
     
     //dismiss keyboard by clicking outside textbox
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -219,5 +207,27 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
         tableViewProvider.reloadData()
     }
     
+    /*
+     MARK: - Navigation
+
+     In a storyboard-based application, you will often want to do a little preparation before navigation    */
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+      //   Pass the selected object to the new view controller.
+        print("########### Loading up the details screen")
+        
+        //Find the selected movie
+        let cell = sender as! UITableViewCell // Sender is the cell that was tapped
+        let indexPath = tableViewProvider.indexPath(for: cell)! //Index of the cell was tapped
+        let event = events[indexPath.row] //event from selected cell
+        
+        //Pass the selected movie to the details view controller
+        let detailsViewController = segue.destination as! ProviderEventDetailsViewController //Variable "detailsViewController" is a destination where selected movie is segue
+        detailsViewController.event = event //this "event" is referring to the selected movie from ProviderKidsEventsViewController
+        
+        //Deselect movie when transitioning (after tapping and coming back to main screen)
+        tableViewProvider.deselectRow(at: indexPath, animated: true)
+        
+    }
 }
 

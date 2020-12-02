@@ -176,10 +176,10 @@
 				41674F39255863C500DFEA6C /* HomeViewController.swift */,
 				41D36807255CFE5C003D6709 /* ProviderKidsEventsViewController.swift */,
 				41D3680C255D017A003D6709 /* EventCell.swift */,
+				41D9C21C255E904400091C24 /* ProviderEventDetailsViewController.swift */,
 				41CB15AC25670EB20087EC74 /* ProviderProfileViewController.swift */,
 				41CB15BA25686A710087EC74 /* SavedProviderProfileViewController.swift */,
 				41D36811255D0D36003D6709 /* PostEventViewController.swift */,
-				41D9C21C255E904400091C24 /* ProviderEventDetailsViewController.swift */,
 				41674F3E2558686E00DFEA6C /* KidsEventsViewController.swift */,
 				41674F4325586C2900DFEA6C /* KidsEventCell.swift */,
 			);
