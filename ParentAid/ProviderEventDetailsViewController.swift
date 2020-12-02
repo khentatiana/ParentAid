@@ -12,7 +12,7 @@ import AlamofireImage
 class ProviderEventDetailsViewController: UIViewController {
     //store selected event
     var event : PFObject!
-
+    
     @IBOutlet weak var eventImageView: UIImageView!
     @IBOutlet weak var providerProfilePhoto: UIImageView!
     @IBOutlet weak var synopsisLabel: UILabel!
@@ -25,10 +25,12 @@ class ProviderEventDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        providerName.text = event["provider.username"] as? String
-      //  providerName.sizeToFit()
+        let user = event["provider"] as! PFUser
+         providerName.text = user.username
+      
         eventTitle.text = event["title"] as? String
         eventTitle.sizeToFit()
+        
         synopsisLabel.text = event["synopsis"] as? String
         synopsisLabel.sizeToFit()
         eventDate.text = event["date"] as? String
