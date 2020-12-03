@@ -43,7 +43,7 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
         searchBarProvider.delegate = self
         //To hide table view:
       //  tableViewProvider.isHidden = true
-        filteredEvents = eventsArray
+      //  filteredEvents = eventsArray
        
         // Get Data from API
        // getAPIData()
@@ -92,8 +92,8 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
         query.findObjectsInBackground{ (events, error) in
             if (events != nil){
                 self.events = events!
-                self.eventsArray = events!
-                self.filteredEvents = events!
+               // self.eventsArray = events!
+                //self.filteredEvents = events!
                                              
                 self.tableViewProvider.reloadData()
             }
@@ -102,18 +102,18 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
-        return filteredEvents.count
-        
+        //return filteredEvents.count
+        return events.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableViewProvider.dequeueReusableCell(withIdentifier: "EventCell", for:indexPath) as! EventCell
        // To display events in reversed order:
-        let event = filteredEvents[indexPath.row]
-      //  let event = events.reversed()[indexPath.row]
-      //  or equivalent:
+      //  let event = filteredEvents[indexPath.row]
+       
+      // let event = events.reversed()[indexPath.row] or equivalent:
     //   query.order(byDescending: "createdAt")
-        
+        let event = events[indexPath.row]
    //     let event = filteredData[indexPath.row]
         let user = event["provider"] as! PFUser
         cell.providerLabel.text = user.username
@@ -216,23 +216,26 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
      MARK: - Navigation
 
      In a storyboard-based application, you will often want to do a little preparation before navigation    */
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-      //   Pass the selected object to the new view controller.
-        print("########### Loading up the details screen")
-        
-        //Find the selected event
-        let cell = sender as! UITableViewCell // Sender is the cell that was tapped
-        let indexPath = tableViewProvider.indexPath(for: cell)! //Index of the cell was tapped
-        let event = filteredEvents[indexPath.row] //event from selected cell
-        
-        //Pass the selected movie to the details view controller
-        let detailsViewController = segue.destination as! ProviderEventDetailsViewController //Variable "detailsViewController" is a destination where selected movie is segue
-        detailsViewController.event = event //this "event" is referring to the selected movie from ProviderKidsEventsViewController
-        
-        //Deselect movie when transitioning (after tapping and coming back to main screen)
-        tableViewProvider.deselectRow(at: indexPath, animated: true)
-        
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        // Get the new view controller using segue.destination.
+//      //   Pass the selected object to the new view controller.
+//        print("########### Loading up the details screen")
+//        
+//        //Find the selected event
+//        let cell = sender as! UITableViewCell // Sender is the cell that was tapped
+//        let indexPath = tableViewProvider.indexPath(for: cell)! //Index of the cell was tapped
+//        let event = events[indexPath.row] //event from selected cell
+//       // let event = filteredEvents[indexPath.row] //event from selected cell
+//        
+//        //Pass the selected movie to the details view controller
+//        //Variable "detailsViewController" is a destination where selected movie is segue
+//        let detailsViewController = segue.destination as! ProviderEventDetailsViewController
+//        
+//        detailsViewController.event = event //this "event" is referring to the selected movie from ProviderKidsEventsViewController
+//        
+//        //Deselect movie when transitioning (after tapping and coming back to main screen)
+//        tableViewProvider.deselectRow(at: indexPath, animated: true)
+//        
+//    }
 }
 

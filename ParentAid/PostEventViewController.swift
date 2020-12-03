@@ -139,7 +139,7 @@ class PostEventViewController: UIViewController, UIImagePickerControllerDelegate
                 eventDateField.text = "Please enter the event date"
                 return
         }
-            eventDateField.text = eventDateField as? String
+            eventDateField.text = eventDateField as! String
     }
     
 }

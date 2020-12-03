@@ -16,22 +16,22 @@ class EventCell: UITableViewCell {
     @IBOutlet weak var photoViewProvider: UIImageView!
     @IBOutlet weak var eventDateLabel: UILabel!
     
-    //  Add Event variable + didset
-    var event: Event!{
-        didSet{
-            eventTitleLabel.text = event.title
-            synopsisLabel.text = event.synopsis
-            providerLabel.text = event.provider
-            
-            //set images
-             photoViewProvider.af_setImage(withURL: event.image!)
-            //To make round corners of the image
-            photoViewProvider.layer.cornerRadius = 10
-            photoViewProvider.clipsToBounds = true
-            
-        }
-        
-    }
+//    //  Add Event variable + didset
+//    var event: Event!{
+//        didSet{
+//            eventTitleLabel.text = event.title
+//            synopsisLabel.text = event.synopsis
+//            providerLabel.text = event.provider
+//            
+//            //set images
+//             photoViewProvider.af_setImage(withURL: event.image!)
+//            //To make round corners of the image
+//            photoViewProvider.layer.cornerRadius = 10
+//            photoViewProvider.clipsToBounds = true
+//            
+//        }
+//        
+//    }
     
     override func awakeFromNib() {
         super.awakeFromNib()

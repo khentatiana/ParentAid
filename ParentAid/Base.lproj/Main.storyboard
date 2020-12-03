@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3Ya-03-ctZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Zmd-hi-SMS">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
@@ -923,7 +923,7 @@
                                             <outlet property="photoViewProvider" destination="Z4R-GT-F4d" id="KZF-3K-sKy"/>
                                             <outlet property="providerLabel" destination="Wa5-m1-AVF" id="N1d-Gu-dYw"/>
                                             <outlet property="synopsisLabel" destination="N98-7L-0LF" id="Zru-Eg-sBV"/>
-                                            <segue destination="QaE-kS-ROJ" kind="show" id="QLW-tp-6zS"/>
+                                            <segue destination="QaE-kS-ROJ" kind="show" id="EjD-FY-YVe"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

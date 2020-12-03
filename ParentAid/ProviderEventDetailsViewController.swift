@@ -12,6 +12,7 @@ import AlamofireImage
 class ProviderEventDetailsViewController: UIViewController {
     //store selected event
     var event : PFObject!
+    var events = [PFObject]()
     
     @IBOutlet weak var eventImageView: UIImageView!
     @IBOutlet weak var providerProfilePhoto: UIImageView!
@@ -27,7 +28,7 @@ class ProviderEventDetailsViewController: UIViewController {
         super.viewDidLoad()
         //display provider name
         let user = event["provider"] as! PFUser
-         providerName.text = user.username
+        providerName.text = user.username
       
         eventTitle.text = event["title"] as? String
         eventTitle.sizeToFit()
