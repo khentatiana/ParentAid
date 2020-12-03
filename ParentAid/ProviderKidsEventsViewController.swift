@@ -232,12 +232,12 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
 
                 //Pass the selected movie to the details view controller
                 //Variable "detailsViewController" is a destination where selected movie is segue
-                let detailsViewController = segue.destination as! ProviderEventDetailsViewController
+                if let detailsViewController = segue.destination as? ProviderEventDetailsViewController{
 
-                detailsViewController.event = event //this "event" is referring to the selected movie from ProviderKidsEventsViewController
+                    detailsViewController.event = event //this "event" is referring to the selected movie from ProviderKidsEventsViewController
 
                 //Deselect movie when transitioning (after tapping and coming back to main screen)
-                tableViewProvider.deselectRow(at: indexPath, animated: true)
+                    tableViewProvider.deselectRow(at: indexPath, animated: true)}
             }
           
         }
