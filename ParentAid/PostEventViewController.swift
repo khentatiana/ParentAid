@@ -9,19 +9,67 @@ import UIKit
 import AlamofireImage
 import Parse
 
-class CameraViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
+class PostEventViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
+    
+
+
+    @IBOutlet weak var eventTimeField: UITextField!
     
     @IBOutlet weak var eventDateField: UITextField!
     @IBOutlet weak var eventDescriptionField: UITextField!
     @IBOutlet weak var eventTitleField: UITextField!
     @IBOutlet weak var imageView: UIImageView!
+    
+    var datePicker = UIDatePicker()
+    var timePicker = UIDatePicker()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         eventTitleField.delegate = self
         eventDescriptionField.delegate = self
-        eventDateField.delegate = self
+        datePickerEventDate()
+        datePickerEventTime()
     }
     
+    func datePickerEventDate(){
+        datePicker.datePickerMode = .date
+        datePicker.addTarget(self, action: #selector(PostEventViewController.dateChanged(datePicker:)), for:  .valueChanged)
+        eventDateField.inputView = datePicker
+    }
+    
+    @objc func dateChanged(datePicker : UIDatePicker){
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "EEEE, MMMM d, yyyy"
+        eventDateField.text = dateFormatter.string(from: datePicker.date)
+        view.endEditing(true)
+    
+    }
+    
+    
+    func datePickerEventTime(){
+//        let eventTime = Date()
+//        let timeFormat = DateFormatter()
+//        timeFormat.locale = Locale(identifier: "en_gb")
+//        timeFormat.dateFormat = "HH:mm"
+//        timePicker.datePickerMode = .time
+//        eventTimeField.inputView = timePicker
+//        view.endEditing(true)
+        timePicker.datePickerMode = .time
+        timePicker.addTarget(self, action: #selector(PostEventViewController.timeChanged(timePicker:)), for:  .valueChanged)
+        eventTimeField.inputView = timePicker
+        
+                
+    }
+    @objc func timeChanged(timePicker : UIDatePicker){
+        let timeFormatter = DateFormatter()
+        timeFormatter.locale = Locale(identifier: "en_gb")
+        timeFormatter.dateFormat = "HH:mm"
+        eventTimeField.text = timeFormatter.string(from: timePicker.date)
+        view.endEditing(true)
+    
+    }
+    
+ 
     @IBAction func onSubmitButton(_ sender: Any) {
         // Create new object "event" that will be stored in table "KidsEvents"
         let event = PFObject(className: "KidsEvents")
@@ -33,6 +81,8 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         event["title"] = eventTitleField.text!
         //Create date of the event
        event["date"] = eventDateField.text!
+        //Create time of the event
+       event["time"] = eventTimeField.text!
         
         let imageData = imageView.image!.pngData()
         let file = PFFileObject(data: imageData!)
@@ -66,7 +116,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         let image = info [.editedImage] as! UIImage
         let size = CGSize(width: 300, height: 300)
-        let scaledImage = image.af_imageAspectScaled(toFill: size)
+        let scaledImage = image.af.imageAspectScaled(toFill: size)
                         
         imageView.image = scaledImage
         //dismiss camera view
