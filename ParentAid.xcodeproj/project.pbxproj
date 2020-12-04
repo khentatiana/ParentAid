@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4103C5A1257A294B00E56B30 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4103C5A0257A294B00E56B30 /* MapViewController.swift */; };
 		41674F3A255863C500DFEA6C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41674F39255863C500DFEA6C /* HomeViewController.swift */; };
 		41674F3F2558686E00DFEA6C /* KidsEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41674F3E2558686E00DFEA6C /* KidsEventsViewController.swift */; };
 		41674F4425586C2900DFEA6C /* KidsEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41674F4325586C2900DFEA6C /* KidsEventCell.swift */; };
@@ -54,6 +55,7 @@
 		2061C507F0C2EA5C2578CCD2 /* Pods_ParentAid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParentAid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2685FE3D3506D6EF7DD43590 /* Pods-ParentAid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParentAid.release.xcconfig"; path = "Target Support Files/Pods-ParentAid/Pods-ParentAid.release.xcconfig"; sourceTree = "<group>"; };
 		30FC422280374685F046E102 /* Pods-ParentAid-ParentAidUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParentAid-ParentAidUITests.release.xcconfig"; path = "Target Support Files/Pods-ParentAid-ParentAidUITests/Pods-ParentAid-ParentAidUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4103C5A0257A294B00E56B30 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		41674F39255863C500DFEA6C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		41674F3E2558686E00DFEA6C /* KidsEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidsEventsViewController.swift; sourceTree = "<group>"; };
 		41674F4325586C2900DFEA6C /* KidsEventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidsEventCell.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				41D36811255D0D36003D6709 /* PostEventViewController.swift */,
 				41674F3E2558686E00DFEA6C /* KidsEventsViewController.swift */,
 				41674F4325586C2900DFEA6C /* KidsEventCell.swift */,
+				4103C5A0257A294B00E56B30 /* MapViewController.swift */,
 			);
 			path = ParentAid;
 			sourceTree = "<group>";
@@ -457,6 +460,7 @@
 				41674F4425586C2900DFEA6C /* KidsEventCell.swift in Sources */,
 				418EB45725760B9300797D28 /* API.swift in Sources */,
 				41D36812255D0D36003D6709 /* PostEventViewController.swift in Sources */,
+				4103C5A1257A294B00E56B30 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

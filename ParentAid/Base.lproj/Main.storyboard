@@ -1517,9 +1517,25 @@
                                                 <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Quf-1W-vbd">
+                                                <rect key="frame" x="127.5" y="617" width="163" height="50"/>
+                                                <color key="backgroundColor" red="0.1564568435" green="0.78866163479999996" blue="0.86024530440000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="163" id="aXS-He-VAB"/>
+                                                    <constraint firstAttribute="height" constant="50" id="fdR-Mz-eMU"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                <state key="normal" title="See Event Location">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="0TO-I1-udx" kind="presentation" id="ehX-8C-ep6"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
+                                            <constraint firstItem="Quf-1W-vbd" firstAttribute="top" secondItem="jLB-Hj-zjq" secondAttribute="bottom" constant="20" id="4mm-NO-hpq"/>
                                             <constraint firstItem="WnE-Wi-Tco" firstAttribute="top" secondItem="Z3H-mA-ZT6" secondAttribute="bottom" constant="54" id="7jA-fv-hgf"/>
                                             <constraint firstAttribute="bottom" secondItem="806-H5-veu" secondAttribute="bottom" constant="230" id="Dfp-Sp-Glw"/>
                                             <constraint firstItem="hFw-Ps-W9C" firstAttribute="leading" secondItem="mGu-fa-vhr" secondAttribute="leading" constant="20" id="F2M-ZT-m8x"/>
@@ -1544,6 +1560,7 @@
                                             <constraint firstItem="jLB-Hj-zjq" firstAttribute="leading" secondItem="mGu-fa-vhr" secondAttribute="leading" constant="20" id="rJQ-Lk-UaY"/>
                                             <constraint firstItem="tUy-ny-DBq" firstAttribute="leading" secondItem="mGu-fa-vhr" secondAttribute="leading" constant="20" id="sHa-HP-PQ3"/>
                                             <constraint firstAttribute="height" constant="1300" id="wPM-Bs-UWC"/>
+                                            <constraint firstItem="Quf-1W-vbd" firstAttribute="centerX" secondItem="mGu-fa-vhr" secondAttribute="centerX" id="wTD-uL-lN3"/>
                                             <constraint firstItem="jCw-IH-cYe" firstAttribute="top" secondItem="tUy-ny-DBq" secondAttribute="bottom" constant="8" symbolic="YES" id="wZq-Dp-fyB"/>
                                         </constraints>
                                     </view>
@@ -1604,6 +1621,32 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nDq-9w-npT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="974" y="1666"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="4T6-wp-pPH">
+            <objects>
+                <viewController id="0TO-I1-udx" customClass="MapViewController" customModule="ParentAid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="w1T-2O-eWc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="47S-m3-h2F">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xvK-Qc-LV2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="47S-m3-h2F" secondAttribute="bottom" id="Ltv-AV-sGJ"/>
+                            <constraint firstItem="47S-m3-h2F" firstAttribute="top" secondItem="xvK-Qc-LV2" secondAttribute="top" id="V5D-Zm-6Fg"/>
+                            <constraint firstItem="47S-m3-h2F" firstAttribute="trailing" secondItem="xvK-Qc-LV2" secondAttribute="trailing" id="Xz9-Wf-Xoy"/>
+                            <constraint firstItem="47S-m3-h2F" firstAttribute="leading" secondItem="xvK-Qc-LV2" secondAttribute="leading" id="g5M-zM-tzR"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jkn-yb-SXl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2366.666666666667" y="1664.7321428571429"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="bqo-lT-Lbb">
