@@ -62,8 +62,8 @@ class PostEventViewController: UIViewController, UIImagePickerControllerDelegate
     }
     @objc func timeChanged(timePicker : UIDatePicker){
         let timeFormatter = DateFormatter()
-        timeFormatter.locale = Locale(identifier: "en_gb")
-        timeFormatter.dateFormat = "HH:mm"
+        //timeFormatter.locale = Locale(identifier: "en_gb")
+        timeFormatter.dateFormat = "h:mm a"
         eventTimeField.text = timeFormatter.string(from: timePicker.date)
         view.endEditing(true)
     
