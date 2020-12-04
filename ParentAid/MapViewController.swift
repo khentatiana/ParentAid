@@ -52,21 +52,22 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     
     // If we have been deined access give the user the option to change it
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        if(status == CLAuthorizationStatus.denied) {
+        if(status == CLAuthorizationStatus.denied || status == .restricted) {
             showLocationDisabledPopUp()
+            return
         }
     }
     
     // Show the popup to the user if we have been deined access
     func showLocationDisabledPopUp() {
         let alertController = UIAlertController(title: "Background Location Services Disabled.",
-                                                message: "In order to find kids events near by we need your location. Please go to Settings > Privacy > Location Services to allow location access for ParentAid.",
+                                                message: "In order to find kids events nearby we need your location. Please go to Settings > Privacy > Location Services to allow location access for ParentAid.",
                                                 preferredStyle: .alert)
         
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         alertController.addAction(cancelAction)
         
-        let openAction = UIAlertAction(title: "Open Settings", style: .default) { (action) in
+        let openAction = UIAlertAction(title: "Open Your Settings", style: .default) { (action) in
             if let url = URL(string: UIApplication.openSettingsURLString) {
                 UIApplication.shared.open(url, options: [:], completionHandler: nil)
             }
