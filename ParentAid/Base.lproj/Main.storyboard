@@ -16,18 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="br6-xb-LL8">
-                                <rect key="frame" x="82" y="281" width="60" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
-                                <state key="normal" title="Parent">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="qOO-4A-2kL" kind="presentation" id="NFa-hs-a6d"/>
-                                </connections>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Parent - COVID -LoginParentScreen" translatesAutoresizingMaskIntoConstraints="NO" id="Ijh-T9-QOZ">
                                 <rect key="frame" x="20" y="130" width="184" height="139"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
@@ -37,7 +25,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f2K-6c-gOX">
-                                <rect key="frame" x="226" y="277" width="130" height="34"/>
+                                <rect key="frame" x="226" y="277" width="140" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.1564568435" green="0.78866163479999996" blue="0.86024530440000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
@@ -47,6 +35,18 @@
                                 </state>
                                 <connections>
                                     <segue destination="bQE-GL-RdF" kind="presentation" id="Oup-oK-sSs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="br6-xb-LL8">
+                                <rect key="frame" x="42" y="277" width="140" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                                <state key="normal" title="Parent">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="qOO-4A-2kL" kind="presentation" id="NFa-hs-a6d"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1437,7 +1437,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jLB-Hj-zjq">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jLB-Hj-zjq">
                                                 <rect key="frame" x="20" y="433" width="335" height="164"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <string key="text">Event synopsis Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
@@ -1459,11 +1459,12 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5P-Ie-WeH">
-                                                <rect key="frame" x="249" y="1020" width="134" height="80"/>
+                                                <rect key="frame" x="249" y="1020" width="134" height="50"/>
                                                 <color key="backgroundColor" red="0.1564568435" green="0.78866163479999996" blue="0.86024530440000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="0o9-fG-Gla"/>
                                                     <constraint firstAttribute="width" constant="134" id="eSg-qR-cpH"/>
-                                                    <constraint firstAttribute="height" constant="80" id="lJU-hr-Hlz"/>
+                                                    <constraint firstAttribute="height" constant="50" id="lJU-hr-Hlz"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                 <state key="normal" title="Cancel">
@@ -1518,10 +1519,10 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Quf-1W-vbd">
-                                                <rect key="frame" x="127.5" y="617" width="163" height="50"/>
+                                                <rect key="frame" x="127.5" y="617" width="170" height="50"/>
                                                 <color key="backgroundColor" red="0.1564568435" green="0.78866163479999996" blue="0.86024530440000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="163" id="aXS-He-VAB"/>
+                                                    <constraint firstAttribute="width" constant="170" id="aXS-He-VAB"/>
                                                     <constraint firstAttribute="height" constant="50" id="fdR-Mz-eMU"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
@@ -1547,20 +1548,19 @@
                                             <constraint firstItem="tUy-ny-DBq" firstAttribute="top" secondItem="mGu-fa-vhr" secondAttribute="top" constant="252" id="Pie-lG-Rkf"/>
                                             <constraint firstItem="WnE-Wi-Tco" firstAttribute="leading" secondItem="tUy-ny-DBq" secondAttribute="trailing" constant="8" id="RyE-MD-0o1"/>
                                             <constraint firstItem="jCw-IH-cYe" firstAttribute="leading" secondItem="mGu-fa-vhr" secondAttribute="leading" constant="20" id="SaI-dZ-ag0"/>
-                                            <constraint firstAttribute="bottom" secondItem="B5P-Ie-WeH" secondAttribute="bottom" constant="200" id="T2p-Lf-u4r"/>
+                                            <constraint firstAttribute="bottom" secondItem="B5P-Ie-WeH" secondAttribute="bottom" constant="230" id="T2p-Lf-u4r"/>
                                             <constraint firstAttribute="trailing" secondItem="WnE-Wi-Tco" secondAttribute="trailing" constant="8" id="XuT-jx-yKI"/>
                                             <constraint firstItem="jLB-Hj-zjq" firstAttribute="top" secondItem="lwq-Nb-B3y" secondAttribute="bottom" constant="48" id="Yz8-SV-LIM"/>
                                             <constraint firstItem="B5P-Ie-WeH" firstAttribute="leading" secondItem="806-H5-veu" secondAttribute="trailing" constant="80" id="dso-Xw-6vr"/>
                                             <constraint firstAttribute="trailing" secondItem="lwq-Nb-B3y" secondAttribute="trailing" constant="8" id="f0I-WW-DEU"/>
                                             <constraint firstAttribute="trailing" secondItem="B5P-Ie-WeH" secondAttribute="trailing" constant="35" id="hP6-va-r8G"/>
                                             <constraint firstItem="lwq-Nb-B3y" firstAttribute="top" secondItem="Z3H-mA-ZT6" secondAttribute="bottom" constant="20" id="lLB-rg-foB"/>
-                                            <constraint firstAttribute="bottom" secondItem="B5P-Ie-WeH" secondAttribute="bottom" constant="200" id="lxg-iJ-nb5"/>
-                                            <constraint firstItem="hFw-Ps-W9C" firstAttribute="top" relation="greaterThanOrEqual" secondItem="jLB-Hj-zjq" secondAttribute="bottom" constant="8" id="mUT-7t-iEs"/>
+                                            <constraint firstAttribute="bottom" secondItem="B5P-Ie-WeH" secondAttribute="bottom" constant="230" id="lxg-iJ-nb5"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1300" id="pgm-ar-8uJ"/>
                                             <constraint firstItem="jLB-Hj-zjq" firstAttribute="leading" secondItem="mGu-fa-vhr" secondAttribute="leading" constant="20" id="rJQ-Lk-UaY"/>
                                             <constraint firstItem="tUy-ny-DBq" firstAttribute="leading" secondItem="mGu-fa-vhr" secondAttribute="leading" constant="20" id="sHa-HP-PQ3"/>
                                             <constraint firstAttribute="height" constant="1300" id="wPM-Bs-UWC"/>
-                                            <constraint firstItem="Quf-1W-vbd" firstAttribute="centerX" secondItem="mGu-fa-vhr" secondAttribute="centerX" id="wTD-uL-lN3"/>
+                                            <constraint firstItem="Quf-1W-vbd" firstAttribute="centerX" secondItem="mGu-fa-vhr" secondAttribute="centerX" constant="3.5" id="wTD-uL-lN3"/>
                                             <constraint firstItem="jCw-IH-cYe" firstAttribute="top" secondItem="tUy-ny-DBq" secondAttribute="bottom" constant="8" symbolic="YES" id="wZq-Dp-fyB"/>
                                         </constraints>
                                     </view>
