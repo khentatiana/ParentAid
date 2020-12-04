@@ -25,12 +25,15 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         super.viewDidLoad()
         updateUI()
         
-        
+        let authorizationStatus = CLLocationManager.authorizationStatus()
+        if authorizationStatus == .notDetermined{
         // For use when the app is open & in the background
        // locationManager.requestAlwaysAuthorization()
         
         // For use when the app is open
         locationManager.requestWhenInUseAuthorization()
+            return
+        }
         
         // If location services is enabled get the users location
         if CLLocationManager.locationServicesEnabled() {
@@ -56,8 +59,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     
     // Show the popup to the user if we have been deined access
     func showLocationDisabledPopUp() {
-        let alertController = UIAlertController(title: "Background Location Access Disabled",
-                                                message: "In order to find kids events near by we need your location",
+        let alertController = UIAlertController(title: "Background Location Services Disabled.",
+                                                message: "In order to find kids events near by we need your location. Please go to Settings > Privacy > Location Services to allow location access for ParentAid.",
                                                 preferredStyle: .alert)
         
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
