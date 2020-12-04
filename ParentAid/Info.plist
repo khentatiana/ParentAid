@@ -64,7 +64,7 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Welcome to ParentAid</string>
+	<string>Welcome to ParentAid.In order to find kids events nearby.</string>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>For Test!!!!</string>
 </dict>
