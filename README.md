@@ -477,7 +477,6 @@ Following are the **required in-progress** functionalities for this week:
 - [ ] Provider user is able to load past events infinitely.
 - [ ] Provider user is able to pull to refresh.
 - [ ] Provider profile pictures are shown for events posted.
-- [ ] Update app logo on homescreen and illustrations across the app.
 
 ### User Stories to-do:
 
