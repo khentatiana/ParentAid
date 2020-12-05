@@ -452,64 +452,46 @@ Here's a walkthrough of implemented user stories:
 ## Build Sprint 2 
 
 ### User Stories completed this week:
+
 Following are the **required completed** functionalities:
+
 - [x] User is able to swtich between a Parent and Provider.
-- [ ] Provider user is able to access the Kids Events.
-- [ ] Provider user is able to add/register an event to Kids Events.
-- [ ] Provider user is able to preview the added event.
-- [ ] Provider user is able to receive a confirmation message after adding the event.
-- [ ] Provider user is able to search for an event using the Search Bar.
-- [ ] Parent user is able to access their profile.
-- [ ] Parent user is able to add a profile picture.
-- [ ] Parent user is able to access Kids Events.
-- [ ] Parent user is able to view the summary of results (Kids Events).
-- [ ] Parent user is able to select an event from the summary of results (Kids Events).
-- [ ] Illustrations and logo design for the app.
-- [ ] Parent user is able to view the selected event of choice.
-- [ ] Parent user is able to receive a confirmation for the selected event of choice.
-- [ ] Parent user is able to search for an event using the Search Bar.
-- [ ] Parent user is able to view the registration confirmation.
-- [ ] Parent user is able to pull to refresh.
-- [ ] Provider user is able to add a profile picture.
-- [ ] Provider user is able to load past events infinitely.
-- [ ] Provider user is able to pull to refresh.
-- [ ] Provider user is able to tag a photo, tag it with a location and then see a mp with tagged event photo.
-- [ ] Provider profile pictures are shown for events posted.
-- [ ] Update app logo on homescreen and illustrations across the app.
+- [x] Provider user is able to access the Kids Events.
+- [x] Provider user is able to add/register an event to Kids Events.
+- [x] Parent user is able to access their profile.
+- [x] Illustrations and logo design for the app.
+- [x] Parent user is able to view the selected event of choice.
+- [x] Provider user is able to tag a photo, tag it with a location and then see a mp with tagged event photo.
+- [x] Provider name is shown for events posted.
+- [x] Update app logo on homescreen and illustrations across the app.
 
 
 ### User Stories in-progress this week:
+
 Following are the **required in-progress** functionalities for this week:
 
-- [ ] User is able to swtich between a Parent and Provider.
-- [ ] Provider user is able to access the Kids Events.
-- [ ] Provider user is able to add/register an event to Kids Events.
 - [ ] Provider user is able to preview the added event.
 - [ ] Provider user is able to receive a confirmation message after adding the event.
 - [ ] Provider user is able to search for an event using the Search Bar.
-- [ ] Parent user is able to access their profile.
-- [ ] Parent user is able to add a profile picture.
-- [ ] Parent user is able to access Kids Events.
-- [ ] Parent user is able to view the summary of results (Kids Events).
-- [ ] Parent user is able to select an event from the summary of results (Kids Events).
-- [ ] Illustrations and logo design for the app.
+- [ ] Provider user is able to add a profile picture.
+- [ ] Provider user is able to load past events infinitely.
+- [ ] Provider user is able to pull to refresh.
+- [ ] Provider profile pictures are shown for events posted.
+- [ ] Update app logo on homescreen and illustrations across the app.
 
 ### User Stories to-do:
+
 Following are the **required to-do** functionalities that are to be worked on after completing the in-progress ones:
 
 - [ ] Parent user is able to view the selected event of choice.
 - [ ] Parent user is able to receive a confirmation for the selected event of choice.
 - [ ] Parent user is able to search for an event using the Search Bar.
+- [ ] Parent user is able to view the selected event of choice.
 - [ ] Parent user is able to view the registration confirmation.
 - [ ] Parent user is able to pull to refresh.
-- [ ] Provider user is able to add a profile picture.
-- [ ] Provider user is able to load past events infinitely.
-- [ ] Provider user is able to pull to refresh.
-- [ ] Provider user is able to tag a photo, tag it with a location and then see a mp with tagged event photo.
-- [ ] Provider profile pictures are shown for events posted.
-- [ ] Update app logo on homescreen and illustrations across the app.
 
 ### User Stories nice-to-have:
+
 Following are the **nice-to-have** functionalities that are to be worked on after completing the to-do's:
 
 - [ ] User can view the app on various device sizes and orientations
