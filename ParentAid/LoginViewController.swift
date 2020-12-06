@@ -13,6 +13,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var usernameField: UITextField!
     
+    @IBOutlet weak var usernameLabel: UILabel!
     //MARK: Variables
     var actInd = UIActivityIndicatorView()
     

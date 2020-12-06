@@ -221,6 +221,7 @@
                     <connections>
                         <outlet property="passwordField" destination="Lvn-Lk-Z8G" id="VqG-zi-HD9"/>
                         <outlet property="usernameField" destination="QSl-mT-jUZ" id="jZL-s8-47w"/>
+                        <outlet property="usernameLabel" destination="W32-s2-De7" id="N3B-zU-1pC"/>
                         <segue destination="Wh3-bh-OMG" kind="presentation" identifier="loginSegue" id="u7h-h2-kcN"/>
                     </connections>
                 </viewController>
@@ -1851,7 +1852,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="c8W-BK-0C8"/>
+        <segue reference="u7h-h2-kcN"/>
         <segue reference="z8C-sB-c7n"/>
     </inferredMetricsTieBreakers>
     <resources>
