@@ -47,7 +47,7 @@ class SignUpViewController: UIViewController {
         
         if (user.username!.count < 5) || (user.password!.count < 5)
         {
-            let alert = UIAlertController(title: "Invalid username or password", message: "Username or password must be greater than 5 characters.", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Invalid username or password", message: "Username and password must be greater than 5 characters.", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             present(alert, animated: true)
         }

@@ -110,7 +110,7 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="143" id="i2j-CO-dNa"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="18"/>
-                                <state key="normal" title="Forgot Password?">
+                                <state key="normal" title="Forgot password?">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -276,8 +276,16 @@
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" enablesReturnKeyAutomatically="YES" smartInsertDeleteType="no"/>
                             </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Vh-mU-1B9">
+                                <rect key="frame" x="30" y="470" width="354" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="hmU-le-nnK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" enablesReturnKeyAutomatically="YES" smartInsertDeleteType="no"/>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="253" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="28y-MZ-oC4">
-                                <rect key="frame" x="173.5" y="484" width="67" height="34"/>
+                                <rect key="frame" x="173.5" y="526" width="67" height="34"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -293,6 +301,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="SPB-sa-bCw" firstAttribute="top" secondItem="GON-JZ-ibu" secondAttribute="bottom" constant="42" id="0ZW-IR-Sj1"/>
+                            <constraint firstItem="4Vh-mU-1B9" firstAttribute="top" secondItem="2eE-iX-b8V" secondAttribute="bottom" constant="8" id="2wR-FT-EHS"/>
                             <constraint firstItem="32W-0p-PUS" firstAttribute="top" secondItem="SPB-sa-bCw" secondAttribute="bottom" constant="8" id="6mM-Mo-mM3"/>
                             <constraint firstItem="SPB-sa-bCw" firstAttribute="top" secondItem="GON-JZ-ibu" secondAttribute="bottom" constant="42" id="8uf-gW-nJo"/>
                             <constraint firstItem="32W-0p-PUS" firstAttribute="top" secondItem="SPB-sa-bCw" secondAttribute="bottom" constant="8" symbolic="YES" id="9H7-Vc-Kp1"/>
@@ -303,11 +312,14 @@
                             <constraint firstItem="hX8-eC-8TW" firstAttribute="trailing" secondItem="32W-0p-PUS" secondAttribute="trailing" constant="30" id="Lrq-tx-kC9"/>
                             <constraint firstItem="GON-JZ-ibu" firstAttribute="centerX" secondItem="ckO-YA-cf9" secondAttribute="centerX" id="MWY-bH-GTL"/>
                             <constraint firstItem="SPB-sa-bCw" firstAttribute="top" secondItem="GON-JZ-ibu" secondAttribute="bottom" constant="42" id="TpR-Wr-fvr"/>
+                            <constraint firstItem="hX8-eC-8TW" firstAttribute="trailing" secondItem="4Vh-mU-1B9" secondAttribute="trailing" constant="30" id="W4j-lC-DhA"/>
                             <constraint firstItem="2eE-iX-b8V" firstAttribute="leading" secondItem="hX8-eC-8TW" secondAttribute="leading" constant="30" id="YoS-0i-twz"/>
                             <constraint firstItem="28y-MZ-oC4" firstAttribute="centerX" secondItem="ckO-YA-cf9" secondAttribute="centerX" id="dXm-VH-pzm"/>
                             <constraint firstItem="SPB-sa-bCw" firstAttribute="leading" secondItem="hX8-eC-8TW" secondAttribute="leading" constant="30" id="f92-99-YBf"/>
-                            <constraint firstItem="28y-MZ-oC4" firstAttribute="top" secondItem="2eE-iX-b8V" secondAttribute="bottom" constant="22" id="fWR-vy-haO"/>
+                            <constraint firstItem="28y-MZ-oC4" firstAttribute="top" secondItem="4Vh-mU-1B9" secondAttribute="bottom" constant="22" id="fWR-vy-haO"/>
+                            <constraint firstItem="4Vh-mU-1B9" firstAttribute="leading" secondItem="hX8-eC-8TW" secondAttribute="leading" constant="30" id="gCh-n6-l71"/>
                             <constraint firstItem="fC0-UW-mWx" firstAttribute="centerX" secondItem="ckO-YA-cf9" secondAttribute="centerX" id="hW1-IG-9XO"/>
+                            <constraint firstItem="28y-MZ-oC4" firstAttribute="centerX" secondItem="ckO-YA-cf9" secondAttribute="centerX" id="roY-yh-7NL"/>
                             <constraint firstItem="hX8-eC-8TW" firstAttribute="trailing" secondItem="SPB-sa-bCw" secondAttribute="trailing" constant="30" id="sG3-Ja-42e"/>
                             <constraint firstItem="2eE-iX-b8V" firstAttribute="top" secondItem="32W-0p-PUS" secondAttribute="bottom" constant="8" symbolic="YES" id="uLY-18-c4E"/>
                             <constraint firstItem="hX8-eC-8TW" firstAttribute="trailing" secondItem="2eE-iX-b8V" secondAttribute="trailing" constant="30" id="wNL-sg-sus"/>
@@ -1839,7 +1851,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="u7h-h2-kcN"/>
+        <segue reference="c8W-BK-0C8"/>
         <segue reference="z8C-sB-c7n"/>
     </inferredMetricsTieBreakers>
     <resources>
