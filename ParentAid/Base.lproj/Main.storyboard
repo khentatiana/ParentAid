@@ -100,22 +100,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="253" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xpt-tb-SZE">
-                                <rect key="frame" x="30" y="571" width="80" height="30"/>
-                                <color key="backgroundColor" red="0.1564568435" green="0.78866163479999996" blue="0.86024530440000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="Bnw-PV-S5R"/>
-                                    <constraint firstAttribute="height" constant="30" id="yIH-yP-Ty0"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <state key="normal" title="Sign In">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="onSignIn:" destination="Zmd-hi-SMS" eventType="touchUpInside" id="DhM-Sq-Fpx"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="left" verticalHuggingPriority="253" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUO-W8-Axf">
+                            <button opaque="NO" contentMode="left" verticalHuggingPriority="253" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUO-W8-Axf">
                                 <rect key="frame" x="31" y="495" width="158" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -132,16 +117,6 @@
                                     <action selector="onSignIn:" destination="Zmd-hi-SMS" eventType="touchUpInside" id="B45-yf-jvf"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="255" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W32-s2-De7">
-                                <rect key="frame" x="31" y="338" width="84" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="84" id="2Lu-T2-Uz4"/>
-                                    <constraint firstAttribute="height" constant="44" id="Qhr-O4-6mi"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="253" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abh-bH-Ich">
                                 <rect key="frame" x="304" y="571" width="80" height="30"/>
                                 <color key="backgroundColor" red="0.1564568435" green="0.78866163479999996" blue="0.86024530440000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -158,6 +133,42 @@
                                     <segue destination="74R-SX-z3Z" kind="presentation" identifier="signupSegue" id="qaK-qG-GJ7"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="255" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W32-s2-De7">
+                                <rect key="frame" x="31" y="338" width="84" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="84" id="2Lu-T2-Uz4"/>
+                                    <constraint firstAttribute="height" constant="44" id="Qhr-O4-6mi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="255" text="Have an account?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYE-vO-Vkb">
+                                <rect key="frame" x="31" y="794" width="188" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="188" id="KgZ-sR-at3"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="qN6-0Y-4zY"/>
+                                    <constraint firstAttribute="height" constant="44" id="tnr-39-60F"/>
+                                    <constraint firstAttribute="width" constant="188" id="y00-SN-876"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="253" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xpt-tb-SZE">
+                                <rect key="frame" x="239" y="794" width="80" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Bnw-PV-S5R"/>
+                                    <constraint firstAttribute="height" constant="44" id="yIH-yP-Ty0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleColor" red="0.1564568435" green="0.78866163479999996" blue="0.86024530440000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="onSignIn:" destination="Zmd-hi-SMS" eventType="touchUpInside" id="DhM-Sq-Fpx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Vab-ud-XPk"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -165,14 +176,16 @@
                             <constraint firstItem="bUO-W8-Axf" firstAttribute="leading" secondItem="Vab-ud-XPk" secondAttribute="leading" constant="31" id="0dH-CF-vKr"/>
                             <constraint firstItem="W32-s2-De7" firstAttribute="leading" secondItem="Vab-ud-XPk" secondAttribute="leading" constant="31" id="2dr-XD-jXJ"/>
                             <constraint firstItem="U8o-m7-Hy2" firstAttribute="centerX" secondItem="bHx-oS-6fK" secondAttribute="centerX" id="32o-3O-RNd"/>
-                            <constraint firstItem="xpt-tb-SZE" firstAttribute="top" secondItem="Lvn-Lk-Z8G" secondAttribute="bottom" constant="86" id="3bv-FO-CW5"/>
+                            <constraint firstItem="xpt-tb-SZE" firstAttribute="top" secondItem="Lvn-Lk-Z8G" secondAttribute="bottom" constant="309" id="3bv-FO-CW5"/>
+                            <constraint firstItem="GYE-vO-Vkb" firstAttribute="top" secondItem="bUO-W8-Axf" secondAttribute="bottom" constant="269" id="42J-c0-04d"/>
+                            <constraint firstItem="GYE-vO-Vkb" firstAttribute="leading" secondItem="Vab-ud-XPk" secondAttribute="leading" constant="31" id="4J6-ww-hmh"/>
                             <constraint firstItem="bUO-W8-Axf" firstAttribute="top" secondItem="Lvn-Lk-Z8G" secondAttribute="bottom" constant="10" id="AQb-0a-k0I"/>
                             <constraint firstItem="Vab-ud-XPk" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="abh-bH-Ich" secondAttribute="trailing" constant="30" id="Gy0-zQ-iG1"/>
                             <constraint firstItem="QSl-mT-jUZ" firstAttribute="top" secondItem="W32-s2-De7" secondAttribute="bottom" constant="2" id="Jc4-ye-KTM"/>
                             <constraint firstItem="abh-bH-Ich" firstAttribute="top" secondItem="Lvn-Lk-Z8G" secondAttribute="bottom" constant="86" id="MzB-ij-UOV"/>
-                            <constraint firstItem="xpt-tb-SZE" firstAttribute="leading" secondItem="Vab-ud-XPk" secondAttribute="leading" constant="30" id="O5B-Od-DkZ"/>
                             <constraint firstItem="Vab-ud-XPk" firstAttribute="trailing" secondItem="QSl-mT-jUZ" secondAttribute="trailing" constant="30" id="OkK-W3-gGv"/>
-                            <constraint firstItem="xpt-tb-SZE" firstAttribute="leading" secondItem="Vab-ud-XPk" secondAttribute="leading" constant="30" id="Ra0-jr-DXs"/>
+                            <constraint firstItem="GYE-vO-Vkb" firstAttribute="top" secondItem="bUO-W8-Axf" secondAttribute="bottom" constant="269" id="Oqy-E9-x7c"/>
+                            <constraint firstItem="xpt-tb-SZE" firstAttribute="leading" secondItem="GYE-vO-Vkb" secondAttribute="trailing" constant="20" id="XXz-33-mk2"/>
                             <constraint firstItem="Vab-ud-XPk" firstAttribute="trailing" secondItem="Lvn-Lk-Z8G" secondAttribute="trailing" constant="30" id="ZDM-wL-yVB"/>
                             <constraint firstItem="Lvn-Lk-Z8G" firstAttribute="top" secondItem="WAk-LE-raL" secondAttribute="bottom" constant="2" id="eRx-RA-Smf"/>
                             <constraint firstItem="U8o-m7-Hy2" firstAttribute="top" secondItem="Vab-ud-XPk" secondAttribute="top" constant="8" id="hgn-xk-kpv"/>
