@@ -67,7 +67,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LauchScreen - ParentAidLogo" translatesAutoresizingMaskIntoConstraints="NO" id="U8o-m7-Hy2">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchIllustrationWhite" translatesAutoresizingMaskIntoConstraints="NO" id="U8o-m7-Hy2">
                                 <rect key="frame" x="79" y="52" width="256" height="256"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="256" id="9lh-ZY-F6e"/>
@@ -181,7 +181,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LauchScreen - ParentAidLogo" translatesAutoresizingMaskIntoConstraints="NO" id="fC0-UW-mWx">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchIllustrationWhite" translatesAutoresizingMaskIntoConstraints="NO" id="fC0-UW-mWx">
                                 <rect key="frame" x="79" y="8" width="256" height="256"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="256" id="Ifz-yM-0O3"/>
@@ -1765,12 +1765,12 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="u7h-h2-kcN"/>
+        <segue reference="c8W-BK-0C8"/>
         <segue reference="z8C-sB-c7n"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="EventProviderLogo" width="337" height="337"/>
-        <image name="LauchScreen - ParentAidLogo" width="708" height="708"/>
+        <image name="LaunchIllustrationWhite" width="1060" height="1287"/>
         <image name="Parent - COVID -LoginParentScreen" width="294" height="171"/>
         <image name="Provider Image" width="1600" height="901"/>
         <image name="bag" catalog="system" width="128" height="128"/>
