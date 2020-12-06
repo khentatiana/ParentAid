@@ -148,6 +148,16 @@ class PostEventViewController: UIViewController, UIImagePickerControllerDelegate
 //        eventTimeField.text = ""
 //        eventTimeField.text = ""
     }
+    //clean picture
+    func cleanImageView(){
+        eventTitleField.text = ""
+        eventTimeField.text = ""
+        eventDateField.text = ""
+        eventDescriptionField.text = ""
+//        eventTimeField.text = ""
+//        eventTimeField.text = ""
+//        eventTimeField.text = ""
+    }
     
     
     //dismiss keyboard by pressing return key

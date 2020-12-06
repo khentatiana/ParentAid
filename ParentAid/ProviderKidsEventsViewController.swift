@@ -131,14 +131,14 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
         //cell.eventDateLabel.sizeToFit()
         
               
-        let imageFile = event["image"] as! PFFileObject
+        if let imageFile = event["image"] as? PFFileObject{
         let urlString = imageFile.url!
         let url = URL(string: urlString)!
         cell.photoViewProvider.af.setImage(withURL: url)
         //To make round corners of the image
         cell.photoViewProvider.layer.cornerRadius = 10
         cell.photoViewProvider.clipsToBounds = true
-        
+        }
         
         //        let cell = UITableViewCell()
         //        cell.textLabel?.text = "This is Provider"
