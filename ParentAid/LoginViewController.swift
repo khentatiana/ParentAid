@@ -9,12 +9,14 @@ import UIKit
 import Parse
 
 class LoginViewController: UIViewController {
-
+    //MARK: IBOutlets
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var usernameField: UITextField!
     
+    //MARK: Variables
     var actInd = UIActivityIndicatorView()
-        
+    
+    //MARK: View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
        setupActivityIndicator()
@@ -29,7 +31,13 @@ class LoginViewController: UIViewController {
         view.addSubview(actInd)
     }
     
+    func showAlert(title: String, message: String){
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {(action) in alert.dismiss(animated: true, completion: nil)}))
+            self.present(alert, animated: true, completion: nil)
+   }
     
+    //MARK: IBActions
     @IBAction func onLoginButton(_ sender: Any) {
         let username = usernameField.text!
                let password = passwordField.text!
@@ -64,17 +72,20 @@ class LoginViewController: UIViewController {
     @IBAction func onSignUp(_ sender: Any) {
         self.performSegue(withIdentifier: "signupSegue", sender: nil)
         }
+
+  
     
-    func showAlert(title: String, message: String){
-        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {(action) in alert.dismiss(animated: true, completion: nil)}))
-            self.present(alert, animated: true, completion: nil)
-   }
     
-    //dismiss keyboard by clkicking outside textbox
+    @IBAction func forgotPasswordButton(_ sender: Any) {
+    }
+    
+    //MARK: Keyboard functions
+    
+    //dismiss keyboard by clicking outside textbox
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
+    
 }
 
-// hamida's comment
+

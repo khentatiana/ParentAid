@@ -114,6 +114,7 @@
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="forgotPasswordButton:" destination="Zmd-hi-SMS" eventType="touchUpInside" id="fmv-Fo-YUn"/>
                                     <action selector="onSignIn:" destination="Zmd-hi-SMS" eventType="touchUpInside" id="B45-yf-jvf"/>
                                 </connections>
                             </button>
