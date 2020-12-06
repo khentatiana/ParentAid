@@ -1288,6 +1288,24 @@
                                                     <action selector="onSubmitButton:" destination="3Ya-03-ctZ" eventType="touchUpInside" id="Zka-Io-LFt"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9tB-5o-ikI">
+                                                <rect key="frame" x="252" y="991" width="134" height="50"/>
+                                                <color key="backgroundColor" red="0.1564568435" green="0.78866163479999996" blue="0.86024530440000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="YWw-jx-rNu"/>
+                                                    <constraint firstAttribute="width" constant="134" id="i3M-HT-uN4"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="pjq-v7-nSD"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="134" id="q3c-uY-9Q1"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                <state key="normal" title="Cancel">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onCancelButton:" destination="3Ya-03-ctZ" eventType="touchUpInside" id="dWf-m1-gbf"/>
+                                                    <action selector="onSubmitButton:" destination="3Ya-03-ctZ" eventType="touchUpInside" id="iQ2-Y5-J5A"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -1304,6 +1322,7 @@
                                             <constraint firstItem="rY2-vf-zCp" firstAttribute="top" secondItem="cjK-Lu-hop" secondAttribute="bottom" constant="2" id="Bsw-eM-cJS"/>
                                             <constraint firstItem="0yX-3R-Sr7" firstAttribute="top" secondItem="hhN-aq-9R1" secondAttribute="bottom" constant="2" id="CHO-Wo-sMn"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="qT1-52-M83" secondAttribute="trailing" constant="20" id="Dqb-Vp-n8u"/>
+                                            <constraint firstAttribute="trailing" secondItem="9tB-5o-ikI" secondAttribute="trailing" constant="20" id="Enx-Ti-GNw"/>
                                             <constraint firstItem="p3D-Il-Pwz" firstAttribute="top" secondItem="0rA-pb-ovY" secondAttribute="bottom" constant="50" id="EvD-nc-rsn"/>
                                             <constraint firstAttribute="trailing" secondItem="cjK-Lu-hop" secondAttribute="trailing" constant="20" id="FLE-IJ-Mdy"/>
                                             <constraint firstItem="rva-Lk-XIz" firstAttribute="leading" secondItem="1mu-Tc-koy" secondAttribute="leading" constant="20" id="FWL-eh-Sfy"/>
@@ -1335,6 +1354,7 @@
                                             <constraint firstItem="kps-8D-6Xx" firstAttribute="top" secondItem="K1w-qI-aUR" secondAttribute="bottom" constant="2" id="hWh-wy-b4a"/>
                                             <constraint firstAttribute="trailing" secondItem="kps-8D-6Xx" secondAttribute="trailing" constant="20" id="hbn-bj-htV"/>
                                             <constraint firstItem="QT0-la-NZC" firstAttribute="top" secondItem="qT1-52-M83" secondAttribute="bottom" constant="8" symbolic="YES" id="hkg-9h-AU6"/>
+                                            <constraint firstItem="9tB-5o-ikI" firstAttribute="top" secondItem="0rA-pb-ovY" secondAttribute="bottom" constant="50" id="hoU-Iz-7uH"/>
                                             <constraint firstAttribute="trailing" secondItem="Z37-F0-WIr" secondAttribute="trailing" constant="20" id="k8n-Ab-XSS"/>
                                             <constraint firstItem="cjK-Lu-hop" firstAttribute="leading" secondItem="1mu-Tc-koy" secondAttribute="leading" constant="20" id="kvO-Zz-eiw"/>
                                             <constraint firstAttribute="trailing" secondItem="x4s-7S-pfl" secondAttribute="trailing" constant="20" id="l6G-jO-ZoS"/>

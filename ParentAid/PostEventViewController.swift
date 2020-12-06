@@ -99,6 +99,13 @@ class PostEventViewController: UIViewController, UIImagePickerControllerDelegate
         
     }
     
+    
+    @IBAction func onCancelButton(_ sender: Any) {
+        cleanTextFields()
+        dismissKeyboard()
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     @IBAction func onCameraButton(_ sender: Any) {
         let picker = UIImagePickerController()
         picker.delegate = self
@@ -127,6 +134,21 @@ class PostEventViewController: UIViewController, UIImagePickerControllerDelegate
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
+    //dismiss keyboard
+    func dismissKeyboard(){
+        self.view.endEditing(false)
+    }
+    //clean textfields
+    func cleanTextFields(){
+        eventTitleField.text = ""
+        eventTimeField.text = ""
+        eventDateField.text = ""
+        eventDescriptionField.text = ""
+//        eventTimeField.text = ""
+//        eventTimeField.text = ""
+//        eventTimeField.text = ""
+    }
+    
     
     //dismiss keyboard by pressing return key
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
