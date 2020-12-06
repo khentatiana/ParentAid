@@ -11,7 +11,7 @@ import Parse
 
 class PostEventViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
     
-
+    var events = [PFObject]()
 
     @IBOutlet weak var eventTimeField: UITextField!
     
@@ -73,7 +73,7 @@ class PostEventViewController: UIViewController, UIImagePickerControllerDelegate
     @IBAction func onSubmitButton(_ sender: Any) {
         // Create new object "event" that will be stored in table "KidsEvents"
         let event = PFObject(className: "KidsEvents")
-        //Create arbitrary key "synopsis", "provider"
+        //Create properties (arbitrary key) of the object "event" such as "synopsis", "provider", "title" etc.
         event["synopsis"] = eventDescriptionField.text!
         //Create provider of the event will be current user
         event["provider"] = PFUser.current()!
@@ -101,7 +101,17 @@ class PostEventViewController: UIViewController, UIImagePickerControllerDelegate
     
     
     @IBAction func onCancelButton(_ sender: Any) {
+        var query = PFQuery(className:"KidsEvents")
+        let event = PFObject(className: "KidsEvents")
         cleanTextFields()
+        // cleanImageView()
+       
+        query.whereKey("title", equalTo:"")
+        
+        event.deleteInBackground()
+            print ("##################Event deleted")
+         
+               
         dismissKeyboard()
         self.dismiss(animated: true, completion: nil)
     }
@@ -148,18 +158,68 @@ class PostEventViewController: UIViewController, UIImagePickerControllerDelegate
 //        eventTimeField.text = ""
 //        eventTimeField.text = ""
     }
+    
     //clean picture
-    func cleanImageView(){
-        eventTitleField.text = ""
-        eventTimeField.text = ""
-        eventDateField.text = ""
-        eventDescriptionField.text = ""
-//        eventTimeField.text = ""
-//        eventTimeField.text = ""
-//        eventTimeField.text = ""
-    }
-    
-    
+//    func cleanImageView(){
+//        var query = PFQuery(className:"KidsEvents")
+//        let event = PFObject(className: "KidsEvents")
+//        query.findObjectsInBackground{(events, error) -> Void in
+//            if event["title"] as? String == ""  && event["synopsis"] as? String == "" && error == nil {
+//                event.deleteInBackground()
+//                print(error)
+//            } else if error != nil {
+//                print(error)
+//
+//               }
+//        }}
+//        var query = PFQuery(className:"KidsEvents")
+//        let event = PFObject(className: "KidsEvents")
+//        var deleteAttributesOnly = true
+//
+//        query.includeKeys(["provider.username", "synopsis" , "title", "date"])
+//        query.getObjectInBackgroundWithId("provider") {
+//          (event: PFObject?, error: NSError?) -> Void in
+//          if error != nil {
+//            print(error)
+//          } else if event != nil {
+//            if deleteAttributesOnly {
+//                event.removeObjectForKey("synopsis")
+//                event.removeObjectForKey("image")
+//                event.removeObjectForKey("provider")
+//                event.removeObjectForKey("title")
+//                event.removeObjectForKey("date")
+//                event.removeObjectForKey("time")
+//                event.saveInBackground()
+//            } else {
+//                event.deleteInBackground()
+//            }
+//          }
+
+//        //MARK: Fetch ObjectId Strings From Parse
+//            func fetchObjectIdString() {
+//
+//                let query = PFQuery(className: "KidsEvents")
+//                query.whereKey("title", equalTo: self.title)
+//                query.findObjectsInBackground { (events, error) -> Void in
+//
+//                    if error == nil {
+//
+//                        if let events = events as? [PFObject] {
+//                            for oneObj in events {
+//                                let ObjectIdFromParse = oneObj.objectId!
+//                                let SingleObjectId = SixthBook()
+//                                SingleObjectId.objectIdString = ObjectIdFromParse
+//                                self.arrayOfObjectId.append(SingleObjectId)
+//                            }
+//                        }
+//                    } else {
+//
+//                        // Log details of the failure
+//                        print("Error: \(error!) \(error!.userInfo)")
+//                    }
+//                }
+//            }
+//
     //dismiss keyboard by pressing return key
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
        assignEventDate()
@@ -175,6 +235,7 @@ class PostEventViewController: UIViewController, UIImagePickerControllerDelegate
     }
     
 }
+
 
 
 

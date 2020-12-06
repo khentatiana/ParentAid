@@ -47,7 +47,7 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
        
         // Get Data from API
        // getAPIData()
-              
+        
        
     }
     
@@ -81,12 +81,23 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
     override func viewDidAppear(_ animated: Bool) {
 //       var eventArray =  [[String:Any]]()
 //        var eventTitle = String.self
-        numberOfEvents = 10
+        numberOfEvents = 20
         super.viewDidAppear(animated)
+        //Create query to retreive data
         let query = PFQuery(className: "KidsEvents")
         query.includeKeys(["provider.username", "synopsis" , "title", "date"])
       // query.whereKey("providerCity", contains: "San Jose")
         query.order(byDescending: "createdAt")
+//
+////        var query = PFQuery(className:"KidsEvents")
+//       let event = PFObject(className: "KidsEvents")
+//
+//      query.whereKey("title", equalTo:"")
+//
+//        event.deleteInBackground()
+//            print ("##################Event deleted")
+//
+        
         query.limit = numberOfEvents
                 
         query.findObjectsInBackground{ (events, error) in
@@ -142,12 +153,32 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
         
         //        let cell = UITableViewCell()
         //        cell.textLabel?.text = "This is Provider"
-        
-        return cell
+          return cell
     }
     
-  
-    
+//    func checkInvalidEvents(){
+//        let query = PFQuery(className: "KidsEvents")
+//      //  query.includeKeys(["provider.username", "synopsis" , "title", "date"])
+//      // query.whereKey("providerCity", contains: "San Jose")
+//        query.findObjectsInBackground(){(events, error) in
+//            if error == nil{
+//                //There was no error in the fetch
+//
+//                if let returnedEvents = events{
+//
+//                    //events array is not nil
+//                    //loop through the array to get each object
+//                    for event in returnedEvents{
+//                        print("#########################")
+//                        print(event["title"] as? String)
+//                    }
+//
+//                }
+//            }
+//
+//        }
+//         }
+//
     //dismiss keyboard by clicking outside textbox
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
