@@ -174,6 +174,21 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REt-dV-sKc">
+                                <rect key="frame" x="138.5" y="571" width="134" height="50"/>
+                                <color key="backgroundColor" red="0.1564568435" green="0.78866163479999996" blue="0.86024530440000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="134" id="NaF-dQ-KuB"/>
+                                    <constraint firstAttribute="height" constant="50" id="WNa-Zs-9IS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="LOGIN">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onLoginButton:" destination="Zmd-hi-SMS" eventType="touchUpInside" id="IUb-Ny-hTA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Vab-ud-XPk"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -190,6 +205,8 @@
                             <constraint firstItem="Vab-ud-XPk" firstAttribute="trailing" secondItem="QSl-mT-jUZ" secondAttribute="trailing" constant="30" id="OkK-W3-gGv"/>
                             <constraint firstItem="Vab-ud-XPk" firstAttribute="trailing" secondItem="mmk-ud-yYQ" secondAttribute="trailing" constant="92" id="TiZ-TC-Gkf"/>
                             <constraint firstItem="Vab-ud-XPk" firstAttribute="trailing" secondItem="Lvn-Lk-Z8G" secondAttribute="trailing" constant="30" id="ZDM-wL-yVB"/>
+                            <constraint firstItem="REt-dV-sKc" firstAttribute="top" secondItem="bUO-W8-Axf" secondAttribute="bottom" constant="46" id="bgf-hZ-E58"/>
+                            <constraint firstItem="REt-dV-sKc" firstAttribute="centerX" secondItem="bHx-oS-6fK" secondAttribute="centerX" id="bjh-zN-fks"/>
                             <constraint firstItem="Lvn-Lk-Z8G" firstAttribute="top" secondItem="WAk-LE-raL" secondAttribute="bottom" constant="2" id="eRx-RA-Smf"/>
                             <constraint firstItem="U8o-m7-Hy2" firstAttribute="top" secondItem="Vab-ud-XPk" secondAttribute="top" constant="8" id="hgn-xk-kpv"/>
                             <constraint firstItem="Lvn-Lk-Z8G" firstAttribute="leading" secondItem="Vab-ud-XPk" secondAttribute="leading" constant="30" id="iNB-WU-Mp1"/>
@@ -208,7 +225,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KrX-3K-Y9f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-94.20289855072464" y="-3880.5803571428569"/>
+            <point key="canvasLocation" x="-407" y="-3902"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="k3X-wD-8bk">
@@ -1316,6 +1333,7 @@
                                                     <constraint firstAttribute="height" constant="50" id="YMg-Te-Afo"/>
                                                     <constraint firstAttribute="width" constant="134" id="ZwO-R5-syb"/>
                                                 </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                 <state key="normal" title="Post Event">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -1468,7 +1486,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mGu-fa-vhr">
                                         <rect key="frame" x="0.0" y="0.0" width="418" height="1300"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_placeholder" id="Z3H-mA-ZT6">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_placeholder" id="Z3H-mA-ZT6">
                                                 <rect key="frame" x="20" y="0.0" width="373" height="328"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
                                             </imageView>
