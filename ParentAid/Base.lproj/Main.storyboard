@@ -163,15 +163,14 @@
                                     <constraint firstAttribute="bottom" secondItem="abh-bH-Ich" secondAttribute="bottom" id="HsK-hB-iMq"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REt-dV-sKc">
-                                <rect key="frame" x="140" y="614" width="134" height="50"/>
-                                <color key="backgroundColor" red="0.1564568435" green="0.78866163479999996" blue="0.86024530440000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REt-dV-sKc">
+                                <rect key="frame" x="132" y="568" width="150" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="134" id="NaF-dQ-KuB"/>
-                                    <constraint firstAttribute="height" constant="50" id="WNa-Zs-9IS"/>
+                                    <constraint firstAttribute="width" constant="150" id="KqG-G5-UCW"/>
+                                    <constraint firstAttribute="height" constant="60" id="zGL-Xf-Gm8"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <state key="normal" title="LOGIN">
+                                <state key="normal" image="register-button-png.svg.hi">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -208,6 +207,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="bUO-W8-Axf" firstAttribute="leading" secondItem="Vab-ud-XPk" secondAttribute="leading" constant="32" id="0dH-CF-vKr"/>
+                            <constraint firstItem="Vab-ud-XPk" firstAttribute="trailing" secondItem="REt-dV-sKc" secondAttribute="trailing" constant="132" id="12a-DB-OfG"/>
                             <constraint firstItem="W32-s2-De7" firstAttribute="leading" secondItem="Vab-ud-XPk" secondAttribute="leading" constant="31" id="2dr-XD-jXJ"/>
                             <constraint firstItem="U8o-m7-Hy2" firstAttribute="centerX" secondItem="bHx-oS-6fK" secondAttribute="centerX" id="32o-3O-RNd"/>
                             <constraint firstItem="mmk-ud-yYQ" firstAttribute="leading" secondItem="Vab-ud-XPk" secondAttribute="leading" constant="31" id="6DX-9t-L3N"/>
@@ -220,9 +220,10 @@
                             <constraint firstItem="Vab-ud-XPk" firstAttribute="trailing" secondItem="QSl-mT-jUZ" secondAttribute="trailing" constant="30" id="OkK-W3-gGv"/>
                             <constraint firstItem="WAk-LE-raL" firstAttribute="top" secondItem="QSl-mT-jUZ" secondAttribute="bottom" constant="10" id="Rvv-7P-x8P"/>
                             <constraint firstItem="Vab-ud-XPk" firstAttribute="trailing" secondItem="mmk-ud-yYQ" secondAttribute="trailing" constant="20" id="TiZ-TC-Gkf"/>
+                            <constraint firstItem="REt-dV-sKc" firstAttribute="leading" secondItem="Vab-ud-XPk" secondAttribute="leading" constant="132" id="Xb2-D5-Z9h"/>
                             <constraint firstItem="Lvn-Lk-Z8G" firstAttribute="top" secondItem="WAk-LE-raL" secondAttribute="bottom" constant="2" id="YnS-cE-jb4"/>
                             <constraint firstItem="Vab-ud-XPk" firstAttribute="trailing" secondItem="Lvn-Lk-Z8G" secondAttribute="trailing" constant="29" id="ZDM-wL-yVB"/>
-                            <constraint firstItem="REt-dV-sKc" firstAttribute="top" secondItem="bUO-W8-Axf" secondAttribute="bottom" constant="46" id="bgf-hZ-E58"/>
+                            <constraint firstItem="REt-dV-sKc" firstAttribute="top" secondItem="bUO-W8-Axf" secondAttribute="bottom" constant="20" id="bgf-hZ-E58"/>
                             <constraint firstItem="REt-dV-sKc" firstAttribute="centerX" secondItem="bHx-oS-6fK" secondAttribute="centerX" id="bjh-zN-fks"/>
                             <constraint firstItem="WAk-LE-raL" firstAttribute="leading" secondItem="Vab-ud-XPk" secondAttribute="leading" constant="31" id="cib-Fy-siY"/>
                             <constraint firstItem="U8o-m7-Hy2" firstAttribute="top" secondItem="Vab-ud-XPk" secondAttribute="top" constant="8" id="hgn-xk-kpv"/>
@@ -1971,6 +1972,7 @@
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="plus.square.fill.on.square.fill" catalog="system" width="128" height="113"/>
         <image name="profile_tab" width="25" height="25"/>
+        <image name="register-button-png.svg.hi" width="600" height="284"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

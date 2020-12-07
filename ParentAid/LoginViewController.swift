@@ -95,7 +95,7 @@ class LoginViewController: UIViewController {
 
     }
     
-    //MARK: Animation
+    //MARK: Animations
     private func updatePlaceholderLabels(textField: UITextField){
         switch textField{
         case usernameField:
@@ -106,6 +106,12 @@ class LoginViewController: UIViewController {
             passwordLabel.text = textField.hasText ? "" : ""
                  
         }
+    }
+    //login button change to SignUp
+    
+    private func updateUIForLogin(login:Bool){
+        
+        
     }
     
     //MARK: Keyboard functions
