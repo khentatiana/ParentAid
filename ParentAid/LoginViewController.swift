@@ -14,6 +14,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var usernameField: UITextField!
     
     @IBOutlet weak var usernameLabel: UILabel!
+    
+    @IBOutlet weak var passwordLabel: UITextField!
     //MARK: Variables
     var actInd = UIActivityIndicatorView()
     
@@ -79,6 +81,14 @@ class LoginViewController: UIViewController {
     
     @IBAction func forgotPasswordButton(_ sender: Any) {
     }
+    //MARK: Setup function
+//    private func setupTextFieldDelegate(){
+//        usernameField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+//        passwordField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+//    }
+//    func textFieldDidChange(){
+//        
+//    }
     
     //MARK: Keyboard functions
     
