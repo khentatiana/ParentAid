@@ -88,16 +88,16 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
         query.includeKeys(["provider.username", "synopsis" , "title", "date"])
       // query.whereKey("providerCity", contains: "San Jose")
         query.order(byDescending: "createdAt")
-//
+
 ////        var query = PFQuery(className:"KidsEvents")
 //       let event = PFObject(className: "KidsEvents")
 //
-//      query.whereKey("title", equalTo:"")
+//        query.whereKeyDoesNotExist("title"){
 //
 //        event.deleteInBackground()
 //            print ("##################Event deleted")
 //
-        
+//        }
         query.limit = numberOfEvents
                 
         query.findObjectsInBackground{ (events, error) in

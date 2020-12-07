@@ -47,13 +47,6 @@ class PostEventViewController: UIViewController, UIImagePickerControllerDelegate
     
     
     func datePickerEventTime(){
-//        let eventTime = Date()
-//        let timeFormat = DateFormatter()
-//        timeFormat.locale = Locale(identifier: "en_gb")
-//        timeFormat.dateFormat = "HH:mm"
-//        timePicker.datePickerMode = .time
-//        eventTimeField.inputView = timePicker
-//        view.endEditing(true)
         timePicker.datePickerMode = .time
         timePicker.addTarget(self, action: #selector(PostEventViewController.timeChanged(timePicker:)), for:  .valueChanged)
         eventTimeField.inputView = timePicker
@@ -101,12 +94,19 @@ class PostEventViewController: UIViewController, UIImagePickerControllerDelegate
     
     
     @IBAction func onCancelButton(_ sender: Any) {
-        var query = PFQuery(className:"KidsEvents")
+var query = PFQuery(className:"KidsEvents")
+//        query.whereKeyDoesNotExist("title"){
+//
+//        event.deleteInBackground()
+//            print ("##################Event deleted")
+//
+//        }
+//
         let event = PFObject(className: "KidsEvents")
         cleanTextFields()
         // cleanImageView()
        
-        query.whereKey("title", equalTo:"")
+        query.selectKeys(["title"])
         
         event.deleteInBackground()
             print ("##################Event deleted")
