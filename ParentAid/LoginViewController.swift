@@ -15,13 +15,15 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var usernameLabel: UILabel!
     
-    @IBOutlet weak var passwordLabel: UITextField!
+
+    @IBOutlet weak var passwordLabel: UILabel!
     //MARK: Variables
     var actInd = UIActivityIndicatorView()
     
     //MARK: View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+    setupTextFieldDelegate()
        setupActivityIndicator()
     }
     
@@ -82,13 +84,29 @@ class LoginViewController: UIViewController {
     @IBAction func forgotPasswordButton(_ sender: Any) {
     }
     //MARK: Setup function
-//    private func setupTextFieldDelegate(){
-//        usernameField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
-//        passwordField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
-//    }
-//    func textFieldDidChange(){
-//        
-//    }
+    private func setupTextFieldDelegate(){
+        usernameField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+        passwordField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+    }
+    @objc func textFieldDidChange(_ textField: UITextField){
+        //print("changing text fields")
+        updatePlaceholderLabels(textField: textField)
+        
+
+    }
+    
+    //MARK: Animation
+    private func updatePlaceholderLabels(textField: UITextField){
+        switch textField{
+        case usernameField:
+            usernameLabel.text = textField.hasText ? "Username" : ""
+        case passwordField:
+            passwordLabel.text = textField.hasText ? "Password" : ""
+        default:
+            passwordLabel.text = textField.hasText ? "" : ""
+                 
+        }
+    }
     
     //MARK: Keyboard functions
     
