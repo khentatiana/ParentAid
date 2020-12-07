@@ -137,16 +137,16 @@
                                             <constraint firstAttribute="height" constant="44" id="tnr-39-60F"/>
                                             <constraint firstAttribute="width" constant="240" id="y00-SN-876"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="253" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abh-bH-Ich">
                                         <rect key="frame" x="260" y="0.0" width="103" height="44"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="JUK-Gn-zcq"/>
                                             <constraint firstAttribute="height" constant="44" id="VkU-L4-uUv"/>
+                                            <constraint firstAttribute="width" constant="103" id="nLX-RC-PDQ"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                         <state key="normal" title="Sign Up">
@@ -158,6 +158,10 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="abh-bH-Ich" secondAttribute="trailing" id="40k-pX-o00"/>
+                                    <constraint firstAttribute="bottom" secondItem="abh-bH-Ich" secondAttribute="bottom" id="HsK-hB-iMq"/>
+                                </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REt-dV-sKc">
                                 <rect key="frame" x="140" y="614" width="134" height="50"/>
@@ -210,6 +214,7 @@
                             <constraint firstItem="Vab-ud-XPk" firstAttribute="trailing" secondItem="QSl-mT-jUZ" secondAttribute="trailing" constant="30" id="7qM-Ld-vwO"/>
                             <constraint firstItem="Vab-ud-XPk" firstAttribute="bottom" secondItem="mmk-ud-yYQ" secondAttribute="bottom" id="95e-mY-P6r"/>
                             <constraint firstItem="bUO-W8-Axf" firstAttribute="top" secondItem="Lvn-Lk-Z8G" secondAttribute="bottom" constant="10" id="AQb-0a-k0I"/>
+                            <constraint firstItem="mmk-ud-yYQ" firstAttribute="centerX" secondItem="bHx-oS-6fK" secondAttribute="centerX" id="J1B-8z-Lve"/>
                             <constraint firstItem="Vab-ud-XPk" firstAttribute="trailing" secondItem="pCK-4l-OvX" secondAttribute="trailing" constant="30" id="JAA-JS-e5u"/>
                             <constraint firstItem="QSl-mT-jUZ" firstAttribute="top" secondItem="W32-s2-De7" secondAttribute="bottom" constant="2" id="Jc4-ye-KTM"/>
                             <constraint firstItem="Vab-ud-XPk" firstAttribute="trailing" secondItem="QSl-mT-jUZ" secondAttribute="trailing" constant="30" id="OkK-W3-gGv"/>
