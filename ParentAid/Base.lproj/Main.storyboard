@@ -67,7 +67,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchIllustrationWhite" translatesAutoresizingMaskIntoConstraints="NO" id="U8o-m7-Hy2">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogInSignUpScreen" translatesAutoresizingMaskIntoConstraints="NO" id="U8o-m7-Hy2">
                                 <rect key="frame" x="79" y="52" width="256" height="256"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="256" id="9lh-ZY-F6e"/>
@@ -1961,6 +1961,7 @@
     <resources>
         <image name="EventProviderLogo" width="337" height="337"/>
         <image name="LaunchIllustrationWhite" width="1060" height="1287"/>
+        <image name="LogInSignUpScreen" width="414.5" height="453.5"/>
         <image name="Parent - COVID -LoginParentScreen" width="294" height="171"/>
         <image name="Provider Image" width="1600" height="901"/>
         <image name="bag" catalog="system" width="128" height="128"/>
