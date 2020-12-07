@@ -13,16 +13,21 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var usernameField: UITextField!
     
+    @IBOutlet weak var dontOrHaveAcctLabel: UILabel!
+    @IBOutlet weak var signupButtonOutlet: UIButton!
+    @IBOutlet weak var loginButtonOutlet: UIButton!
     @IBOutlet weak var usernameLabel: UILabel!
     
 
     @IBOutlet weak var passwordLabel: UILabel!
     //MARK: Variables
+    var isLogin = true
     var actInd = UIActivityIndicatorView()
     
     //MARK: View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        updateUIForLogin(login: true)
     setupTextFieldDelegate()
        setupActivityIndicator()
     }
@@ -74,8 +79,12 @@ class LoginViewController: UIViewController {
 
     }
     
-    @IBAction func onSignUp(_ sender: Any) {
-        self.performSegue(withIdentifier: "signupSegue", sender: nil)
+    @IBAction func onSignUp(_ sender: UIButton) {
+        updateUIForLogin(login: sender.titleLabel?.text == "Login")
+        //toggle() function is switching Boolean variable from "true" to "false". it was set to true in the beggining : var isLogin = true.
+        //after will changed to false
+        isLogin.toggle()
+      //  self.performSegue(withIdentifier: "signupSegue", sender: nil)
         }
 
   
@@ -110,8 +119,12 @@ class LoginViewController: UIViewController {
     //login button change to SignUp
     
     private func updateUIForLogin(login:Bool){
-        
-        
+        loginButtonOutlet.setImage(UIImage(named: login ? "login-button" : "register-button"), for: .normal)
+      signupButtonOutlet.setTitle(login ? "Sign Up" : "Login", for: .normal)
+        dontOrHaveAcctLabel.text = login ? "Don't have an account?" : "Have an account?"
+//        UIView.animate(withDuration: 0.5){
+//            self.
+//        }
     }
     
     //MARK: Keyboard functions
