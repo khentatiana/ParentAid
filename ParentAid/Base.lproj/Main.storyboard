@@ -129,7 +129,7 @@
                                             <constraint firstAttribute="height" constant="34" id="dAw-eM-V47"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits" spellCheckingType="no" secureTextEntry="YES"/>
+                                        <textInputTraits key="textInputTraits" spellCheckingType="no"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="254" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAk-LE-raL">
                                         <rect key="frame" x="0.0" y="228" width="84" height="30"/>
@@ -147,7 +147,7 @@
                                             <constraint firstAttribute="height" constant="34" id="LI7-XO-7GH"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits" spellCheckingType="no" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                        <textInputTraits key="textInputTraits" spellCheckingType="no"/>
                                     </textField>
                                 </subviews>
                                 <constraints>
@@ -282,13 +282,17 @@
                     </view>
                     <navigationItem key="navigationItem" id="dvD-Il-dMF"/>
                     <connections>
+                        <outlet property="confirmPasswordField" destination="Lvn-Lk-Z8G" id="sjB-Wm-MdO"/>
+                        <outlet property="confirmPasswordLabel" destination="WAk-LE-raL" id="KIk-Y9-9n0"/>
                         <outlet property="dontOrHaveAcctLabel" destination="GYE-vO-Vkb" id="A19-OP-69d"/>
+                        <outlet property="emailField" destination="wiX-Fg-NBs" id="nU0-eY-DeS"/>
+                        <outlet property="emailLabel" destination="bDq-u5-GH9" id="4IU-hP-w7e"/>
                         <outlet property="loginButtonOutlet" destination="REt-dV-sKc" id="8Zs-58-876"/>
-                        <outlet property="passwordField" destination="Lvn-Lk-Z8G" id="VqG-zi-HD9"/>
-                        <outlet property="passwordLabel" destination="WAk-LE-raL" id="Fnh-Sm-H5m"/>
+                        <outlet property="passwordField" destination="r2d-8y-gle" id="9eX-29-0xk"/>
+                        <outlet property="passwordLabel" destination="ezs-rS-2wD" id="CFH-Lv-3rC"/>
                         <outlet property="signupButtonOutlet" destination="abh-bH-Ich" id="EcN-P9-wBx"/>
                         <outlet property="usernameField" destination="QSl-mT-jUZ" id="jZL-s8-47w"/>
-                        <outlet property="usernameLabel" destination="W32-s2-De7" id="N3B-zU-1pC"/>
+                        <outlet property="usernameLabel" destination="W32-s2-De7" id="Mzc-Ju-8f6"/>
                         <segue destination="Wh3-bh-OMG" kind="presentation" identifier="loginSegue" id="u7h-h2-kcN"/>
                     </connections>
                 </viewController>

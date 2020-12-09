@@ -10,16 +10,18 @@ import Parse
 
 class LoginViewController: UIViewController {
     //MARK: IBOutlets
-    @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var usernameField: UITextField!
-    
     @IBOutlet weak var dontOrHaveAcctLabel: UILabel!
     @IBOutlet weak var signupButtonOutlet: UIButton!
     @IBOutlet weak var loginButtonOutlet: UIButton!
+    @IBOutlet weak var emailField: UITextField!
+    @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var usernameLabel: UILabel!
-    
-
     @IBOutlet weak var passwordLabel: UILabel!
+    @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var confirmPasswordLabel: UILabel!
+    @IBOutlet weak var confirmPasswordField: UITextField!
+    
     //MARK: Variables
     var isLogin = true
     var actInd = UIActivityIndicatorView()
