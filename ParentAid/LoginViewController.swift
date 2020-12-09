@@ -7,6 +7,8 @@
 
 import UIKit
 import Parse
+import ProgressHUD
+
 
 class LoginViewController: UIViewController {
     //MARK: IBOutlets
@@ -57,8 +59,16 @@ class LoginViewController: UIViewController {
     //MARK: IBActions
     @IBAction func onLoginButton(_ sender: Any) {
         let username = usernameField.text!
-               let password = passwordField.text!
-               
+        let password = passwordField.text!
+        
+        if isDataInputedFor(type: isLogin ? "login" : "registration"){
+            //login or register
+            
+        }else {
+            //ProgressHUD.showFailed("All fields are required")
+            
+        }
+    
                PFUser.logInWithUsername(inBackground: username, password: password) { (user, error) in
                    if user != nil {
                        self.performSegue(withIdentifier: "loginSegue", sender: nil)
@@ -97,9 +107,23 @@ class LoginViewController: UIViewController {
   
     
     @IBAction func resendEmailButton(_ sender: Any) {
+        if isDataInputedFor(type: "password"){
+            //reset password
+            print("have info for resend email")
+        }else {
+            ProgressHUD.showFailed("Email is required")
+            
+        }
     }
     
     @IBAction func forgotPasswordButton(_ sender: Any) {
+        if isDataInputedFor(type: "password"){
+            //resend verification email
+            print("have info for forgotten password")
+        }else {
+            ProgressHUD.showFailed("Email is required")
+            
+        }
     }
     //MARK: Setup function
     private func setupTextFieldDelegate(){
@@ -157,6 +181,18 @@ class LoginViewController: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         self.view.endEditing(true)
+    }
+    //MARK: helpers
+    //for required fields
+    private func isDataInputedFor(type: String) -> Bool{
+        switch type {
+        case "login":
+            return usernameField.text != "" && passwordField.text != ""
+        case "registration":
+            return emailField.text != "" && passwordField.text != "" && emailField.text != "" && confirmPasswordField.text != ""
+        default:
+            return usernameField.text != "" && passwordField.text != ""
+        }
     }
     
 }

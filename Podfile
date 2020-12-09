@@ -11,6 +11,7 @@ pod 'Parse'
 pod 'youtube-ios-player-helper'
 pod 'MessageInputBar'
 pod 'FSCalendar'
+pod 'ProgressHUD'
 
   target 'ParentAidTests' do
     inherit! :search_paths
