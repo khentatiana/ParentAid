@@ -23,9 +23,9 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var confirmPasswordField: UITextField!
     @IBOutlet weak var resendEmailOutlet: UIButton!
     
-    //MARK: Views
-    @IBOutlet weak var emailLineView: UIView!
-    @IBOutlet weak var confirmPasswordLineView: UIView!
+//    //MARK: Views
+//    @IBOutlet weak var emailLineView: UIView!
+//    @IBOutlet weak var confirmPasswordLineView: UIView!
     
     //MARK: Variables
     var isLogin = true
@@ -35,7 +35,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUIForLogin(login: true)
-    setupTextFieldDelegate()
+        setupTextFieldDelegate()
        setupActivityIndicator()
     }
     
@@ -133,11 +133,15 @@ class LoginViewController: UIViewController {
     
     private func updateUIForLogin(login:Bool){
         loginButtonOutlet.setImage(UIImage(named: login ? "login-button" : "register-button"), for: .normal)
-      signupButtonOutlet.setTitle(login ? "Sign Up" : "Login", for: .normal)
+        signupButtonOutlet.setTitle(login ? "Sign Up" : "Login", for: .normal)
         dontOrHaveAcctLabel.text = login ? "Don't have an account?" : "Have an account?"
-//        UIView.animate(withDuration: 0.5){
-//            self.
-//        }
+        
+        UIView.animate(withDuration: 0.5){
+            self.emailField.isHidden = login
+            self.emailLabel.isHidden = login
+            self.confirmPasswordField.isHidden = login
+            self.confirmPasswordLabel.isHidden = login
+        }
     }
     
     //MARK: Keyboard functions
