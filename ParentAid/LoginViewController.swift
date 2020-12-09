@@ -21,6 +21,11 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var confirmPasswordLabel: UILabel!
     @IBOutlet weak var confirmPasswordField: UITextField!
+    @IBOutlet weak var resendEmailOutlet: UIButton!
+    
+    //MARK: Views
+    @IBOutlet weak var emailLineView: UIView!
+    @IBOutlet weak var confirmPasswordLineView: UIView!
     
     //MARK: Variables
     var isLogin = true
@@ -91,13 +96,17 @@ class LoginViewController: UIViewController {
 
   
     
+    @IBAction func resendEmailButton(_ sender: Any) {
+    }
     
     @IBAction func forgotPasswordButton(_ sender: Any) {
     }
     //MARK: Setup function
     private func setupTextFieldDelegate(){
         usernameField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+        emailField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
         passwordField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+        confirmPasswordField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
     }
     @objc func textFieldDidChange(_ textField: UITextField){
         //print("changing text fields")
@@ -111,10 +120,12 @@ class LoginViewController: UIViewController {
         switch textField{
         case usernameField:
             usernameLabel.text = textField.hasText ? "Username" : ""
+        case emailField:
+            emailLabel.text = textField.hasText ? "Email" : ""
         case passwordField:
             passwordLabel.text = textField.hasText ? "Password" : ""
         default:
-            passwordLabel.text = textField.hasText ? "" : ""
+            confirmPasswordLabel.text = textField.hasText ? "Confirm Password" : ""
                  
         }
     }
