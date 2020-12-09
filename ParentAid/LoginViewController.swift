@@ -111,10 +111,17 @@ class LoginViewController: UIViewController {
     @objc func textFieldDidChange(_ textField: UITextField){
         //print("changing text fields")
         updatePlaceholderLabels(textField: textField)
-        
-
     }
-    
+    //When tap outside text fileds keyboard disapears
+    private func setupBackgroundTap(){
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(backgroundTap))
+        view.addGestureRecognizer(tapGesture)
+        
+    }
+    @objc func backgroundTap(){
+        //print("##########background tap")
+        view.endEditing(false)
+    }
     //MARK: Animations
     private func updatePlaceholderLabels(textField: UITextField){
         switch textField{
@@ -135,7 +142,7 @@ class LoginViewController: UIViewController {
         loginButtonOutlet.setImage(UIImage(named: login ? "login-button" : "register-button"), for: .normal)
         signupButtonOutlet.setTitle(login ? "Sign Up" : "Login", for: .normal)
         dontOrHaveAcctLabel.text = login ? "Don't have an account?" : "Have an account?"
-        
+        //When login view email and confirmPassword are hidden
         UIView.animate(withDuration: 0.5){
             self.emailField.isHidden = login
             self.emailLabel.isHidden = login
@@ -148,6 +155,7 @@ class LoginViewController: UIViewController {
     
     //dismiss keyboard by clicking outside textbox
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
         self.view.endEditing(true)
     }
     
