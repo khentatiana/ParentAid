@@ -34,7 +34,7 @@
                                     <color key="titleShadowColor" red="0.1564568435" green="0.78866163479999996" blue="0.86024530440000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <segue destination="bQE-GL-RdF" kind="presentation" id="Oup-oK-sSs"/>
+                                    <segue destination="bQE-GL-RdF" kind="push" id="Oup-oK-sSs"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="br6-xb-LL8">
@@ -1911,6 +1911,7 @@
         <scene sceneID="bqo-lT-Lbb">
             <objects>
                 <tabBarController id="bQE-GL-RdF" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="q7J-ee-y3t"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="w0o-8o-Byv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -2023,7 +2024,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="oFK-e6-JGD"/>
-        <segue reference="z8C-sB-c7n"/>
+        <segue reference="X8i-1c-Nd9"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="EventProviderLogo" width="337" height="337"/>

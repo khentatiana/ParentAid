@@ -13,10 +13,10 @@
 		41674F4425586C2900DFEA6C /* KidsEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41674F4325586C2900DFEA6C /* KidsEventCell.swift */; };
 		4180AC7C2580F1E4008E0A2F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4180AC7B2580F1E4008E0A2F /* User.swift */; };
 		4180AC882580F882008E0A2F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4180AC872580F882008E0A2F /* Constants.swift */; };
+		4180AC8F2581D913008E0A2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4198E1F52555F497009F5092 /* Assets.xcassets */; };
 		418EB4492575EC7C00797D28 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418EB4482575EC7C00797D28 /* Event.swift */; };
 		418EB45725760B9300797D28 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418EB45625760B9300797D28 /* API.swift */; };
 		4198E1EE2555EE27009F5092 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4198E1ED2555EE27009F5092 /* LoginViewController.swift */; };
-		4198E1F62555F497009F5092 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4198E1F52555F497009F5092 /* Assets.xcassets */; };
 		41CB159F256651F50087EC74 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CB159E256651F40087EC74 /* SignUpViewController.swift */; };
 		41CB15AD25670EB30087EC74 /* ProviderProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CB15AC25670EB20087EC74 /* ProviderProfileViewController.swift */; };
 		41CB15BB25686A710087EC74 /* SavedProviderProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CB15BA25686A710087EC74 /* SavedProviderProfileViewController.swift */; };
@@ -330,7 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D628C5FF2551FB6B00BE82A0 /* LaunchScreen.storyboard in Resources */,
-				4198E1F62555F497009F5092 /* Assets.xcassets in Resources */,
+				4180AC8F2581D913008E0A2F /* Assets.xcassets in Resources */,
 				D628C5FA2551FB6A00BE82A0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
