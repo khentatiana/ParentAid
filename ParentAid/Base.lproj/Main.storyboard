@@ -756,7 +756,7 @@
         <scene sceneID="aiG-um-2AJ">
             <objects>
                 <viewController storyboardIdentifier="ProviderProfileViewController" id="bHo-4Q-Agt" customClass="ProviderProfileViewController" customModule="ParentAid" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="GNO-Q1-Ghr">
+                    <view key="view" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GNO-Q1-Ghr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -901,10 +901,10 @@
                                 <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="done" smartInsertDeleteType="yes"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fUr-qa-4ie">
-                                <rect key="frame" x="137" y="672" width="140" height="50"/>
+                                <rect key="frame" x="20" y="672" width="134" height="50"/>
                                 <color key="backgroundColor" red="0.1564568435" green="0.78866163479999996" blue="0.86024530440000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="140" id="DQk-6X-znc"/>
+                                    <constraint firstAttribute="width" constant="134" id="DQk-6X-znc"/>
                                     <constraint firstAttribute="height" constant="50" id="oCJ-lc-RQc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
@@ -921,6 +921,23 @@
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hT-bc-7bY">
+                                <rect key="frame" x="260" y="672" width="134" height="50"/>
+                                <color key="backgroundColor" red="0.1564568435" green="0.78866163479999996" blue="0.86024530440000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Pwr-hX-Eft"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="134" id="X34-LR-HRI"/>
+                                    <constraint firstAttribute="width" constant="134" id="nYL-zw-e1a"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="v7a-ef-2ag"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onCancelButton:" destination="3Ya-03-ctZ" eventType="touchUpInside" id="yDz-Qw-nV4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qSl-EA-PFK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -928,27 +945,29 @@
                             <constraint firstItem="Gjr-gF-cf9" firstAttribute="leading" secondItem="KkL-Py-4GC" secondAttribute="trailing" constant="50" id="1Fk-t9-aw7"/>
                             <constraint firstItem="1kf-zm-3v5" firstAttribute="top" secondItem="cdg-xI-exN" secondAttribute="bottom" constant="10" id="1jZ-bd-rjD"/>
                             <constraint firstItem="wqf-iE-ycF" firstAttribute="leading" secondItem="qSl-EA-PFK" secondAttribute="leading" constant="20" id="2WD-xM-j4Z"/>
+                            <constraint firstItem="1hT-bc-7bY" firstAttribute="top" secondItem="uQu-dd-Qe0" secondAttribute="bottom" constant="20" id="2pX-0o-lOx"/>
                             <constraint firstItem="qSl-EA-PFK" firstAttribute="trailing" secondItem="pcI-cr-a3z" secondAttribute="trailing" constant="20" id="3jT-6g-jCh"/>
                             <constraint firstItem="KkL-Py-4GC" firstAttribute="top" secondItem="wsl-RN-jb6" secondAttribute="bottom" constant="8" id="48S-Hj-F0M"/>
+                            <constraint firstItem="fUr-qa-4ie" firstAttribute="leading" secondItem="qSl-EA-PFK" secondAttribute="leading" constant="20" id="4B0-HJ-XUr"/>
                             <constraint firstItem="nG5-Fa-zcl" firstAttribute="leading" secondItem="qSl-EA-PFK" secondAttribute="leading" constant="20" id="7LV-1e-ocG"/>
                             <constraint firstItem="qSl-EA-PFK" firstAttribute="trailing" secondItem="cdg-xI-exN" secondAttribute="trailing" constant="20" id="8bm-g4-62e"/>
+                            <constraint firstItem="fUr-qa-4ie" firstAttribute="top" secondItem="uQu-dd-Qe0" secondAttribute="bottom" constant="20" id="9Vx-nc-FWQ"/>
                             <constraint firstItem="wsl-RN-jb6" firstAttribute="top" secondItem="wqf-iE-ycF" secondAttribute="bottom" constant="8" id="CpH-BO-zfR"/>
                             <constraint firstItem="c0B-Mf-DSF" firstAttribute="top" secondItem="hFn-At-AYu" secondAttribute="bottom" constant="8" id="CvE-Gb-ZtM"/>
                             <constraint firstItem="qSl-EA-PFK" firstAttribute="trailing" secondItem="nG5-Fa-zcl" secondAttribute="trailing" constant="20" id="E3X-hf-fhm"/>
                             <constraint firstItem="uQu-dd-Qe0" firstAttribute="leading" secondItem="qSl-EA-PFK" secondAttribute="leading" constant="20" id="Eba-S6-Cow"/>
+                            <constraint firstItem="1hT-bc-7bY" firstAttribute="top" secondItem="uQu-dd-Qe0" secondAttribute="bottom" constant="20" id="Ed9-dK-gyh"/>
                             <constraint firstItem="wqf-iE-ycF" firstAttribute="top" secondItem="nG5-Fa-zcl" secondAttribute="bottom" constant="8" id="F8f-uT-jzV"/>
                             <constraint firstItem="uQu-dd-Qe0" firstAttribute="top" secondItem="1NS-xe-KS3" secondAttribute="bottom" constant="8" id="Flg-bQ-9Ri"/>
                             <constraint firstItem="wsl-RN-jb6" firstAttribute="leading" secondItem="qSl-EA-PFK" secondAttribute="leading" constant="20" id="GOH-A4-RFt"/>
                             <constraint firstItem="Gjr-gF-cf9" firstAttribute="top" secondItem="wsl-RN-jb6" secondAttribute="bottom" constant="8" id="H8W-ak-YKO"/>
                             <constraint firstItem="KkL-Py-4GC" firstAttribute="leading" secondItem="qSl-EA-PFK" secondAttribute="leading" constant="20" id="Kf0-w8-ogg"/>
                             <constraint firstItem="5au-df-bn4" firstAttribute="top" secondItem="qSl-EA-PFK" secondAttribute="top" constant="103" id="M05-rZ-ny7"/>
-                            <constraint firstItem="fUr-qa-4ie" firstAttribute="centerX" secondItem="GNO-Q1-Ghr" secondAttribute="centerX" id="Ny2-YO-IKs"/>
                             <constraint firstItem="qSl-EA-PFK" firstAttribute="trailing" secondItem="wsl-RN-jb6" secondAttribute="trailing" constant="20" id="SMg-zB-X3G"/>
                             <constraint firstItem="cdg-xI-exN" firstAttribute="top" secondItem="5au-df-bn4" secondAttribute="bottom" constant="10" id="UzF-DT-Yco"/>
                             <constraint firstItem="cQA-JM-Kjs" firstAttribute="top" secondItem="CtF-um-e2x" secondAttribute="bottom" constant="8" id="WSO-dN-b0V"/>
                             <constraint firstItem="cQA-JM-Kjs" firstAttribute="leading" secondItem="qSl-EA-PFK" secondAttribute="leading" constant="20" id="Xrw-pb-B4B"/>
                             <constraint firstItem="qSl-EA-PFK" firstAttribute="trailing" secondItem="uQu-dd-Qe0" secondAttribute="trailing" constant="20" id="Z8F-PF-mag"/>
-                            <constraint firstItem="fUr-qa-4ie" firstAttribute="top" secondItem="uQu-dd-Qe0" secondAttribute="bottom" constant="20" id="Zmy-xG-Hk6"/>
                             <constraint firstItem="5au-df-bn4" firstAttribute="leading" secondItem="qSl-EA-PFK" secondAttribute="leading" constant="20" id="b9l-2a-WlY"/>
                             <constraint firstItem="nG5-Fa-zcl" firstAttribute="top" secondItem="1kf-zm-3v5" secondAttribute="bottom" constant="8" id="bGu-YW-Thy"/>
                             <constraint firstItem="pcI-cr-a3z" firstAttribute="leading" secondItem="qSl-EA-PFK" secondAttribute="leading" constant="20" id="fQO-W7-OQ6"/>
@@ -957,6 +976,7 @@
                             <constraint firstItem="He0-VO-5wL" firstAttribute="top" secondItem="Gjr-gF-cf9" secondAttribute="bottom" constant="8" id="jZg-xz-EJT"/>
                             <constraint firstItem="hFn-At-AYu" firstAttribute="top" secondItem="cQA-JM-Kjs" secondAttribute="bottom" constant="8" id="nxr-1l-rrD"/>
                             <constraint firstItem="1kf-zm-3v5" firstAttribute="leading" secondItem="qSl-EA-PFK" secondAttribute="leading" constant="20" id="o8z-Eh-CEK"/>
+                            <constraint firstItem="qSl-EA-PFK" firstAttribute="trailing" secondItem="1hT-bc-7bY" secondAttribute="trailing" constant="20" id="p8p-L3-whb"/>
                             <constraint firstItem="hFn-At-AYu" firstAttribute="leading" secondItem="qSl-EA-PFK" secondAttribute="leading" constant="20" id="qUr-YB-gUn"/>
                             <constraint firstItem="bf7-S0-3Fh" firstAttribute="top" secondItem="qSl-EA-PFK" secondAttribute="top" constant="15" id="qVe-J8-FjS"/>
                             <constraint firstItem="qSl-EA-PFK" firstAttribute="trailing" secondItem="bf7-S0-3Fh" secondAttribute="trailing" constant="43" id="qd9-M6-V0i"/>
@@ -969,13 +989,7 @@
                             <constraint firstItem="CtF-um-e2x" firstAttribute="leading" secondItem="qSl-EA-PFK" secondAttribute="leading" constant="20" id="zxR-cT-vec"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Provider Profile" id="pAu-NF-1ST">
-                        <barButtonItem key="leftBarButtonItem" title="Kids Events" style="plain" id="sNB-ct-Hpl">
-                            <connections>
-                                <action selector="kidsEventsTabButton:" destination="bHo-4Q-Agt" id="rRT-XR-C6E"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Provider Profile" id="pAu-NF-1ST"/>
                     <connections>
                         <outlet property="profilePhotoImageView" destination="bf7-S0-3Fh" id="5No-M6-zIH"/>
                         <outlet property="providerAddressField" destination="nG5-Fa-zcl" id="1ea-b1-GN1"/>
@@ -1526,8 +1540,6 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="YWw-jx-rNu"/>
                                                     <constraint firstAttribute="width" constant="134" id="i3M-HT-uN4"/>
-                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="pjq-v7-nSD"/>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="134" id="q3c-uY-9Q1"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                 <state key="normal" title="Cancel">
@@ -2039,8 +2051,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="u7h-h2-kcN"/>
-        <segue reference="X8i-1c-Nd9"/>
+        <segue reference="oFK-e6-JGD"/>
+        <segue reference="z8C-sB-c7n"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="EventProviderLogo" width="337" height="337"/>
