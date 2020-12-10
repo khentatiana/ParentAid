@@ -716,7 +716,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="family-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="HeO-a9-RQJ">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="family-placeholder -3" translatesAutoresizingMaskIntoConstraints="NO" id="HeO-a9-RQJ">
                                 <rect key="frame" x="236" y="71" width="124" height="107"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="107" id="fgr-nJ-fPR"/>
@@ -2098,7 +2098,7 @@
         <image name="Parent - COVID -LoginParentScreen" width="294" height="171"/>
         <image name="Provider Image" width="1600" height="901"/>
         <image name="bag" catalog="system" width="128" height="128"/>
-        <image name="family-placeholder" width="500" height="300"/>
+        <image name="family-placeholder -3" width="275" height="183"/>
         <image name="image_placeholder" width="375" height="375"/>
         <image name="lasso.sparkles" catalog="system" width="122" height="128"/>
         <image name="location-64" width="64" height="64"/>
