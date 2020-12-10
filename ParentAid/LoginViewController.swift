@@ -32,13 +32,15 @@ class LoginViewController: UIViewController {
     //MARK: Variables
     var isLogin = true
     var actInd = UIActivityIndicatorView()
+
     
     //MARK: View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupActivityIndicator()
         updateUIForLogin(login: true)
         setupTextFieldDelegate()
-       setupActivityIndicator()
+        
     }
     
     func setupActivityIndicator(){
@@ -80,31 +82,76 @@ class LoginViewController: UIViewController {
                }
 
     }
-    @IBAction func onSignIn(_ sender: Any) {
-        let username = usernameField.text!
-               let password = passwordField.text!
-               
-               PFUser.logInWithUsername(inBackground: username, password: password) { (user, error) in
-                   if user != nil {
-                       self.performSegue(withIdentifier: "loginSegue", sender: nil)
-                   }
-                   else {
-                       print ("Error: \(error?.localizedDescription)")
-                    self.showAlert(title: "Invalid", message: "Invalid username or password. Please try again.")
-                   }
-               }
-
-    }
+//    @IBAction func onSignIn(_ sender: Any) {
+//        let username = usernameField.text!
+//        let password = passwordField.text!
+//               
+//               PFUser.logInWithUsername(inBackground: username, password: password) { (user, error) in
+//                   if user != nil {
+//                       self.performSegue(withIdentifier: "loginSegue", sender: nil)
+//                   }
+//                   else {
+//                       print ("Error: \(error?.localizedDescription)")
+//                    self.showAlert(title: "Invalid", message: "Invalid username or password. Please try again.")
+//                   }
+//               }
+//
+//    }
     
     @IBAction func onSignUp(_ sender: UIButton) {
+        
         updateUIForLogin(login: sender.titleLabel?.text == "Login")
         //toggle() function is switching Boolean variable from "true" to "false". it was set to true in the beggining : var isLogin = true.
         //after will changed to false
         isLogin.toggle()
-      //  self.performSegue(withIdentifier: "signupSegue", sender: nil)
+        
+        //self.performSegue(withIdentifier: "signupSegue", sender: nil)
+        var user = PFUser(className: "_User")
+        user.username = usernameField.text
+        user.email = emailField.text
+        user.password = passwordField.text
+        
+        if isDataInputedFor(type:"registration"){
+            //register
+            let email = isValidEmail(testStr: emailField.text!)
+                                   
+            if (user.username!.count < 5) || (user.password!.count < 5)
+            {
+                let alert = UIAlertController(title: "Invalid username or password", message: "Username and password must be greater than 5 characters.", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                present(alert, animated: true)
+            } else if email == false{
+                showAlert(title: "Invalid", message: "This is not a valid email. Please try again.")
+                emailField.text = ""
+            }
+            
+//        }else {
+//            //ProgressHUD.showFailed("All fields are required")
+//            self.showEmailAlert(title: "Welcome to ParentsAid", message: "Create an account here")
+     }
+        
+        user.signUpInBackground{ (success, error) in
+            if success {
+                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+            } else {
+                print ("Error: \(error?.localizedDescription)")
+                self.showEmailAlert(title: "Invalid", message: "##############Invalid username or email or password. Please try again.")
+            }
+        }
+        
         }
 
-  
+    func isValidEmail(testStr:String) -> Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        
+        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailTest.evaluate(with: testStr)
+    }
+    func showEmailAlert(title: String, message: String){
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {(action) in alert.dismiss(animated: true, completion: nil)}))
+        self.present(alert, animated: true, completion: nil)
+    }
     
     @IBAction func resendEmailButton(_ sender: Any) {
         if isDataInputedFor(type: "password"){
@@ -172,9 +219,11 @@ class LoginViewController: UIViewController {
             self.emailLabel.isHidden = login
             self.confirmPasswordField.isHidden = login
             self.confirmPasswordLabel.isHidden = login
+          //  self.forgotPasswordButton(<#T##sender: Any##Any#>)
         }
     }
     
+
     //MARK: Keyboard functions
     
     //dismiss keyboard by clicking outside textbox

@@ -34,6 +34,19 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
     
     //var selectedEvent: PFObject!
     
+    //Struct
+    struct Event: Codable, Equatable {
+        //Establish properties
+        var synopsis : String?
+        var provider : String?
+        var title : String?
+        var date : String?
+        var time : String?
+//        var image : URL?
+//        var url : URL?
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //Table View delegate
@@ -48,6 +61,13 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
         // Get Data from API
        // getAPIData()
         
+        // Get Data from API
+//        getEventsData()
+//       
+//        
+//        let allEvents = Event(synopsis: "Event synopsis ", provider: "Event provider ", title: "Event title ", date: "Event date ", time: "Event time ")
+//        print("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
+//        print(allEvents)
        
     }
     
@@ -64,6 +84,55 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
 //    }
 //
     
+
+//    @objc func getEventsData(){
+//
+//    let url = URL(string: "https://parse-dashboard.back4app.com/apps/dc82cc29-73ba-4d69-adc0-263de4c30df7/browser/KidsEvents")!
+//    var urlRequest = URLRequest(url: url)
+//    urlRequest.setValue("Jwxuau0jvzMCpZgdxbqkxhKdOCWhZvQb1vPnmrft", forHTTPHeaderField: "X-Parse-Application-Id") // This is the app's application id
+//  //  urlRequest.setValue("0MPgfTQvTh1dTHET9bEUEqLKcCXk8o2Ce3lzHl4t", forHTTPHeaderField: "X-Parse-Master-Key") // This is the app's readonly master key
+//    URLSession.shared.dataTask(with: urlRequest, completionHandler: { (data, response, error) in
+//        let json = try! JSONSerialization.jsonObject(with: data!, options: []) // Here you have the data that you need
+//        print(String(data: try! JSONSerialization.data(withJSONObject: json, options: .prettyPrinted), encoding: .utf8)!)
+//    }).resume()
+    
+//        let url = URL(string: "https://parse-dashboard.back4app.com/apps/dc82cc29-73ba-4d69-adc0-263de4c30df7/browser/KidsEvents")!
+//        let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
+//        let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
+//        let task = session.dataTask(with: request) { (data, response, error) in
+//           // This will run when the network request returns
+//           if let error = error {
+//              print("Failed to load: \(error.localizedDescription)")
+//           } else if let data = data {
+//            var dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]{
+//            self.events = dataDictionary?["title"] as! [PFObject]
+//            self.tableViewProvider.reloadData()
+//
+//              // TODO: Get the array of events
+//              // TODO: Store the events in a property to use elsewhere
+//              // TODO: Reload your table view data
+//
+//           }
+//           }}
+//        task.resume()
+ // }
+    
+    @objc func getEventsAPIData(){
+        let query = PFQuery(className: "KidsEvents")
+        query.includeKeys(["provider.username", "synopsis" , "title", "date"])
+        
+        query.findObjectsInBackground{ (events, error) in
+            if (events != nil){
+                self.events = events!
+               // self.eventsArray = events!
+                //self.filteredEvents = events!
+                                             
+                self.tableViewProvider.reloadData()
+            }
+        }
+        print("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
+        print(events)
+    }
     @IBAction func onLogoutButton(_ sender: Any) {
         
         PFUser.logOut()
@@ -112,9 +181,12 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
         
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-
+        print("55555555555555555555555")
+       // print(events)
+     
         //return filteredEvents.count
         return events.count
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

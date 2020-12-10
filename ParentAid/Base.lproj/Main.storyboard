@@ -135,7 +135,7 @@
                                             <constraint firstAttribute="height" constant="34" id="dAw-eM-V47"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits" spellCheckingType="no" secureTextEntry="YES"/>
+                                        <textInputTraits key="textInputTraits" spellCheckingType="no" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="254" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAk-LE-raL">
                                         <rect key="frame" x="0.0" y="188" width="158" height="30"/>
@@ -154,7 +154,7 @@
                                             <constraint firstAttribute="height" constant="34" id="LI7-XO-7GH"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits" spellCheckingType="no" secureTextEntry="YES"/>
+                                        <textInputTraits key="textInputTraits" spellCheckingType="no" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                                 <constraints>
@@ -206,7 +206,7 @@
                                         </state>
                                         <connections>
                                             <action selector="onSignUp:" destination="Zmd-hi-SMS" eventType="touchUpInside" id="geg-1f-Ltm"/>
-                                            <segue destination="74R-SX-z3Z" kind="presentation" identifier="signupSegue" id="qaK-qG-GJ7"/>
+                                            <segue destination="74R-SX-z3Z" kind="show" id="Wvc-xW-EDl"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -215,20 +215,6 @@
                                     <constraint firstAttribute="bottom" secondItem="abh-bH-Ich" secondAttribute="bottom" id="HsK-hB-iMq"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="253" ambiguous="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xpt-tb-SZE">
-                                <rect key="frame" x="278" y="706" width="80" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="Bnw-PV-S5R"/>
-                                    <constraint firstAttribute="height" constant="44" id="yIH-yP-Ty0"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <state key="normal" title="Sign In">
-                                    <color key="titleColor" systemColor="systemBlueColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="onSignIn:" destination="Zmd-hi-SMS" eventType="touchUpInside" id="DhM-Sq-Fpx"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="left" verticalHuggingPriority="253" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUO-W8-Axf">
                                 <rect key="frame" x="31" y="546" width="158" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -326,7 +312,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchIllustrationWhite" translatesAutoresizingMaskIntoConstraints="NO" id="fC0-UW-mWx">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogInSignUpScreen" translatesAutoresizingMaskIntoConstraints="NO" id="fC0-UW-mWx">
                                 <rect key="frame" x="79" y="8" width="256" height="256"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="256" id="Ifz-yM-0O3"/>
@@ -374,16 +360,19 @@
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" enablesReturnKeyAutomatically="YES" smartInsertDeleteType="no"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="253" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="28y-MZ-oC4">
-                                <rect key="frame" x="173.5" y="526" width="67" height="34"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <state key="normal" title="Sign Up">
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="253" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="28y-MZ-oC4">
+                                <rect key="frame" x="132" y="525" width="150" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Pe5-F5-Wwh"/>
+                                    <constraint firstAttribute="width" constant="150" id="XFW-Ja-xEz"/>
+                                </constraints>
+                                <state key="normal" title="Sign Up" image="register-button">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="onSignUp:" destination="Zmd-hi-SMS" eventType="touchUpInside" id="ybA-IC-5O5"/>
                                     <action selector="onSignUpAction:" destination="74R-SX-z3Z" eventType="touchUpInside" id="c46-2D-cce"/>
-                                    <segue destination="Wh3-bh-OMG" kind="presentation" identifier="loginFromSignup" id="c8W-BK-0C8"/>
+                                    <segue destination="Wh3-bh-OMG" kind="presentation" identifier="loginFromSignup" id="oFK-e6-JGD"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -416,6 +405,7 @@
                             <constraint firstItem="SPB-sa-bCw" firstAttribute="top" secondItem="GON-JZ-ibu" secondAttribute="bottom" constant="42" id="waw-JR-LAG"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="AMa-F5-POw"/>
                     <connections>
                         <outlet property="emailSignupField" destination="32W-0p-PUS" id="Z6a-g5-DZJ"/>
                         <outlet property="passwordSignupField" destination="2eE-iX-b8V" id="Z43-RL-DYj"/>
@@ -2026,12 +2016,11 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="u7h-h2-kcN"/>
+        <segue reference="oFK-e6-JGD"/>
         <segue reference="z8C-sB-c7n"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="EventProviderLogo" width="337" height="337"/>
-        <image name="LaunchIllustrationWhite" width="1060" height="1287"/>
         <image name="LogInSignUpScreen" width="414.5" height="453.5"/>
         <image name="Parent - COVID -LoginParentScreen" width="294" height="171"/>
         <image name="Provider Image" width="1600" height="901"/>
@@ -2045,6 +2034,7 @@
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="plus.square.fill.on.square.fill" catalog="system" width="128" height="113"/>
         <image name="profile_tab" width="25" height="25"/>
+        <image name="register-button" width="600" height="284"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
