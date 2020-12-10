@@ -1688,25 +1688,11 @@
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Provider" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCw-IH-cYe">
-                                                <rect key="frame" x="20" y="402" width="124" height="23"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Provider" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCw-IH-cYe">
+                                                <rect key="frame" x="20" y="402" width="124" height="22.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
                                                 <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registrants" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fd1-LB-tTc">
-                                                <rect key="frame" x="20" y="844" width="253" height="27"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                                <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Available Spots" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="COh-wF-hpJ">
-                                                <rect key="frame" x="20" y="791" width="253" height="27"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                                <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5P-Ie-WeH">
@@ -1735,42 +1721,73 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COVID-19 Safe" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hFw-Ps-W9C">
-                                                <rect key="frame" x="20" y="743" width="253" height="27"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                                <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="V" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="f3c-Ce-jzZ">
-                                                <rect key="frame" x="307" y="744" width="48" height="27"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                                <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WMn-a0-JwF">
-                                                <rect key="frame" x="307" y="791" width="48" height="27"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                                <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="e2T-Dv-7dP">
-                                                <rect key="frame" x="307" y="844" width="48" height="27"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                                <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="o6o-da-BKb">
+                                                <rect key="frame" x="0.0" y="852" width="418" height="168"/>
+                                                <subviews>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COVID-19 Safe" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFw-Ps-W9C">
+                                                        <rect key="frame" x="268" y="0.0" width="150" height="36"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="150" id="u8t-md-53U"/>
+                                                            <constraint firstAttribute="height" constant="36" id="z1H-dK-N86"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="V" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="f3c-Ce-jzZ">
+                                                        <rect key="frame" x="403" y="36" width="15" height="26"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Available Spots" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="COh-wF-hpJ">
+                                                        <rect key="frame" x="260" y="63" width="158" height="26"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WMn-a0-JwF">
+                                                        <rect key="frame" x="393" y="89" width="25" height="26"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registrants" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fd1-LB-tTc">
+                                                        <rect key="frame" x="300" y="115" width="118" height="27"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="e2T-Dv-7dP">
+                                                        <rect key="frame" x="404" y="142" width="14" height="26"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="hFw-Ps-W9C" firstAttribute="leading" secondItem="o6o-da-BKb" secondAttribute="leading" constant="20" id="wLY-n3-Bfw"/>
+                                                    <constraint firstItem="hFw-Ps-W9C" firstAttribute="top" secondItem="o6o-da-BKb" secondAttribute="top" id="xUg-Vy-fbs"/>
+                                                </constraints>
+                                            </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lwq-Nb-B3y">
                                                 <rect key="frame" x="164" y="348" width="246" height="26.5"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                                 <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Quf-1W-vbd">
-                                                <rect key="frame" x="87.5" y="763.5" width="250" height="50"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" ambiguous="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jLB-Hj-zjq">
+                                                <rect key="frame" x="20" y="433" width="378" height="278"/>
+                                                <string key="text">Event synopsis Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="13"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Quf-1W-vbd">
+                                                <rect key="frame" x="81" y="719" width="250" height="50"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="250" id="aXS-He-VAB"/>
@@ -1783,41 +1800,40 @@
                                                     <segue destination="0TO-I1-udx" kind="presentation" id="ehX-8C-ep6"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" misplaced="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jLB-Hj-zjq">
-                                                <rect key="frame" x="40" y="433" width="378" height="310.5"/>
-                                                <string key="text">Event synopsis Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
-                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="13"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstItem="Quf-1W-vbd" firstAttribute="top" secondItem="jLB-Hj-zjq" secondAttribute="bottom" constant="20" id="4mm-NO-hpq"/>
                                             <constraint firstItem="WnE-Wi-Tco" firstAttribute="top" secondItem="Z3H-mA-ZT6" secondAttribute="bottom" constant="54" id="7jA-fv-hgf"/>
                                             <constraint firstAttribute="bottom" secondItem="806-H5-veu" secondAttribute="bottom" constant="230" id="Dfp-Sp-Glw"/>
-                                            <constraint firstItem="hFw-Ps-W9C" firstAttribute="leading" secondItem="mGu-fa-vhr" secondAttribute="leading" constant="20" id="F2M-ZT-m8x"/>
                                             <constraint firstItem="lwq-Nb-B3y" firstAttribute="leading" secondItem="tUy-ny-DBq" secondAttribute="trailing" constant="8" id="GuJ-Ot-Ap4"/>
                                             <constraint firstItem="jLB-Hj-zjq" firstAttribute="top" secondItem="jCw-IH-cYe" secondAttribute="bottom" constant="8" id="GzI-0l-xu3"/>
                                             <constraint firstItem="806-H5-veu" firstAttribute="leading" secondItem="mGu-fa-vhr" secondAttribute="leading" constant="35" id="I0m-6W-R5n"/>
                                             <constraint firstItem="jCw-IH-cYe" firstAttribute="top" secondItem="tUy-ny-DBq" secondAttribute="bottom" constant="8" id="JZN-Bu-kVH"/>
+                                            <constraint firstItem="o6o-da-BKb" firstAttribute="top" secondItem="Quf-1W-vbd" secondAttribute="bottom" constant="8" id="LMT-Ln-LrN"/>
                                             <constraint firstItem="WnE-Wi-Tco" firstAttribute="leading" secondItem="jCw-IH-cYe" secondAttribute="trailing" constant="20" id="O3w-EW-HwS"/>
                                             <constraint firstItem="tUy-ny-DBq" firstAttribute="top" secondItem="mGu-fa-vhr" secondAttribute="top" constant="252" id="Pie-lG-Rkf"/>
                                             <constraint firstItem="WnE-Wi-Tco" firstAttribute="leading" secondItem="tUy-ny-DBq" secondAttribute="trailing" constant="8" id="RyE-MD-0o1"/>
                                             <constraint firstItem="jCw-IH-cYe" firstAttribute="leading" secondItem="mGu-fa-vhr" secondAttribute="leading" constant="20" id="SaI-dZ-ag0"/>
                                             <constraint firstAttribute="bottom" secondItem="B5P-Ie-WeH" secondAttribute="bottom" constant="230" id="T2p-Lf-u4r"/>
+                                            <constraint firstAttribute="trailing" secondItem="o6o-da-BKb" secondAttribute="trailing" id="WwE-pQ-ZQU"/>
                                             <constraint firstAttribute="trailing" secondItem="WnE-Wi-Tco" secondAttribute="trailing" constant="8" id="XuT-jx-yKI"/>
+                                            <constraint firstItem="B5P-Ie-WeH" firstAttribute="top" secondItem="o6o-da-BKb" secondAttribute="bottom" id="YkB-iL-qa8"/>
                                             <constraint firstItem="B5P-Ie-WeH" firstAttribute="leading" secondItem="806-H5-veu" secondAttribute="trailing" constant="80" id="dso-Xw-6vr"/>
                                             <constraint firstAttribute="trailing" secondItem="lwq-Nb-B3y" secondAttribute="trailing" constant="8" id="f0I-WW-DEU"/>
+                                            <constraint firstAttribute="trailing" secondItem="jLB-Hj-zjq" secondAttribute="trailing" constant="20" id="gmW-kp-jyh"/>
                                             <constraint firstAttribute="trailing" secondItem="B5P-Ie-WeH" secondAttribute="trailing" constant="35" id="hP6-va-r8G"/>
                                             <constraint firstAttribute="trailing" secondItem="jLB-Hj-zjq" secondAttribute="trailing" constant="20" id="l3L-WS-dUV"/>
                                             <constraint firstItem="lwq-Nb-B3y" firstAttribute="top" secondItem="Z3H-mA-ZT6" secondAttribute="bottom" constant="20" id="lLB-rg-foB"/>
                                             <constraint firstAttribute="bottom" secondItem="B5P-Ie-WeH" secondAttribute="bottom" constant="230" id="lxg-iJ-nb5"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1300" id="pgm-ar-8uJ"/>
+                                            <constraint firstItem="jLB-Hj-zjq" firstAttribute="leading" secondItem="mGu-fa-vhr" secondAttribute="leading" constant="20" id="qeq-GP-h1F"/>
                                             <constraint firstItem="jLB-Hj-zjq" firstAttribute="leading" secondItem="mGu-fa-vhr" secondAttribute="leading" constant="20" id="rJQ-Lk-UaY"/>
                                             <constraint firstItem="tUy-ny-DBq" firstAttribute="leading" secondItem="mGu-fa-vhr" secondAttribute="leading" constant="20" id="sHa-HP-PQ3"/>
                                             <constraint firstAttribute="height" constant="1300" id="wPM-Bs-UWC"/>
-                                            <constraint firstItem="Quf-1W-vbd" firstAttribute="centerX" secondItem="mGu-fa-vhr" secondAttribute="centerX" constant="3.5" id="wTD-uL-lN3"/>
+                                            <constraint firstItem="Quf-1W-vbd" firstAttribute="centerX" secondItem="mGu-fa-vhr" secondAttribute="centerX" constant="-3" id="wTD-uL-lN3"/>
                                             <constraint firstItem="jCw-IH-cYe" firstAttribute="top" secondItem="tUy-ny-DBq" secondAttribute="bottom" constant="8" symbolic="YES" id="wZq-Dp-fyB"/>
+                                            <constraint firstItem="Quf-1W-vbd" firstAttribute="top" secondItem="jLB-Hj-zjq" secondAttribute="bottom" constant="10" id="yaU-9d-I9N"/>
+                                            <constraint firstItem="o6o-da-BKb" firstAttribute="leading" secondItem="mGu-fa-vhr" secondAttribute="leading" id="zCw-bx-L6q"/>
                                         </constraints>
                                     </view>
                                 </subviews>
