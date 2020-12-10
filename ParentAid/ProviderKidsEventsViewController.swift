@@ -22,6 +22,7 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
     @IBOutlet weak var tableViewProviderTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var searchBarProvider: UISearchBar!
     
+    
     //Initiliazers
     var events = [PFObject]()
     var eventsArray = [PFObject]()
@@ -54,8 +55,11 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
         tableViewProvider.dataSource = self
         //Search Bar delegate
         searchBarProvider.delegate = self
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(didCreateNewEvent), name: PostEventViewController.createEventNotification, object: nil)
+    
         //To hide table view:
-      //  tableViewProvider.isHidden = true
+     //tableViewProvider.isHidden = true
       //  filteredEvents = eventsArray
        
         // Get Data from API
@@ -133,6 +137,13 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
         print("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
         print(events)
     }
+    
+    
+    
+    @IBAction func onPostEventButton(_ sender: Any) {
+        
+    }
+    
     @IBAction func onLogoutButton(_ sender: Any) {
         
         PFUser.logOut()
@@ -150,9 +161,12 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
     override func viewDidAppear(_ animated: Bool) {
 //       var eventArray =  [[String:Any]]()
 //        var eventTitle = String.self
-        numberOfEvents = 20
+       
         super.viewDidAppear(animated)
+        numberOfEvents = 20
+        self.tableViewProvider.reloadData()
         //Create query to retreive data
+        
         let query = PFQuery(className: "KidsEvents")
         query.includeKeys(["provider.username", "synopsis" , "title", "date"])
       // query.whereKey("providerCity", contains: "San Jose")
@@ -315,6 +329,33 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
         tableViewProvider.reloadData()
     }
     
+    @objc func didCreateNewEvent(){
+        let query = PFQuery(className: "KidsEvents")
+        query.includeKeys(["provider.username", "synopsis" , "title", "date"])
+      // query.whereKey("providerCity", contains: "San Jose")
+        query.order(byDescending: "createdAt")
+
+////        var query = PFQuery(className:"KidsEvents")
+//       let event = PFObject(className: "KidsEvents")
+//
+//        query.whereKeyDoesNotExist("title"){
+//
+//        event.deleteInBackground()
+//            print ("##################Event deleted")
+//
+//        }
+        query.limit = numberOfEvents
+                
+        query.findObjectsInBackground{ (events, error) in
+            if (events != nil){
+                self.events = events!
+               // self.eventsArray = events!
+                //self.filteredEvents = events!
+                                             
+                self.tableViewProvider.reloadData()
+            }
+        }
+    }
     /*
      MARK: - Navigation
 
@@ -350,4 +391,7 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
 
     }
 }
+
+
+    
 

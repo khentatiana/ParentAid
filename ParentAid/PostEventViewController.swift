@@ -9,6 +9,8 @@ import UIKit
 import AlamofireImage
 import Parse
 
+
+
 class PostEventViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
     
    
@@ -24,13 +26,14 @@ class PostEventViewController: UIViewController, UIImagePickerControllerDelegate
     @IBOutlet weak var eventZipCodeField: UITextField!
     @IBOutlet weak var eventAvailableSpots: UITextField!
     @IBOutlet weak var eventCOVIDField: UITextField!
-    
+
     
 
     //MARK: Variables
     var events = [PFObject]()
     var datePicker = UIDatePicker()
     var timePicker = UIDatePicker()
+    static let createEventNotification = Notification.Name("createEventNotification")
     
     //MARK: View Lifecycle
     override func viewDidLoad() {
@@ -39,6 +42,7 @@ class PostEventViewController: UIViewController, UIImagePickerControllerDelegate
         eventDescriptionField.delegate = self
         datePickerEventDate()
         datePickerEventTime()
+        
     }
     
     func datePickerEventDate(){
@@ -108,6 +112,7 @@ class PostEventViewController: UIViewController, UIImagePickerControllerDelegate
             if success {
                 self.dismiss(animated: true, completion: nil)
                 print("Saved event!!!")
+                NotificationCenter.default.post(name: PostEventViewController.createEventNotification, object: nil)
             } else {
                 print ("Error saving event!!!")
             }

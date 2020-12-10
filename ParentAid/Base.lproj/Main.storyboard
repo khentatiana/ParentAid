@@ -1516,6 +1516,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
+                                                    <action selector="onPostEventButton:" destination="vhy-QW-zVd" eventType="touchUpInside" id="ikM-kI-GOd"/>
                                                     <action selector="onSubmitButton:" destination="3Ya-03-ctZ" eventType="touchUpInside" id="Zka-Io-LFt"/>
                                                 </connections>
                                             </button>
@@ -1647,13 +1648,14 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hrz-ck-jO6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="vhy-QW-zVd" userLabel="Exit" sceneMemberID="exit"/>
                 <tapGestureRecognizer id="W2q-rQ-Ixz">
                     <connections>
                         <action selector="onCameraButton:" destination="3Ya-03-ctZ" id="jeY-HI-WgW"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="973.91304347826099" y="760.71428571428567"/>
+            <point key="canvasLocation" x="972" y="777"/>
         </scene>
         <!--Provider Event Details View Controller-->
         <scene sceneID="NEE-07-bu6">
