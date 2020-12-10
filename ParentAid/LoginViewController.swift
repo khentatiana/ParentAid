@@ -164,8 +164,26 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func forgotPasswordButton(_ sender: Any) {
+        var user = PFUser(className: "_User")
+        let username = usernameField.text!
+        let email = emailField.text!
+        let query = PFUser.query()
+        query?.whereKey("username", equalTo:username)
+        query?.whereKey("email", equalTo:email)
+      
+        
+//        query?.findObjects{ (user, error) in
+//            if (events != nil){
+//                self.events = events!
+//               // self.eventsArray = events!
+//                //self.filteredEvents = events!
+//
+//                self.tableViewProvider.reloadData()
+//            }
+//        }
         if isDataInputedFor(type: "password"){
             //resend verification email
+            PFUser.requestPasswordResetForEmail(inBackground: email)
             print("have info for forgotten password")
         }else {
             ProgressHUD.showFailed("Email is required")

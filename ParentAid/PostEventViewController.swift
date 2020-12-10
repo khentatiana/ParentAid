@@ -11,18 +11,28 @@ import Parse
 
 class PostEventViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
     
-    var events = [PFObject]()
-
+   
+    //MARK: IBOutlets
     @IBOutlet weak var eventTimeField: UITextField!
-    
     @IBOutlet weak var eventDateField: UITextField!
     @IBOutlet weak var eventDescriptionField: UITextField!
     @IBOutlet weak var eventTitleField: UITextField!
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var eventAddressField: UITextField!
+    @IBOutlet weak var eventCityField: UITextField!
+    @IBOutlet weak var eventStateField: UITextField!
+    @IBOutlet weak var eventZipCodeField: UITextField!
+    @IBOutlet weak var eventAvailableSpots: UITextField!
+    @IBOutlet weak var eventCOVIDField: UITextField!
     
+    
+
+    //MARK: Variables
+    var events = [PFObject]()
     var datePicker = UIDatePicker()
     var timePicker = UIDatePicker()
     
+    //MARK: View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         eventTitleField.delegate = self
@@ -62,7 +72,7 @@ class PostEventViewController: UIViewController, UIImagePickerControllerDelegate
     
     }
     
- 
+    //MARK: IBActions
     @IBAction func onSubmitButton(_ sender: Any) {
         // Create new object "event" that will be stored in table "KidsEvents"
         let event = PFObject(className: "KidsEvents")
@@ -76,6 +86,19 @@ class PostEventViewController: UIViewController, UIImagePickerControllerDelegate
        event["date"] = eventDateField.text!
         //Create time of the event
        event["time"] = eventTimeField.text!
+        //Create address of the event
+       event["address"] = eventAddressField.text!
+        //Create city of the event
+       event["city"] = eventCityField.text!
+        //Create state of the event
+       event["state"] = eventStateField.text!
+        //Create zipCode of the event
+       event["zipCode"] = eventZipCodeField.text!
+        //Create availableSpots of the event
+       event["availableSpots"] = eventAvailableSpots.text!
+        //Create covidSafe of the event
+       event["covidSafe"] = eventCOVIDField.text!
+    
         
         let imageData = imageView.image!.pngData()
         let file = PFFileObject(data: imageData!)
@@ -94,6 +117,30 @@ class PostEventViewController: UIViewController, UIImagePickerControllerDelegate
     
     
     @IBAction func onCancelButton(_ sender: Any) {
+        
+//
+//        var deleteAttributesOnly = true
+//
+//        var query = PFQuery(className:"KidsEvents")
+//
+//        query.getObjectInBackgroundWithId("<PARSE_OBJECT_ID>") {
+//          (parseObject: PFObject?, error: NSError?) -> Void in
+//          if error != nil {
+//            print(error)
+//          } else if parseObject != nil {
+//            if deleteAttributesOnly {
+//              parseObject.removeObjectForKey("synopsis")
+//              parseObject.removeObjectForKey("image")
+//              parseObject.removeObjectForKey("provider")
+//              parseObject.removeObjectForKey("title")
+//              parseObject.removeObjectForKey("date")
+//              parseObject.removeObjectForKey("time")
+//              parseObject.saveInBackground()
+//            } else {
+//              parseObject.deleteInBackground()
+//            }
+//          }
+//        }
 var query = PFQuery(className:"KidsEvents")
 //        query.whereKeyDoesNotExist("title"){
 //
@@ -105,7 +152,9 @@ var query = PFQuery(className:"KidsEvents")
         let event = PFObject(className: "KidsEvents")
         cleanTextFields()
         // cleanImageView()
-       
+        //dismiss view
+        dismiss(animated: true, completion: nil)
+        
         query.selectKeys(["title"])
         
         event.deleteInBackground()
@@ -140,6 +189,7 @@ var query = PFQuery(className:"KidsEvents")
         dismiss(animated: true, completion: nil)
     }
     
+    //MARK: Keyboard functions
     //dismiss keyboard by clicking outside textbox
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
@@ -233,6 +283,8 @@ var query = PFQuery(className:"KidsEvents")
         }
             eventDateField.text = eventDateField as! String
     }
+  
+    
     
 }
 

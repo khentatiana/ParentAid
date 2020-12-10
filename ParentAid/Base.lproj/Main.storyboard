@@ -215,7 +215,7 @@
                                     <constraint firstAttribute="bottom" secondItem="abh-bH-Ich" secondAttribute="bottom" id="HsK-hB-iMq"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="left" verticalHuggingPriority="253" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUO-W8-Axf">
+                            <button hidden="YES" opaque="NO" contentMode="left" verticalHuggingPriority="253" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUO-W8-Axf">
                                 <rect key="frame" x="31" y="546" width="158" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -370,7 +370,6 @@
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="onSignUp:" destination="Zmd-hi-SMS" eventType="touchUpInside" id="ybA-IC-5O5"/>
                                     <action selector="onSignUpAction:" destination="74R-SX-z3Z" eventType="touchUpInside" id="c46-2D-cce"/>
                                     <segue destination="Wh3-bh-OMG" kind="presentation" identifier="loginFromSignup" id="oFK-e6-JGD"/>
                                 </connections>
@@ -1535,7 +1534,6 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="onCancelButton:" destination="3Ya-03-ctZ" eventType="touchUpInside" id="dWf-m1-gbf"/>
-                                                    <action selector="onSubmitButton:" destination="3Ya-03-ctZ" eventType="touchUpInside" id="iQ2-Y5-J5A"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -1634,10 +1632,16 @@
                     </view>
                     <size key="freeformSize" width="414" height="1200"/>
                     <connections>
+                        <outlet property="eventAddressField" destination="rY2-vf-zCp" id="aaH-e9-0T2"/>
+                        <outlet property="eventAvailableSpots" destination="kps-8D-6Xx" id="Zhm-nS-VOa"/>
+                        <outlet property="eventCOVIDField" destination="0rA-pb-ovY" id="p6H-9H-7JU"/>
+                        <outlet property="eventCityField" destination="B1T-Ga-HKg" id="8D0-ct-ObW"/>
                         <outlet property="eventDateField" destination="FhB-LD-FSC" id="aJy-fJ-Dgt"/>
                         <outlet property="eventDescriptionField" destination="rva-Lk-XIz" id="Ncd-b0-O30"/>
+                        <outlet property="eventStateField" destination="hhN-aq-9R1" id="WdH-Vi-4sU"/>
                         <outlet property="eventTimeField" destination="2sx-4c-acJ" id="VXw-GY-k8K"/>
                         <outlet property="eventTitleField" destination="G9S-qh-q0b" id="jwY-SE-cM7"/>
+                        <outlet property="eventZipCodeField" destination="QEt-FK-ZI6" id="mvq-WY-3lz"/>
                         <outlet property="imageView" destination="qT1-52-M83" id="03K-oI-ZW1"/>
                         <segue destination="fMp-c5-3yH" kind="custom" id="8ch-At-lSF"/>
                     </connections>
