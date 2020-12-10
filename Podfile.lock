@@ -11,6 +11,7 @@ PODS:
     - Parse/Core (= 1.19.1)
   - Parse/Core (1.19.1):
     - Bolts/Tasks (= 1.9.1)
+  - ProgressHUD (13.4)
   - youtube-ios-player-helper (1.0.2)
 
 DEPENDENCIES:
@@ -18,6 +19,7 @@ DEPENDENCIES:
   - FSCalendar
   - MessageInputBar
   - Parse
+  - ProgressHUD
   - youtube-ios-player-helper
 
 SPEC REPOS:
@@ -28,6 +30,7 @@ SPEC REPOS:
     - FSCalendar
     - MessageInputBar
     - Parse
+    - ProgressHUD
     - youtube-ios-player-helper
 
 SPEC CHECKSUMS:
@@ -37,8 +40,9 @@ SPEC CHECKSUMS:
   FSCalendar: 5245140456fcbcac5824c203b98bd8068bdfee1a
   MessageInputBar: e81c7535347f1f7b923de7080409a535a004b6e4
   Parse: e40fdb9c7d665823b7fe9865949cac9a53eb2ce7
+  ProgressHUD: 137a7fc677487c5581668f4490563124fb35c232
   youtube-ios-player-helper: 40b96e52c22445f0fdc43731cefa32c67075ff81
 
-PODFILE CHECKSUM: 6d9eb5873faab2d53be5024b403b4bceb8256221
+PODFILE CHECKSUM: da26692c6dea5da6143069039920f20a96f8bf93
 
 COCOAPODS: 1.9.3
