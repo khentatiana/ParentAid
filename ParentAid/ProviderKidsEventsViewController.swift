@@ -332,26 +332,12 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
     @objc func didCreateNewEvent(){
         let query = PFQuery(className: "KidsEvents")
         query.includeKeys(["provider.username", "synopsis" , "title", "date"])
-      // query.whereKey("providerCity", contains: "San Jose")
         query.order(byDescending: "createdAt")
-
-////        var query = PFQuery(className:"KidsEvents")
-//       let event = PFObject(className: "KidsEvents")
-//
-//        query.whereKeyDoesNotExist("title"){
-//
-//        event.deleteInBackground()
-//            print ("##################Event deleted")
-//
-//        }
         query.limit = numberOfEvents
                 
         query.findObjectsInBackground{ (events, error) in
             if (events != nil){
                 self.events = events!
-               // self.eventsArray = events!
-                //self.filteredEvents = events!
-                                             
                 self.tableViewProvider.reloadData()
             }
         }
