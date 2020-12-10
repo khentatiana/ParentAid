@@ -21,7 +21,6 @@
       "size" : "29x29"
     },
     {
-      "filename" : "Asset 11@2x.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "40x40"
@@ -32,11 +31,13 @@
       "size" : "40x40"
     },
     {
+      "filename" : "New120.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "60x60"
     },
     {
+      "filename" : "New180.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "60x60"
