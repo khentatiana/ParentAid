@@ -13,6 +13,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var passwordSignupField: UITextField!
     @IBOutlet weak var emailSignupField: UITextField!
     @IBOutlet weak var usernameSignupField: UITextField!
+    @IBOutlet weak var confirmPasswordSignupField: UITextField!
     
     var actInd = UIActivityIndicatorView()
     
@@ -52,6 +53,10 @@ class SignUpViewController: UIViewController {
             present(alert, animated: true)
         }
         
+        if passwordSignupField.text! != confirmPasswordSignupField.text!{
+            showAlert(title: "Invalid", message: "The passwords don't match. Please try again.")
+            confirmPasswordSignupField.text = ""
+        }
         user.signUpInBackground{ (success, error) in
             if success {
                 self.performSegue(withIdentifier: "loginFromSignup", sender: nil)

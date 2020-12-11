@@ -493,6 +493,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="AMa-F5-POw"/>
                     <connections>
+                        <outlet property="confirmPasswordSignupField" destination="4Vh-mU-1B9" id="hcb-Ne-UlK"/>
                         <outlet property="emailSignupField" destination="32W-0p-PUS" id="Z6a-g5-DZJ"/>
                         <outlet property="passwordSignupField" destination="2eE-iX-b8V" id="Z43-RL-DYj"/>
                         <outlet property="usernameSignupField" destination="SPB-sa-bCw" id="DhW-hn-xXD"/>
@@ -2415,7 +2416,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="u7h-h2-kcN"/>
+        <segue reference="oFK-e6-JGD"/>
         <segue reference="z8C-sB-c7n"/>
     </inferredMetricsTieBreakers>
     <resources>
