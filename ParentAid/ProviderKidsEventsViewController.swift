@@ -55,6 +55,8 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
         //Table View delegate
         tableViewProvider.delegate = self
         tableViewProvider.dataSource = self
+        tableViewProvider.tableFooterView = UIView()
+        
         //Search Bar delegate
         searchBarProvider.delegate = self
         

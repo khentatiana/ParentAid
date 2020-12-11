@@ -59,7 +59,16 @@ class SignUpViewController: UIViewController {
         }
         user.signUpInBackground{ (success, error) in
             if success {
-                self.performSegue(withIdentifier: "loginFromSignup", sender: nil)
+                //This is performing segue
+                //self.performSegue(withIdentifier: "loginFromSignup", sender: nil)
+                
+                //This is navigate to storyboard ID "ParentProviderNavigationController"
+                let loginView = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(identifier: "ParentProviderNavigationController")
+                DispatchQueue.main.async{
+                    //this is show Present modaly segue as full screen
+                    loginView.modalPresentationStyle = .fullScreen
+                    self.present(loginView, animated: true, completion: nil)
+                      }
             } else {
                 print ("Error: \(error?.localizedDescription)")
                 self.showAlert(title: "Invalid", message: "Invalid username or email or password. Please try again.")
