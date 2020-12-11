@@ -2036,7 +2036,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Quf-1W-vbd">
-                                                <rect key="frame" x="84" y="1152.5" width="250" height="50"/>
+                                                <rect key="frame" x="103" y="1152.5" width="250" height="50"/>
                                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="250" id="aXS-He-VAB"/>
@@ -2087,7 +2087,7 @@
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="s52-CD-kBI" secondAttribute="trailing" constant="40" id="3cj-Dz-beT"/>
-                                            <constraint firstItem="WnE-Wi-Tco" firstAttribute="top" secondItem="Z3H-mA-ZT6" secondAttribute="bottom" constant="54" id="7jA-fv-hgf"/>
+                                            <constraint firstItem="WnE-Wi-Tco" firstAttribute="top" secondItem="Z3H-mA-ZT6" secondAttribute="bottom" constant="60" id="7jA-fv-hgf"/>
                                             <constraint firstItem="kvy-HE-uen" firstAttribute="top" secondItem="05D-Pn-xag" secondAttribute="bottom" constant="10" id="Aeb-Ca-ChF"/>
                                             <constraint firstItem="kvy-HE-uen" firstAttribute="top" secondItem="05D-Pn-xag" secondAttribute="bottom" constant="10" id="B5j-dd-orq"/>
                                             <constraint firstItem="B5P-Ie-WeH" firstAttribute="top" secondItem="Quf-1W-vbd" secondAttribute="bottom" constant="20" id="G5y-4O-S6r"/>
