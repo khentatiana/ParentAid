@@ -16,85 +16,92 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="944-go-Bbi">
-                                <rect key="frame" x="20" y="50" width="374" height="266"/>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="BjW-7m-aHf">
+                                <rect key="frame" x="20" y="140" width="374" height="545"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Parent - COVID -LoginParentScreen" translatesAutoresizingMaskIntoConstraints="NO" id="Ijh-T9-QOZ">
-                                        <rect key="frame" x="40" y="0.0" width="294" height="171"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="br6-xb-LL8">
-                                        <rect key="frame" x="117" y="216" width="140" height="50"/>
-                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" alignment="center" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="944-go-Bbi">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="266"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Parent - COVID -LoginParentScreen" translatesAutoresizingMaskIntoConstraints="NO" id="Ijh-T9-QOZ">
+                                                <rect key="frame" x="40" y="0.0" width="294" height="171"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="171" id="2Oa-Su-2qg"/>
+                                                    <constraint firstAttribute="width" constant="294" id="8ot-XW-sHu"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="br6-xb-LL8">
+                                                <rect key="frame" x="117" y="216" width="140" height="50"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="ZaX-io-GBL"/>
+                                                    <constraint firstAttribute="width" constant="140" id="jZk-Ni-IJI"/>
+                                                </constraints>
+                                                <state key="normal" title="Parent" image="login-button">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="qOO-4A-2kL" kind="presentation" id="NFa-hs-a6d"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="ZaX-io-GBL"/>
-                                            <constraint firstAttribute="width" constant="140" id="jZk-Ni-IJI"/>
+                                            <constraint firstItem="Ijh-T9-QOZ" firstAttribute="top" secondItem="944-go-Bbi" secondAttribute="top" constant="50" id="3rc-Vg-jC1"/>
+                                            <constraint firstItem="Ijh-T9-QOZ" firstAttribute="leading" secondItem="944-go-Bbi" secondAttribute="leading" constant="40" id="DXb-tW-o1e"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ijh-T9-QOZ" secondAttribute="trailing" constant="40" id="OqT-oj-x5g"/>
+                                            <constraint firstItem="Ijh-T9-QOZ" firstAttribute="top" secondItem="944-go-Bbi" secondAttribute="top" constant="150" id="Pbc-39-hCh"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ijh-T9-QOZ" secondAttribute="trailing" constant="40" id="fE6-cj-S8W"/>
+                                            <constraint firstItem="br6-xb-LL8" firstAttribute="centerX" secondItem="944-go-Bbi" secondAttribute="centerX" id="fRG-Ik-vui"/>
+                                            <constraint firstItem="br6-xb-LL8" firstAttribute="top" secondItem="Ijh-T9-QOZ" secondAttribute="bottom" constant="20" id="fUc-Ga-qxb"/>
+                                            <constraint firstItem="Ijh-T9-QOZ" firstAttribute="leading" secondItem="944-go-Bbi" secondAttribute="leading" constant="40" id="l7b-or-qRD"/>
+                                            <constraint firstItem="Ijh-T9-QOZ" firstAttribute="leading" secondItem="944-go-Bbi" secondAttribute="leading" constant="40" id="xeY-zD-l4F"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
-                                        <state key="normal" title="Parent">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="qOO-4A-2kL" kind="presentation" id="NFa-hs-a6d"/>
-                                        </connections>
-                                    </button>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5uS-zD-vCe">
+                                        <rect key="frame" x="0.0" y="316" width="374" height="229"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Parent - COVID -LoginParentScreen" translatesAutoresizingMaskIntoConstraints="NO" id="HZq-yr-KKr">
+                                                <rect key="frame" x="40" y="0.0" width="294" height="171"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="294" id="joh-By-hni"/>
+                                                    <constraint firstAttribute="height" constant="171" id="qNk-Ne-mua"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f2K-6c-gOX">
+                                                <rect key="frame" x="117" y="179" width="140" height="50"/>
+                                                <color key="backgroundColor" red="0.1564568435" green="0.78866163479999996" blue="0.86024530440000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="140" id="ZTi-8p-kPa"/>
+                                                    <constraint firstAttribute="height" constant="50" id="xns-Ph-4w3"/>
+                                                </constraints>
+                                                <state key="normal" title="Event Provider" image="register-button">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleShadowColor" red="0.1564568435" green="0.78866163479999996" blue="0.86024530440000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="bQE-GL-RdF" kind="showDetail" id="Oup-oK-sSs"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="HZq-yr-KKr" firstAttribute="leading" secondItem="5uS-zD-vCe" secondAttribute="leading" constant="40" id="0GM-aW-NMT"/>
+                                            <constraint firstItem="HZq-yr-KKr" firstAttribute="top" secondItem="5uS-zD-vCe" secondAttribute="top" id="7IT-3b-wJC"/>
+                                            <constraint firstAttribute="trailing" secondItem="HZq-yr-KKr" secondAttribute="trailing" constant="40" id="AFw-5y-kFo"/>
+                                            <constraint firstItem="f2K-6c-gOX" firstAttribute="top" secondItem="HZq-yr-KKr" secondAttribute="bottom" constant="20" id="Hsc-XW-G4f"/>
+                                            <constraint firstItem="HZq-yr-KKr" firstAttribute="leading" secondItem="5uS-zD-vCe" secondAttribute="leading" constant="40" id="MOi-et-bdc"/>
+                                            <constraint firstItem="HZq-yr-KKr" firstAttribute="leading" secondItem="5uS-zD-vCe" secondAttribute="leading" constant="95" id="PPP-Fr-zYy"/>
+                                            <constraint firstAttribute="trailing" secondItem="HZq-yr-KKr" secondAttribute="trailing" constant="40" id="sfX-st-bFe"/>
+                                            <constraint firstItem="HZq-yr-KKr" firstAttribute="top" secondItem="5uS-zD-vCe" secondAttribute="top" id="uUZ-mh-fKu"/>
+                                        </constraints>
+                                    </stackView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="Ijh-T9-QOZ" firstAttribute="top" secondItem="944-go-Bbi" secondAttribute="top" constant="50" id="3rc-Vg-jC1"/>
-                                    <constraint firstItem="Ijh-T9-QOZ" firstAttribute="leading" secondItem="944-go-Bbi" secondAttribute="leading" constant="40" id="DXb-tW-o1e"/>
-                                    <constraint firstItem="Ijh-T9-QOZ" firstAttribute="top" secondItem="944-go-Bbi" secondAttribute="top" constant="150" id="Pbc-39-hCh"/>
-                                    <constraint firstAttribute="trailing" secondItem="Ijh-T9-QOZ" secondAttribute="trailing" constant="40" id="fE6-cj-S8W"/>
-                                    <constraint firstItem="br6-xb-LL8" firstAttribute="centerX" secondItem="944-go-Bbi" secondAttribute="centerX" id="fRG-Ik-vui"/>
-                                    <constraint firstItem="br6-xb-LL8" firstAttribute="top" secondItem="Ijh-T9-QOZ" secondAttribute="bottom" constant="8" id="fUc-Ga-qxb"/>
-                                    <constraint firstItem="Ijh-T9-QOZ" firstAttribute="leading" secondItem="944-go-Bbi" secondAttribute="leading" constant="40" id="l7b-or-qRD"/>
-                                </constraints>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5uS-zD-vCe">
-                                <rect key="frame" x="20" y="366" width="374" height="229"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Parent - COVID -LoginParentScreen" translatesAutoresizingMaskIntoConstraints="NO" id="HZq-yr-KKr">
-                                        <rect key="frame" x="40" y="0.0" width="294" height="171"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="294" id="joh-By-hni"/>
-                                            <constraint firstAttribute="height" constant="171" id="qNk-Ne-mua"/>
-                                        </constraints>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f2K-6c-gOX">
-                                        <rect key="frame" x="117" y="179" width="140" height="50"/>
-                                        <color key="backgroundColor" red="0.1564568435" green="0.78866163479999996" blue="0.86024530440000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="140" id="ZTi-8p-kPa"/>
-                                            <constraint firstAttribute="height" constant="50" id="xns-Ph-4w3"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
-                                        <state key="normal" title="Event Provider">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <color key="titleShadowColor" red="0.1564568435" green="0.78866163479999996" blue="0.86024530440000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="bQE-GL-RdF" kind="showDetail" id="Oup-oK-sSs"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="HZq-yr-KKr" firstAttribute="leading" secondItem="5uS-zD-vCe" secondAttribute="leading" constant="40" id="0GM-aW-NMT"/>
-                                    <constraint firstAttribute="trailing" secondItem="HZq-yr-KKr" secondAttribute="trailing" constant="40" id="AFw-5y-kFo"/>
-                                    <constraint firstItem="f2K-6c-gOX" firstAttribute="top" secondItem="HZq-yr-KKr" secondAttribute="bottom" constant="8" id="Hsc-XW-G4f"/>
-                                    <constraint firstItem="HZq-yr-KKr" firstAttribute="leading" secondItem="5uS-zD-vCe" secondAttribute="leading" constant="95" id="PPP-Fr-zYy"/>
-                                    <constraint firstItem="HZq-yr-KKr" firstAttribute="top" secondItem="5uS-zD-vCe" secondAttribute="top" id="uUZ-mh-fKu"/>
-                                    <constraint firstItem="HZq-yr-KKr" firstAttribute="top" secondItem="5uS-zD-vCe" secondAttribute="top" id="ujB-Bs-ZE2"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="944-go-Bbi" secondAttribute="top" constant="6" id="0Ka-I6-Zz4"/>
-                            <constraint firstItem="944-go-Bbi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="3Pb-ul-LG7"/>
-                            <constraint firstAttribute="trailing" secondItem="5uS-zD-vCe" secondAttribute="trailing" constant="20" id="8fY-yH-GAN"/>
-                            <constraint firstItem="944-go-Bbi" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="50" id="BAv-Ln-ktu"/>
-                            <constraint firstItem="5uS-zD-vCe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="QL8-OM-VQD"/>
-                            <constraint firstAttribute="trailing" secondItem="944-go-Bbi" secondAttribute="trailing" constant="20" id="grU-Qr-SAP"/>
-                            <constraint firstItem="5uS-zD-vCe" firstAttribute="top" secondItem="944-go-Bbi" secondAttribute="bottom" constant="50" id="j3L-q1-zWH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BjW-7m-aHf" secondAttribute="trailing" constant="20" id="FUd-Zi-nWm"/>
+                            <constraint firstItem="BjW-7m-aHf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="hm5-5X-KzV"/>
+                            <constraint firstItem="BjW-7m-aHf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="140" id="hvi-9w-DaY"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Suf-Eu-DLD"/>
