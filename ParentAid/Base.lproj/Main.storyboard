@@ -1928,14 +1928,15 @@
                                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="26"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jLB-Hj-zjq">
-                                                <rect key="frame" x="20" y="432.5" width="378" height="310.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jLB-Hj-zjq">
+                                                <rect key="frame" x="20" y="432.5" width="378" height="475.5"/>
                                                 <string key="text">Event synopsis Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
-                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="13"/>
+                                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="15"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COVID-19 Safe" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dj1-Aa-QMq">
-                                                <rect key="frame" x="20" y="753" width="200" height="36"/>
+                                                <rect key="frame" x="20" y="958" width="200" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="200" id="3OJ-a7-cej"/>
                                                     <constraint firstAttribute="height" constant="36" id="uOr-8k-xij"/>
@@ -1945,7 +1946,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="V" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s52-CD-kBI">
-                                                <rect key="frame" x="302" y="753" width="76" height="36"/>
+                                                <rect key="frame" x="302" y="958" width="76" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="76" id="FH8-1h-CgF"/>
                                                     <constraint firstAttribute="height" constant="36" id="ubm-Ta-1DI"/>
@@ -1955,7 +1956,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PN6-DY-3zI">
-                                                <rect key="frame" x="302" y="799" width="76" height="36"/>
+                                                <rect key="frame" x="302" y="1004" width="76" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="36" id="Lu2-cq-4BA"/>
                                                     <constraint firstAttribute="width" constant="76" id="MXe-kA-Kh3"/>
@@ -1965,7 +1966,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ro4-bd-pFe">
-                                                <rect key="frame" x="302" y="845" width="76" height="36"/>
+                                                <rect key="frame" x="302" y="1050" width="76" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="36" id="YFx-HQ-yvi"/>
                                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="76" id="fuP-fy-OLo"/>
@@ -1979,7 +1980,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Available Spots" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="05D-Pn-xag">
-                                                <rect key="frame" x="20" y="799" width="240" height="36"/>
+                                                <rect key="frame" x="20" y="1004" width="240" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="36" id="kKT-QK-lzM"/>
                                                     <constraint firstAttribute="width" constant="240" id="tOC-O6-VCa"/>
@@ -1989,7 +1990,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registrants" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvy-HE-uen">
-                                                <rect key="frame" x="20" y="845" width="154" height="36"/>
+                                                <rect key="frame" x="20" y="1050" width="154" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="154" id="Ph9-fa-waj"/>
                                                     <constraint firstAttribute="height" constant="36" id="vsh-17-wOQ"/>
@@ -1999,7 +2000,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Quf-1W-vbd">
-                                                <rect key="frame" x="103" y="901" width="250" height="50"/>
+                                                <rect key="frame" x="84" y="1106" width="250" height="50"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="250" id="aXS-He-VAB"/>
@@ -2013,7 +2014,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5P-Ie-WeH">
-                                                <rect key="frame" x="249" y="971" width="134" height="50"/>
+                                                <rect key="frame" x="249" y="1176" width="134" height="50"/>
                                                 <color key="backgroundColor" red="0.1564568435" green="0.78866163479999996" blue="0.86024530440000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="134" id="eSg-qR-cpH"/>
@@ -2025,7 +2026,7 @@
                                                 </state>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="806-H5-veu">
-                                                <rect key="frame" x="35" y="971" width="134" height="50"/>
+                                                <rect key="frame" x="35" y="1176" width="134" height="50"/>
                                                 <color key="backgroundColor" red="0.1564568435" green="0.78866163479999996" blue="0.86024530440000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="134" id="3cu-77-Zbi"/>
@@ -2060,7 +2061,7 @@
                                             <constraint firstItem="05D-Pn-xag" firstAttribute="leading" secondItem="mGu-fa-vhr" secondAttribute="leading" constant="20" id="Sd8-rh-9Sv"/>
                                             <constraint firstItem="05D-Pn-xag" firstAttribute="top" secondItem="dj1-Aa-QMq" secondAttribute="bottom" constant="10" id="U06-s3-Bhr"/>
                                             <constraint firstAttribute="trailing" secondItem="WnE-Wi-Tco" secondAttribute="trailing" constant="8" id="XuT-jx-yKI"/>
-                                            <constraint firstItem="dj1-Aa-QMq" firstAttribute="top" secondItem="jLB-Hj-zjq" secondAttribute="bottom" constant="10" id="Z7c-sP-Qfc"/>
+                                            <constraint firstItem="dj1-Aa-QMq" firstAttribute="top" secondItem="jLB-Hj-zjq" secondAttribute="bottom" constant="50" id="Z7c-sP-Qfc"/>
                                             <constraint firstItem="Quf-1W-vbd" firstAttribute="centerX" secondItem="mGu-fa-vhr" secondAttribute="centerX" id="a4e-8Z-NOv"/>
                                             <constraint firstItem="kvy-HE-uen" firstAttribute="leading" secondItem="mGu-fa-vhr" secondAttribute="leading" constant="20" id="bRB-t4-EIi"/>
                                             <constraint firstItem="dj1-Aa-QMq" firstAttribute="leading" secondItem="mGu-fa-vhr" secondAttribute="leading" constant="20" id="bVe-hy-XPL"/>
@@ -2068,7 +2069,7 @@
                                             <constraint firstItem="B5P-Ie-WeH" firstAttribute="leading" secondItem="806-H5-veu" secondAttribute="trailing" constant="80" id="dso-Xw-6vr"/>
                                             <constraint firstItem="05D-Pn-xag" firstAttribute="leading" secondItem="mGu-fa-vhr" secondAttribute="leading" constant="20" id="e0k-2d-0sC"/>
                                             <constraint firstAttribute="trailing" secondItem="lwq-Nb-B3y" secondAttribute="trailing" constant="8" id="f0I-WW-DEU"/>
-                                            <constraint firstItem="s52-CD-kBI" firstAttribute="top" secondItem="jLB-Hj-zjq" secondAttribute="bottom" constant="10" id="fNt-X0-bMo"/>
+                                            <constraint firstItem="s52-CD-kBI" firstAttribute="top" secondItem="jLB-Hj-zjq" secondAttribute="bottom" constant="50" id="fNt-X0-bMo"/>
                                             <constraint firstItem="ro4-bd-pFe" firstAttribute="top" secondItem="PN6-DY-3zI" secondAttribute="bottom" constant="10" id="g7n-3K-Aqf"/>
                                             <constraint firstAttribute="trailing" secondItem="jLB-Hj-zjq" secondAttribute="trailing" constant="20" id="gmW-kp-jyh"/>
                                             <constraint firstAttribute="trailing" secondItem="B5P-Ie-WeH" secondAttribute="trailing" constant="35" id="hP6-va-r8G"/>
