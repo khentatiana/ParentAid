@@ -15,7 +15,7 @@ class ParentKidsEventsViewController: UIViewController, UITableViewDelegate, UIT
     @IBOutlet weak var tableViewParent: UITableView!
     @IBOutlet weak var tableViewParentTopConstraint: NSLayoutConstraint!
  
-    @IBOutlet weak var searchBarParent: UISearchBar!
+  @IBOutlet weak var searchBarParent: UISearchBar!
     
     
     
@@ -35,7 +35,7 @@ class ParentKidsEventsViewController: UIViewController, UITableViewDelegate, UIT
         tableViewParent.dataSource = self
         tableViewParent.tableFooterView = UIView()
         //Search Bar delegate
-        searchBarParent.delegate = self
+      searchBarParent.delegate = self
         
     //    NotificationCenter.default.addObserver(self, selector: #selector(didCreateNewEvent), name: RegisterParentViewController.createEventNotification, object: nil)
 
@@ -88,7 +88,9 @@ class ParentKidsEventsViewController: UIViewController, UITableViewDelegate, UIT
         return cell
     }
     
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 220.0
+    }
     @IBAction func onParentLogoutBtn(_ sender: Any) {
         PFUser.logOut()
         let main = UIStoryboard(name: "Main", bundle: nil)
