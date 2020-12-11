@@ -14,7 +14,7 @@ class ProviderEventDetailsViewController: UIViewController {
     var event : PFObject!
     var events = [PFObject]()
     var providerUser : PFObject!
-   var providerProfiles = [PFObject]()
+    var providerProfiles = [PFObject]()
     
     @IBOutlet weak var eventImageView: UIImageView!
     
@@ -32,7 +32,7 @@ class ProviderEventDetailsViewController: UIViewController {
         //display provider name
         let user = event["provider"] as! PFUser
         providerName.text = user.username
-      
+        
         eventTitle.text = event["title"] as? String
         eventTitle.sizeToFit()
         
@@ -50,28 +50,28 @@ class ProviderEventDetailsViewController: UIViewController {
         eventImageView.layer.cornerRadius = 10
         eventImageView.clipsToBounds = true
     }
-        
-//      
-//        if let imageProviderFile = providerUser["profilePhotoImageView"] as? PFFileObject{
-//                let urlProviderPhotoString = imageProviderFile.url!
-//                let urlProviderPhoto = URL(string: urlProviderPhotoString)!
-//                providerProfilePhoto.af.setImage(withURL: urlProviderPhoto)
-//        //To make round corners of the image
-//                providerProfilePhoto.layer.cornerRadius = 10
-//                providerProfilePhoto.clipsToBounds = true
 //
-//        }else{
-//            print ("@@@@@@@@@@@@ No profile picture" )
+//
+//            if let imageProviderFile = providerUser["profilePhotoImageView"] as? PFFileObject{
+//                    let urlProviderPhotoString = imageProviderFile.url!
+//                    let urlProviderPhoto = URL(string: urlProviderPhotoString)!
+//                    providerProfilePhoto.af.setImage(withURL: urlProviderPhoto)
+//            //To make round corners of the image
+//                    providerProfilePhoto.layer.cornerRadius = 10
+//                    providerProfilePhoto.clipsToBounds = true
+//
+//            }else{
+//                print ("@@@@@@@@@@@@ No profile picture" )
+//            }
 //        }
-//    }
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
