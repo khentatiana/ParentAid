@@ -2167,7 +2167,7 @@
                         <outlet property="eventImageView" destination="Z3H-mA-ZT6" id="MYm-RM-HwI"/>
                         <outlet property="eventTitle" destination="lwq-Nb-B3y" id="baD-PX-2Pe"/>
                         <outlet property="providerName" destination="jCw-IH-cYe" id="rBt-IE-P0l"/>
-                        <outlet property="providerProfilePhoto" destination="tUy-ny-DBq" id="kBY-JK-P9z"/>
+                        <outlet property="providerProfilePhoto" destination="tUy-ny-DBq" id="ueo-Fh-7JU"/>
                         <outlet property="synopsisLabel" destination="jLB-Hj-zjq" id="Rr8-Ms-GHP"/>
                     </connections>
                 </viewController>

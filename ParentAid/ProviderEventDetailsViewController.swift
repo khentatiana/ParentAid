@@ -13,8 +13,11 @@ class ProviderEventDetailsViewController: UIViewController {
     //store selected event
     var event : PFObject!
     var events = [PFObject]()
+    var providerUser : PFObject!
+   var providerProfiles = [PFObject]()
     
     @IBOutlet weak var eventImageView: UIImageView!
+    
     @IBOutlet weak var providerProfilePhoto: UIImageView!
     @IBOutlet weak var synopsisLabel: UILabel!
     @IBOutlet weak var providerName: UILabel!
@@ -46,11 +49,21 @@ class ProviderEventDetailsViewController: UIViewController {
         //To make round corners of the image
         eventImageView.layer.cornerRadius = 10
         eventImageView.clipsToBounds = true
-        
-        
     }
-    
-
+        
+//      
+//        if let imageProviderFile = providerUser["profilePhotoImageView"] as? PFFileObject{
+//                let urlProviderPhotoString = imageProviderFile.url!
+//                let urlProviderPhoto = URL(string: urlProviderPhotoString)!
+//                providerProfilePhoto.af.setImage(withURL: urlProviderPhoto)
+//        //To make round corners of the image
+//                providerProfilePhoto.layer.cornerRadius = 10
+//                providerProfilePhoto.clipsToBounds = true
+//
+//        }else{
+//            print ("@@@@@@@@@@@@ No profile picture" )
+//        }
+//    }
     /*
     // MARK: - Navigation
 
