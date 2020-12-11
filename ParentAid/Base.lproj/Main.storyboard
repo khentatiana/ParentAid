@@ -1894,7 +1894,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="scrollableAxes" translatesAutoresizingMaskIntoConstraints="NO" id="5EY-Th-s0F">
-                                <rect key="frame" x="0.0" y="236" width="414" height="1300"/>
+                                <rect key="frame" x="0.0" y="76" width="414" height="1300"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mGu-fa-vhr">
                                         <rect key="frame" x="0.0" y="0.0" width="418" height="1300"/>
@@ -1903,7 +1903,7 @@
                                                 <rect key="frame" x="20" y="0.0" width="373" height="328"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EventProviderLogo" translatesAutoresizingMaskIntoConstraints="NO" id="tUy-ny-DBq">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="provider" translatesAutoresizingMaskIntoConstraints="NO" id="tUy-ny-DBq">
                                                 <rect key="frame" x="20" y="252" width="136" height="142"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="136" id="GLt-41-n7a"/>
@@ -1950,7 +1950,7 @@
                                                 </state>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="o6o-da-BKb">
-                                                <rect key="frame" x="0.0" y="852" width="418" height="168"/>
+                                                <rect key="frame" x="0.0" y="832" width="418" height="168"/>
                                                 <subviews>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COVID-19 Safe" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFw-Ps-W9C">
                                                         <rect key="frame" x="268" y="0.0" width="150" height="36"/>
@@ -2014,23 +2014,24 @@
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="13"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Quf-1W-vbd">
-                                                <rect key="frame" x="81" y="719" width="250" height="50"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Quf-1W-vbd">
+                                                <rect key="frame" x="81" y="774" width="250" height="50"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="250" id="aXS-He-VAB"/>
                                                     <constraint firstAttribute="height" constant="50" id="fdR-Mz-eMU"/>
                                                 </constraints>
-                                                <state key="normal" title="See Event Location" image="location-64">
+                                                <state key="normal" title="Event Location" image="login-button">
                                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="0TO-I1-udx" kind="presentation" id="ehX-8C-ep6"/>
+                                                    <segue destination="0TO-I1-udx" kind="show" id="ehX-8C-ep6"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="o6o-da-BKb" secondAttribute="trailing" id="01D-Si-gag"/>
                                             <constraint firstItem="WnE-Wi-Tco" firstAttribute="top" secondItem="Z3H-mA-ZT6" secondAttribute="bottom" constant="54" id="7jA-fv-hgf"/>
                                             <constraint firstAttribute="bottom" secondItem="806-H5-veu" secondAttribute="bottom" constant="230" id="Dfp-Sp-Glw"/>
                                             <constraint firstItem="lwq-Nb-B3y" firstAttribute="leading" secondItem="tUy-ny-DBq" secondAttribute="trailing" constant="8" id="GuJ-Ot-Ap4"/>
@@ -2044,8 +2045,10 @@
                                             <constraint firstItem="jCw-IH-cYe" firstAttribute="leading" secondItem="mGu-fa-vhr" secondAttribute="leading" constant="20" id="SaI-dZ-ag0"/>
                                             <constraint firstAttribute="bottom" secondItem="B5P-Ie-WeH" secondAttribute="bottom" constant="230" id="T2p-Lf-u4r"/>
                                             <constraint firstAttribute="trailing" secondItem="o6o-da-BKb" secondAttribute="trailing" id="WwE-pQ-ZQU"/>
+                                            <constraint firstItem="o6o-da-BKb" firstAttribute="top" secondItem="Quf-1W-vbd" secondAttribute="bottom" constant="8" id="XVL-I2-pq8"/>
                                             <constraint firstAttribute="trailing" secondItem="WnE-Wi-Tco" secondAttribute="trailing" constant="8" id="XuT-jx-yKI"/>
                                             <constraint firstItem="B5P-Ie-WeH" firstAttribute="top" secondItem="o6o-da-BKb" secondAttribute="bottom" id="YkB-iL-qa8"/>
+                                            <constraint firstItem="B5P-Ie-WeH" firstAttribute="top" secondItem="o6o-da-BKb" secondAttribute="bottom" constant="20" id="YzV-ir-naW"/>
                                             <constraint firstItem="B5P-Ie-WeH" firstAttribute="leading" secondItem="806-H5-veu" secondAttribute="trailing" constant="80" id="dso-Xw-6vr"/>
                                             <constraint firstAttribute="trailing" secondItem="lwq-Nb-B3y" secondAttribute="trailing" constant="8" id="f0I-WW-DEU"/>
                                             <constraint firstAttribute="trailing" secondItem="jLB-Hj-zjq" secondAttribute="trailing" constant="20" id="gmW-kp-jyh"/>
@@ -2057,6 +2060,7 @@
                                             <constraint firstItem="jLB-Hj-zjq" firstAttribute="leading" secondItem="mGu-fa-vhr" secondAttribute="leading" constant="20" id="qeq-GP-h1F"/>
                                             <constraint firstItem="jLB-Hj-zjq" firstAttribute="leading" secondItem="mGu-fa-vhr" secondAttribute="leading" constant="20" id="rJQ-Lk-UaY"/>
                                             <constraint firstItem="tUy-ny-DBq" firstAttribute="leading" secondItem="mGu-fa-vhr" secondAttribute="leading" constant="20" id="sHa-HP-PQ3"/>
+                                            <constraint firstItem="o6o-da-BKb" firstAttribute="leading" secondItem="mGu-fa-vhr" secondAttribute="leading" id="vzy-KA-Rql"/>
                                             <constraint firstAttribute="height" constant="1300" id="wPM-Bs-UWC"/>
                                             <constraint firstItem="Quf-1W-vbd" firstAttribute="centerX" secondItem="mGu-fa-vhr" secondAttribute="centerX" constant="-3" id="wTD-uL-lN3"/>
                                             <constraint firstItem="jCw-IH-cYe" firstAttribute="top" secondItem="tUy-ny-DBq" secondAttribute="bottom" constant="8" symbolic="YES" id="wZq-Dp-fyB"/>
@@ -2083,10 +2087,9 @@
                         <constraints>
                             <constraint firstItem="UDh-ly-zod" firstAttribute="trailing" secondItem="5EY-Th-s0F" secondAttribute="trailing" id="AkV-ad-5mM"/>
                             <constraint firstAttribute="bottom" secondItem="5EY-Th-s0F" secondAttribute="bottom" constant="-300" id="KeK-Fx-R9p"/>
-                            <constraint firstItem="5EY-Th-s0F" firstAttribute="top" secondItem="UDh-ly-zod" secondAttribute="top" constant="180" id="Tku-SK-whO"/>
+                            <constraint firstItem="5EY-Th-s0F" firstAttribute="top" secondItem="UDh-ly-zod" secondAttribute="top" constant="20" id="Tku-SK-whO"/>
                             <constraint firstItem="5EY-Th-s0F" firstAttribute="leading" secondItem="UDh-ly-zod" secondAttribute="leading" id="efq-1T-tHi"/>
                             <constraint firstItem="5EY-Th-s0F" firstAttribute="trailing" secondItem="UDh-ly-zod" secondAttribute="trailing" id="pii-2P-rZU"/>
-                            <constraint firstItem="5EY-Th-s0F" firstAttribute="top" secondItem="Vdr-ar-kny" secondAttribute="top" constant="146" id="wsK-7D-lE0"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="UVh-TE-QUl"/>
@@ -2131,7 +2134,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="47S-m3-h2F">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="786"/>
                             </mapView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xvK-Qc-LV2"/>
@@ -2143,6 +2146,7 @@
                             <constraint firstItem="47S-m3-h2F" firstAttribute="leading" secondItem="xvK-Qc-LV2" secondAttribute="leading" id="g5M-zM-tzR"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="TgD-Pa-3FY"/>
                     <connections>
                         <outlet property="mapView" destination="47S-m3-h2F" id="Jzm-pU-8Q7"/>
                     </connections>
@@ -2271,7 +2275,6 @@
         <segue reference="z8C-sB-c7n"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="EventProviderLogo" width="337" height="337"/>
         <image name="LogInSignUpScreen" width="414.5" height="453.5"/>
         <image name="Parent - COVID -LoginParentScreen" width="294" height="171"/>
         <image name="Provider Image" width="1600" height="901"/>
@@ -2279,13 +2282,13 @@
         <image name="family-placeholder -3" width="275" height="183"/>
         <image name="image_placeholder" width="375" height="375"/>
         <image name="lasso.sparkles" catalog="system" width="122" height="128"/>
-        <image name="location-64" width="64" height="64"/>
         <image name="login-button" width="320" height="157"/>
         <image name="logo-placeholder" width="300" height="300"/>
         <image name="person.3" catalog="system" width="128" height="62"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="plus.square.fill.on.square.fill" catalog="system" width="128" height="113"/>
         <image name="profile_tab" width="25" height="25"/>
+        <image name="provider" width="600" height="500"/>
         <image name="register-button" width="600" height="284"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
