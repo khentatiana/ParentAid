@@ -6,8 +6,9 @@
 //
 
 import UIKit
+import Parse
 
-class SavedProviderProfileViewController: UIViewController {
+class EditProviderProfileViewController: UIViewController {
     
     @IBOutlet weak var providerPhoneField: UITextField!
     @IBOutlet weak var providerWebsiteField: UITextField!
@@ -31,7 +32,12 @@ class SavedProviderProfileViewController: UIViewController {
     
     
     private func showUserInfo(){
-        
+       // if case PFUser.current() != nil{
+        if let user = PFUser.current(){
+            //var user = PFUser(className: "_User")
+            print("@@@@@@@@@@@ This is EditProviderProfileViewController")
+            print(user.username ?? "NO USER") as? String
+    }
     }
     /*
     // MARK: - Navigation
