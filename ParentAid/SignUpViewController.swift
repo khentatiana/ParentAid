@@ -63,11 +63,11 @@ class SignUpViewController: UIViewController {
                 //self.performSegue(withIdentifier: "loginFromSignup", sender: nil)
                 
                 //This is navigate to storyboard ID "ParentProviderNavigationController"
-                let loginView = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(identifier: "ParentProviderNavigationController")
+                let loginFromSignUpView = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(identifier: "ParentProviderNavigationController")
                 DispatchQueue.main.async{
                     //this is show Present modaly segue as full screen
-                    loginView.modalPresentationStyle = .fullScreen
-                    self.present(loginView, animated: true, completion: nil)
+                    loginFromSignUpView.modalPresentationStyle = .fullScreen
+                    self.present(loginFromSignUpView, animated: true, completion: nil)
                       }
             } else {
                 print ("Error: \(error?.localizedDescription)")
