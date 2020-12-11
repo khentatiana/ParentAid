@@ -77,7 +77,14 @@ class ParentKidsEventsViewController: UIViewController, UITableViewDelegate, UIT
 
         cell.synopsisParentLabel.text = event["synopsis"] as! String
         cell.synopsisParentLabel.sizeToFit()
+        cell.synopsisParentLabel.textAlignment = .left
+        cell.synopsisParentLabel.textAlignment = .justified
+               
+     cell.eventParentDateLabel.text = event["date"] as? String
+               //cell.eventDateLabel.sizeToFit()
 
+        
+        
         let imageFile = event["image"] as! PFFileObject
         let urlString = imageFile.url!
         let url = URL(string: urlString)!
