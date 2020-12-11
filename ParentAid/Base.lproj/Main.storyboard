@@ -95,13 +95,49 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Customer Support" translatesAutoresizingMaskIntoConstraints="NO" id="Mav-oZ-1Kd">
+                                <rect key="frame" x="20" y="765" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="LTh-MJ-nmf"/>
+                                    <constraint firstAttribute="width" constant="50" id="ZT6-gP-R7I"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We're here to help!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCd-HO-8Tm">
+                                <rect key="frame" x="78" y="770" width="181" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="YmG-C8-fdi"/>
+                                    <constraint firstAttribute="width" constant="181" id="g5P-Gl-Z87"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W7" family="Hiragino Sans" pointSize="17"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Call our Customer Support :(415) 555-5555" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QgG-Z6-eel">
+                                <rect key="frame" x="78" y="808" width="316" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20.5" id="1mj-yd-doA"/>
+                                    <constraint firstAttribute="width" constant="316" id="OJC-39-Wcd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Mav-oZ-1Kd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="0Ld-Or-8jy"/>
+                            <constraint firstItem="QgG-Z6-eel" firstAttribute="top" secondItem="dCd-HO-8Tm" secondAttribute="bottom" constant="2" id="8CP-gg-Myn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BjW-7m-aHf" secondAttribute="trailing" constant="20" id="FUd-Zi-nWm"/>
+                            <constraint firstItem="Mav-oZ-1Kd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Nxb-H4-Yrt"/>
+                            <constraint firstItem="Mav-oZ-1Kd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Xdw-s2-FAa"/>
+                            <constraint firstItem="QgG-Z6-eel" firstAttribute="top" secondItem="dCd-HO-8Tm" secondAttribute="bottom" constant="2" id="cQE-l8-AmZ"/>
+                            <constraint firstItem="dCd-HO-8Tm" firstAttribute="leading" secondItem="Mav-oZ-1Kd" secondAttribute="trailing" constant="8" id="gk7-H4-uiR"/>
+                            <constraint firstItem="dCd-HO-8Tm" firstAttribute="top" secondItem="BjW-7m-aHf" secondAttribute="bottom" constant="85" id="hcT-nB-1fn"/>
                             <constraint firstItem="BjW-7m-aHf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="hm5-5X-KzV"/>
                             <constraint firstItem="BjW-7m-aHf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="140" id="hvi-9w-DaY"/>
+                            <constraint firstItem="Mav-oZ-1Kd" firstAttribute="top" secondItem="BjW-7m-aHf" secondAttribute="bottom" constant="80" id="iEh-sZ-MSf"/>
+                            <constraint firstItem="QgG-Z6-eel" firstAttribute="leading" secondItem="Mav-oZ-1Kd" secondAttribute="trailing" constant="8" id="uUa-V2-3nd"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Suf-Eu-DLD"/>
@@ -2383,6 +2419,7 @@
         <segue reference="z8C-sB-c7n"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="Customer Support" width="83" height="103"/>
         <image name="LogInSignUpScreen" width="414.5" height="453.5"/>
         <image name="Parent - COVID -LoginParentScreen" width="294" height="171"/>
         <image name="Provider Image" width="1600" height="901"/>
