@@ -1923,30 +1923,6 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5P-Ie-WeH">
-                                                <rect key="frame" x="249" y="1250" width="134" height="50"/>
-                                                <color key="backgroundColor" red="0.1564568435" green="0.78866163479999996" blue="0.86024530440000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="134" id="eSg-qR-cpH"/>
-                                                    <constraint firstAttribute="height" constant="50" id="lJU-hr-Hlz"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                                <state key="normal" title="Cancel">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                            </button>
-                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="806-H5-veu">
-                                                <rect key="frame" x="35" y="1250" width="134" height="50"/>
-                                                <color key="backgroundColor" red="0.1564568435" green="0.78866163479999996" blue="0.86024530440000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="134" id="3cu-77-Zbi"/>
-                                                    <constraint firstAttribute="height" constant="50" id="Aae-Em-vJc"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                                <state key="normal" title="Edit">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                            </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lwq-Nb-B3y">
                                                 <rect key="frame" x="164" y="348" width="246" height="34"/>
                                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="26"/>
@@ -2029,12 +2005,36 @@
                                                     <constraint firstAttribute="width" constant="250" id="aXS-He-VAB"/>
                                                     <constraint firstAttribute="height" constant="50" id="fdR-Mz-eMU"/>
                                                 </constraints>
-                                                <state key="normal" title="Event Location" image="login-button">
+                                                <state key="normal" title="Event Location">
                                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <segue destination="0TO-I1-udx" kind="show" id="ehX-8C-ep6"/>
                                                 </connections>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5P-Ie-WeH">
+                                                <rect key="frame" x="249" y="971" width="134" height="50"/>
+                                                <color key="backgroundColor" red="0.1564568435" green="0.78866163479999996" blue="0.86024530440000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="134" id="eSg-qR-cpH"/>
+                                                    <constraint firstAttribute="height" constant="50" id="lJU-hr-Hlz"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                <state key="normal" title="Cancel">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="806-H5-veu">
+                                                <rect key="frame" x="35" y="971" width="134" height="50"/>
+                                                <color key="backgroundColor" red="0.1564568435" green="0.78866163479999996" blue="0.86024530440000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="134" id="3cu-77-Zbi"/>
+                                                    <constraint firstAttribute="height" constant="50" id="Aae-Em-vJc"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                <state key="normal" title="Edit">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -2043,12 +2043,13 @@
                                             <constraint firstItem="WnE-Wi-Tco" firstAttribute="top" secondItem="Z3H-mA-ZT6" secondAttribute="bottom" constant="54" id="7jA-fv-hgf"/>
                                             <constraint firstItem="kvy-HE-uen" firstAttribute="top" secondItem="05D-Pn-xag" secondAttribute="bottom" constant="10" id="Aeb-Ca-ChF"/>
                                             <constraint firstItem="kvy-HE-uen" firstAttribute="top" secondItem="05D-Pn-xag" secondAttribute="bottom" constant="10" id="B5j-dd-orq"/>
-                                            <constraint firstAttribute="bottom" secondItem="806-H5-veu" secondAttribute="bottom" id="Dfp-Sp-Glw"/>
+                                            <constraint firstItem="B5P-Ie-WeH" firstAttribute="top" secondItem="Quf-1W-vbd" secondAttribute="bottom" constant="20" id="G5y-4O-S6r"/>
                                             <constraint firstAttribute="trailing" secondItem="ro4-bd-pFe" secondAttribute="trailing" constant="40" id="GWu-rM-30W"/>
                                             <constraint firstItem="lwq-Nb-B3y" firstAttribute="leading" secondItem="tUy-ny-DBq" secondAttribute="trailing" constant="8" id="GuJ-Ot-Ap4"/>
                                             <constraint firstItem="jLB-Hj-zjq" firstAttribute="top" secondItem="jCw-IH-cYe" secondAttribute="bottom" constant="8" id="GzI-0l-xu3"/>
                                             <constraint firstItem="806-H5-veu" firstAttribute="leading" secondItem="mGu-fa-vhr" secondAttribute="leading" constant="35" id="I0m-6W-R5n"/>
                                             <constraint firstItem="jCw-IH-cYe" firstAttribute="top" secondItem="tUy-ny-DBq" secondAttribute="bottom" constant="8" id="JZN-Bu-kVH"/>
+                                            <constraint firstItem="806-H5-veu" firstAttribute="top" secondItem="Quf-1W-vbd" secondAttribute="bottom" constant="20" id="LtY-xj-YNB"/>
                                             <constraint firstAttribute="trailing" secondItem="PN6-DY-3zI" secondAttribute="trailing" constant="40" id="MeG-u0-gad"/>
                                             <constraint firstItem="WnE-Wi-Tco" firstAttribute="leading" secondItem="jCw-IH-cYe" secondAttribute="trailing" constant="20" id="O3w-EW-HwS"/>
                                             <constraint firstItem="tUy-ny-DBq" firstAttribute="top" secondItem="mGu-fa-vhr" secondAttribute="top" constant="252" id="Pie-lG-Rkf"/>
@@ -2057,7 +2058,6 @@
                                             <constraint firstItem="kvy-HE-uen" firstAttribute="leading" secondItem="mGu-fa-vhr" secondAttribute="leading" constant="25" id="SPR-H9-THv"/>
                                             <constraint firstItem="jCw-IH-cYe" firstAttribute="leading" secondItem="mGu-fa-vhr" secondAttribute="leading" constant="20" id="SaI-dZ-ag0"/>
                                             <constraint firstItem="05D-Pn-xag" firstAttribute="leading" secondItem="mGu-fa-vhr" secondAttribute="leading" constant="20" id="Sd8-rh-9Sv"/>
-                                            <constraint firstAttribute="bottom" secondItem="B5P-Ie-WeH" secondAttribute="bottom" id="T2p-Lf-u4r"/>
                                             <constraint firstItem="05D-Pn-xag" firstAttribute="top" secondItem="dj1-Aa-QMq" secondAttribute="bottom" constant="10" id="U06-s3-Bhr"/>
                                             <constraint firstAttribute="trailing" secondItem="WnE-Wi-Tco" secondAttribute="trailing" constant="8" id="XuT-jx-yKI"/>
                                             <constraint firstItem="dj1-Aa-QMq" firstAttribute="top" secondItem="jLB-Hj-zjq" secondAttribute="bottom" constant="10" id="Z7c-sP-Qfc"/>
@@ -2096,7 +2096,6 @@
                                     <constraint firstItem="mGu-fa-vhr" firstAttribute="top" secondItem="5EY-Th-s0F" secondAttribute="top" id="WWt-8q-HEL"/>
                                     <constraint firstItem="mGu-fa-vhr" firstAttribute="leading" secondItem="5EY-Th-s0F" secondAttribute="leading" id="amH-CP-7SV"/>
                                     <constraint firstItem="mGu-fa-vhr" firstAttribute="top" secondItem="5EY-Th-s0F" secondAttribute="top" id="fp6-zy-XZ7"/>
-                                    <constraint firstAttribute="trailing" secondItem="mGu-fa-vhr" secondAttribute="trailing" constant="-4" id="rc9-Sx-hdc"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
