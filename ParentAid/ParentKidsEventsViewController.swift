@@ -9,20 +9,51 @@ import UIKit
 import Parse
 import AlamofireImage
 
-class ParentKidsEventsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-      var events = [PFObject]()
-
+class ParentKidsEventsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
+    
+    //MARK: IBOutlets
     @IBOutlet weak var tableViewParent: UITableView!
+    @IBOutlet weak var tableViewParentTopConstraint: NSLayoutConstraint!
+ 
+    @IBOutlet weak var searchBarParent: UISearchBar!
+    
+    
+    
+    
+    //MARK: Variables
+    var events = [PFObject]()
+    var numberOfEvents: Int!
+
+    
+    
+    
+    //MARK: View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Table View delegate
         tableViewParent.delegate = self
         tableViewParent.dataSource = self
+        tableViewParent.tableFooterView = UIView()
+        //Search Bar delegate
+        searchBarParent.delegate = self
+        
+    //    NotificationCenter.default.addObserver(self, selector: #selector(didCreateNewEvent), name: RegisterParentViewController.createEventNotification, object: nil)
+
+        
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        numberOfEvents = 20
+        self.tableViewParent.reloadData()
+        
+        //Create query to READ data
+
         let query = PFQuery(className: "KidsEvents")
-        query.includeKey("provider")
-        query.limit = 20
+        query.includeKeys(["provider.username", "synopsis" , "title", "date"])
+        // query.whereKey("providerCity", contains: "San Jose")
+        query.order(byDescending: "createdAt")
+
+        query.limit = numberOfEvents
         
         query.findObjectsInBackground{(events, error) in
             if (events != nil){
@@ -33,27 +64,27 @@ class ParentKidsEventsViewController: UIViewController, UITableViewDelegate, UIT
      
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return events.count
-        return 50
+       return events.count
+        //return 50
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableViewParent.dequeueReusableCell(withIdentifier: "KidsEventCell") as! KidsEventCell
-//        let event = events[indexPath.row]
-//        let user = event["provider"] as! PFUser
-//        cell.usernameProviderLabel.text = user.username
-        //cell.usernameProviderLabel.sizeToFit()
-//
-//        cell.descritionLabel.text = event["synopsis"] as! String
-       // cell.descritionLabel.sizeToFit()
-//
-//        let imageFile = event["image"] as! PFFileObject
-//        let urlString = imageFile.url!
-//        let url = URL(string: urlString)!
-//        cell.photoView.af_setImage(withURL: url)
-//
-        let cell = UITableViewCell()
-        cell.textLabel?.text = "row: \(indexPath.row)"
+        let cell = tableViewParent.dequeueReusableCell(withIdentifier: "ParentEventCell") as! ParentEventCell
+        let event = events[indexPath.row]
+        let user = event["provider"] as! PFUser
+        cell.providerNameParentLabel.text = user.username
+        cell.providerNameParentLabel.sizeToFit()
+
+        cell.synopsisParentLabel.text = event["synopsis"] as! String
+        cell.synopsisParentLabel.sizeToFit()
+
+        let imageFile = event["image"] as! PFFileObject
+        let urlString = imageFile.url!
+        let url = URL(string: urlString)!
+        cell.eventPictureParentProvider.af_setImage(withURL: url)
+
+//        let cell = UITableViewCell()
+//        cell.textLabel?.text = "row: \(indexPath.row)"
         return cell
     }
     

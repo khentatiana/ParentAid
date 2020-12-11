@@ -8,7 +8,13 @@
 import UIKit
 
 class ParentEventCell: UITableViewCell {
-
+    
+    @IBOutlet weak var eventPictureParentProvider: UIImageView!
+    @IBOutlet weak var eventTitleParentLabel: UILabel!
+    @IBOutlet weak var eventParentDateLabel: UILabel!
+    @IBOutlet weak var synopsisParentLabel: UILabel!
+    @IBOutlet weak var providerNameParentLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

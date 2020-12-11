@@ -686,6 +686,14 @@
                                             <constraint firstAttribute="height" constant="220" id="c1l-t7-qKZ"/>
                                             <constraint firstAttribute="width" constant="414" id="tsq-dT-CQ6"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="eventParentDateLabel" destination="kLy-R7-bcE" id="bdK-3N-K0e"/>
+                                            <outlet property="eventPictureParentProvider" destination="Bqx-6c-xCb" id="G0N-TO-wGJ"/>
+                                            <outlet property="eventTitleParentLabel" destination="M1J-cI-RLJ" id="2Q5-d9-ZKG"/>
+                                            <outlet property="providerNameParentLabel" destination="Ord-PF-4CH" id="8mk-rf-ij1"/>
+                                            <outlet property="synopsisParentLabel" destination="Bor-so-tQK" id="OeG-Pw-rOJ"/>
+                                            <segue destination="J26-c9-ork" kind="show" id="xAq-zf-ZGJ"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -704,7 +712,7 @@
                             <constraint firstItem="s9b-yR-1RE" firstAttribute="trailing" secondItem="Ypr-LP-BYK" secondAttribute="trailing" id="E3K-5g-PrX"/>
                             <constraint firstItem="s9b-yR-1RE" firstAttribute="top" secondItem="PMc-cI-sD5" secondAttribute="top" constant="88" id="Icx-Fo-U4P"/>
                             <constraint firstItem="s9b-yR-1RE" firstAttribute="leading" secondItem="Ypr-LP-BYK" secondAttribute="leading" id="LjU-kA-Pta"/>
-                            <constraint firstItem="lhf-Dk-pnO" firstAttribute="top" secondItem="s9b-yR-1RE" secondAttribute="bottom" constant="18" id="V1x-jz-5QN"/>
+                            <constraint firstItem="lhf-Dk-pnO" firstAttribute="top" secondItem="s9b-yR-1RE" secondAttribute="bottom" constant="50" id="V1x-jz-5QN"/>
                             <constraint firstItem="s9b-yR-1RE" firstAttribute="trailing" secondItem="Ypr-LP-BYK" secondAttribute="trailing" id="YS4-YS-zox"/>
                             <constraint firstItem="s9b-yR-1RE" firstAttribute="leading" secondItem="Ypr-LP-BYK" secondAttribute="leading" id="cAq-qw-jR0"/>
                         </constraints>
@@ -718,12 +726,44 @@
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="searchBarParent" destination="s9b-yR-1RE" id="6e2-ir-hHJ"/>
                         <outlet property="tableViewParent" destination="lhf-Dk-pnO" id="qbj-b6-MFO"/>
+                        <outlet property="tableViewParentTopConstraint" destination="V1x-jz-5QN" id="yMH-IA-sII"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="brE-Yu-5qD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1442.0289855072465" y="-76.339285714285708"/>
+        </scene>
+        <!--Register Parent View Controller-->
+        <scene sceneID="qo2-Nc-Kea">
+            <objects>
+                <viewController id="J26-c9-ork" customClass="RegisterParentViewController" customModule="ParentAid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wWw-dT-eLY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RcZ-R3-ito">
+                                <rect key="frame" x="146" y="747" width="134" height="50"/>
+                                <color key="backgroundColor" red="0.1564568435" green="0.78866163479999996" blue="0.86024530440000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="14x-AW-Uho"/>
+                                    <constraint firstAttribute="width" constant="134" id="lw8-gm-neH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <state key="normal" title="Join">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xYE-cp-czk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Aig-uY-IRr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fAB-u0-q3x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1442" y="652"/>
         </scene>
         <!--Family Profile-->
         <scene sceneID="bKn-vB-lPj">

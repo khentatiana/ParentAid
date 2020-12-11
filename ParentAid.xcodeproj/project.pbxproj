@@ -14,6 +14,7 @@
 		4180AC882580F882008E0A2F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4180AC872580F882008E0A2F /* Constants.swift */; };
 		4180AC8F2581D913008E0A2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4198E1F52555F497009F5092 /* Assets.xcassets */; };
 		418D953725840B890019E99C /* ParentEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418D953625840B890019E99C /* ParentEventCell.swift */; };
+		418D953F258416400019E99C /* RegisterParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418D953E258416400019E99C /* RegisterParentViewController.swift */; };
 		418EB4492575EC7C00797D28 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418EB4482575EC7C00797D28 /* Event.swift */; };
 		418EB45725760B9300797D28 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418EB45625760B9300797D28 /* API.swift */; };
 		4198E1EE2555EE27009F5092 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4198E1ED2555EE27009F5092 /* LoginViewController.swift */; };
@@ -63,6 +64,7 @@
 		4180AC7B2580F1E4008E0A2F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4180AC872580F882008E0A2F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		418D953625840B890019E99C /* ParentEventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentEventCell.swift; sourceTree = "<group>"; };
+		418D953E258416400019E99C /* RegisterParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterParentViewController.swift; sourceTree = "<group>"; };
 		418EB4482575EC7C00797D28 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		418EB45625760B9300797D28 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		4198E1ED2555EE27009F5092 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -195,10 +197,11 @@
 				41CB15BA25686A710087EC74 /* EditProviderProfileViewController.swift */,
 				41CB15AC25670EB20087EC74 /* ProviderProfileViewController.swift */,
 				41D36811255D0D36003D6709 /* PostEventViewController.swift */,
-				41674F3E2558686E00DFEA6C /* ParentKidsEventsViewController.swift */,
 				4103C5A0257A294B00E56B30 /* MapViewController.swift */,
-				4180AC872580F882008E0A2F /* Constants.swift */,
+				41674F3E2558686E00DFEA6C /* ParentKidsEventsViewController.swift */,
 				418D953625840B890019E99C /* ParentEventCell.swift */,
+				4180AC872580F882008E0A2F /* Constants.swift */,
+				418D953E258416400019E99C /* RegisterParentViewController.swift */,
 			);
 			path = ParentAid;
 			sourceTree = "<group>";
@@ -470,6 +473,7 @@
 				41CB159F256651F50087EC74 /* SignUpViewController.swift in Sources */,
 				D628C5F52551FB6A00BE82A0 /* SceneDelegate.swift in Sources */,
 				418D953725840B890019E99C /* ParentEventCell.swift in Sources */,
+				418D953F258416400019E99C /* RegisterParentViewController.swift in Sources */,
 				41D9C21D255E904400091C24 /* ProviderEventDetailsViewController.swift in Sources */,
 				41CB15AD25670EB30087EC74 /* ProviderProfileViewController.swift in Sources */,
 				41674F3A255863C500DFEA6C /* HomeViewController.swift in Sources */,
