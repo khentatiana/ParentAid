@@ -9,7 +9,7 @@ import UIKit
 import Parse
 import AlamofireImage
 
-class KidsEventsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ParentKidsEventsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
       var events = [PFObject]()
 
     @IBOutlet weak var tableViewParent: UITableView!
@@ -56,4 +56,18 @@ class KidsEventsViewController: UIViewController, UITableViewDelegate, UITableVi
         cell.textLabel?.text = "row: \(indexPath.row)"
         return cell
     }
+    
+    
+    @IBAction func onParentLogoutBtn(_ sender: Any) {
+        PFUser.logOut()
+        let main = UIStoryboard(name: "Main", bundle: nil)
+        let loginViewController = main.instantiateViewController(identifier: "LoginViewController")
+        
+        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+              let delegate = windowScene.delegate as? SceneDelegate
+        else {return}
+        delegate.window?.rootViewController = loginViewController
+    }
+    
+    
 }

@@ -1,17 +1,14 @@
 //
-//  KidsEventCell.swift
+//  ParentEventCell.swift
 //  ParentAid
 //
-//  Created by Tatiana on 11/8/20.
+//  Created by Tatiana on 12/11/20.
 //
 
 import UIKit
 
-class KidsEventCell: UITableViewCell {
+class ParentEventCell: UITableViewCell {
 
-    @IBOutlet weak var descritionLabel: UILabel!
-    @IBOutlet weak var usernameProviderLabel: UILabel!
-    @IBOutlet weak var photoView: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

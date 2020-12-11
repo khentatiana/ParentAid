@@ -620,7 +620,7 @@
         <!--Kids Events-->
         <scene sceneID="iDj-za-9KQ">
             <objects>
-                <viewController id="5aG-H4-qlh" customClass="KidsEventsViewController" customModule="ParentAid" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5aG-H4-qlh" customClass="ParentKidsEventsViewController" customModule="ParentAid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PMc-cI-sD5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -629,7 +629,7 @@
                                 <rect key="frame" x="0.0" y="162" width="414" height="680"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventCell" rowHeight="220" translatesAutoresizingMaskIntoConstraints="NO" id="NWQ-sG-jP9" customClass="EventCell" customModule="ParentAid" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ParentEventCell" rowHeight="220" translatesAutoresizingMaskIntoConstraints="NO" id="NWQ-sG-jP9" customClass="ParentEventCell" customModule="ParentAid" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="220"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NWQ-sG-jP9" id="Ay2-F7-u7w">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="220"/>
@@ -686,13 +686,6 @@
                                             <constraint firstAttribute="height" constant="220" id="c1l-t7-qKZ"/>
                                             <constraint firstAttribute="width" constant="414" id="tsq-dT-CQ6"/>
                                         </constraints>
-                                        <connections>
-                                            <outlet property="eventDateLabel" destination="kLy-R7-bcE" id="I6u-d4-PFY"/>
-                                            <outlet property="eventTitleLabel" destination="M1J-cI-RLJ" id="gKo-gZ-MH3"/>
-                                            <outlet property="photoViewProvider" destination="Bqx-6c-xCb" id="KpC-Gy-nUC"/>
-                                            <outlet property="providerLabel" destination="Ord-PF-4CH" id="dod-29-qzO"/>
-                                            <outlet property="synopsisLabel" destination="Bor-so-tQK" id="gHc-Gt-tAi"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -716,7 +709,14 @@
                             <constraint firstItem="s9b-yR-1RE" firstAttribute="leading" secondItem="Ypr-LP-BYK" secondAttribute="leading" id="cAq-qw-jR0"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Kids Events" id="D6l-h5-GSg"/>
+                    <navigationItem key="navigationItem" title="Kids Events" id="D6l-h5-GSg">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" style="plain" id="KMK-cI-hl6">
+                            <connections>
+                                <action selector="onParentLogoutBtn:" destination="5aG-H4-qlh" id="GR4-6A-fRp"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableViewParent" destination="lhf-Dk-pnO" id="qbj-b6-MFO"/>
                     </connections>
