@@ -22,7 +22,7 @@ class EditProviderProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        showUserInfo()
+      //  showUserInfo()
 
         // Do any additional setup after loading the view.
     }
@@ -31,14 +31,14 @@ class EditProviderProfileViewController: UIViewController {
     }
     
     
-    private func showUserInfo(){
-       // if case PFUser.current() != nil{
-        if let user = PFUser.current(){
-            //var user = PFUser(className: "_User")
-            print("@@@@@@@@@@@ This is EditProviderProfileViewController")
-            print(user.username ?? "NO USER") as? String
-    }
-    }
+//    private func showUserInfo(){
+//       // if case PFUser.current() != nil{
+//        if let user = PFUser.current(){
+//            //var user = PFUser(className: "_User")
+//            print("@@@@@@@@@@@ This is EditProviderProfileViewController")
+//            print(user.username ?? "NO USER") as? String
+//    }
+//    }
     /*
     // MARK: - Navigation
 
