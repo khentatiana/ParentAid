@@ -36,7 +36,7 @@
                                                     <constraint firstAttribute="height" constant="50" id="ZaX-io-GBL"/>
                                                     <constraint firstAttribute="width" constant="140" id="jZk-Ni-IJI"/>
                                                 </constraints>
-                                                <state key="normal" title="Parent" image="login-button">
+                                                <state key="normal" title="Parent">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -73,7 +73,7 @@
                                                     <constraint firstAttribute="width" constant="140" id="ZTi-8p-kPa"/>
                                                     <constraint firstAttribute="height" constant="50" id="xns-Ph-4w3"/>
                                                 </constraints>
-                                                <state key="normal" title="Event Provider" image="login-button">
+                                                <state key="normal" title="Event Provider">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="titleShadowColor" red="0.1564568435" green="0.78866163479999996" blue="0.86024530440000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
