@@ -73,7 +73,16 @@ class LoginViewController: UIViewController {
     
                PFUser.logInWithUsername(inBackground: username, password: password) { (user, error) in
                    if user != nil {
-                       self.performSegue(withIdentifier: "loginSegue", sender: nil)
+                    //This is performing segue
+                    //self.performSegue(withIdentifier: "loginSegue", sender: nil)
+                    
+                    //This is navigate to storyboard ID "ParentProviderNavigationController"
+                    let loginView = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(identifier: "ParentProviderNavigationController")
+                    DispatchQueue.main.async{
+                        //this is show Present modaly segue as full screen
+                        loginView.modalPresentationStyle = .fullScreen
+                        self.present(loginView, animated: true, completion: nil)
+                          }
                    }
                    else {
                        print ("Error: \(error?.localizedDescription)")

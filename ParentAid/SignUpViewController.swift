@@ -13,6 +13,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var passwordSignupField: UITextField!
     @IBOutlet weak var emailSignupField: UITextField!
     @IBOutlet weak var usernameSignupField: UITextField!
+    @IBOutlet weak var confirmPasswordSignupField: UITextField!
     
     var actInd = UIActivityIndicatorView()
     
@@ -52,9 +53,22 @@ class SignUpViewController: UIViewController {
             present(alert, animated: true)
         }
         
+        if passwordSignupField.text! != confirmPasswordSignupField.text!{
+            showAlert(title: "Invalid", message: "The passwords don't match. Please try again.")
+            confirmPasswordSignupField.text = ""
+        }
         user.signUpInBackground{ (success, error) in
             if success {
-                self.performSegue(withIdentifier: "loginFromSignup", sender: nil)
+                //This is performing segue
+                //self.performSegue(withIdentifier: "loginFromSignup", sender: nil)
+                
+                //This is navigate to storyboard ID "ParentProviderNavigationController"
+                let loginFromSignUpView = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(identifier: "ParentProviderNavigationController")
+                DispatchQueue.main.async{
+                    //this is show Present modaly segue as full screen
+                    loginFromSignUpView.modalPresentationStyle = .fullScreen
+                    self.present(loginFromSignUpView, animated: true, completion: nil)
+                      }
             } else {
                 print ("Error: \(error?.localizedDescription)")
                 self.showAlert(title: "Invalid", message: "Invalid username or email or password. Please try again.")

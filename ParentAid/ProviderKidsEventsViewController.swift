@@ -30,6 +30,8 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
     var filteredEvents = [PFObject]()
    // var filteredEvents : [Event] = []
     
+    var providerProfiles = [PFObject]()
+    
    // var refreshControl: UIRefreshControl!
    var numberOfEvents: Int!
     
@@ -53,6 +55,8 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
         //Table View delegate
         tableViewProvider.delegate = self
         tableViewProvider.dataSource = self
+        tableViewProvider.tableFooterView = UIView()
+        
         //Search Bar delegate
         searchBarProvider.delegate = self
         
@@ -170,8 +174,14 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
         let query = PFQuery(className: "KidsEvents")
         query.includeKeys(["provider.username", "synopsis" , "title", "date"])
       // query.whereKey("providerCity", contains: "San Jose")
-        query.order(byDescending: "createdAt")
+     query.order(byDescending: "createdAt")
 
+      //  query.order(byDescending: "date")
+
+        
+        //to read providerProfilePhoto
+        let queryProvider = PFQuery(className:"ProviderProfile")
+        queryProvider.includeKeys(["provider.username", "profilePhotoImageView"])
 ////        var query = PFQuery(className:"KidsEvents")
 //       let event = PFObject(className: "KidsEvents")
 //
@@ -236,7 +246,14 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
         cell.photoViewProvider.layer.cornerRadius = 10
         cell.photoViewProvider.clipsToBounds = true
         }
-        
+//      //  let providerUser = providerProfile["provider"] as! PFUser
+//        let providerProfile = providerProfiles[indexPath.row]
+//        if let imageProviderFile = providerProfile["profilePhotoImageView"] as? PFFileObject{
+//        let urlProviderPhotoString = imageProviderFile.url!
+//        let urlProviderPhoto = URL(string: urlProviderPhotoString)!
+//            
+//            
+//    }
         //        let cell = UITableViewCell()
         //        cell.textLabel?.text = "This is Provider"
           return cell
@@ -359,14 +376,15 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
             if let indexPath = tableViewProvider.indexPath(for: cell){//Index of the cell was tapped
                 let event = events[indexPath.row] //event from selected cell
                // let event = filteredEvents[indexPath.row] //event from selected cell
+                
 
                 //Pass the selected movie to the details view controller
-                //Variable "detailsViewController" is a destination where selected movie is segue
+                //Variable "detailsViewController" is a destination where selected event is segue
                 if let detailsViewController = segue.destination as? ProviderEventDetailsViewController{
 
-                    detailsViewController.event = event //this "event" is referring to the selected movie from ProviderKidsEventsViewController
+                    detailsViewController.event = event //this "event" is referring to the selected event from ProviderKidsEventsViewController
 
-                //Deselect movie when transitioning (after tapping and coming back to main screen)
+                //Deselect event when transitioning (after tapping and coming back to main screen)
                     tableViewProvider.deselectRow(at: indexPath, animated: true)}
             }
           
