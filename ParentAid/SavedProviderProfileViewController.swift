@@ -21,6 +21,7 @@ class SavedProviderProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        showUserInfo()
 
         // Do any additional setup after loading the view.
     }
@@ -28,6 +29,10 @@ class SavedProviderProfileViewController: UIViewController {
     @IBAction func onEditButton(_ sender: Any) {
     }
     
+    
+    private func showUserInfo(){
+        
+    }
     /*
     // MARK: - Navigation
 
