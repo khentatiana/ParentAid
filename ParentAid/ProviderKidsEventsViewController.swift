@@ -222,9 +222,11 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
     //   query.order(byDescending: "createdAt")
         let event = events[indexPath.row]
    //     let event = filteredData[indexPath.row]
-        let user = event["provider"] as! PFUser
+        if let user = event["provider"] as? PFUser{
         cell.providerLabel.text = user.username
-        cell.providerLabel.sizeToFit()
+            cell.providerLabel.sizeToFit()
+            
+        }
         
         cell.eventTitleLabel.text = event["title"] as? String
         cell.eventTitleLabel.sizeToFit()
@@ -246,13 +248,14 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
         cell.photoViewProvider.layer.cornerRadius = 10
         cell.photoViewProvider.clipsToBounds = true
         }
-//      //  let providerUser = providerProfile["provider"] as! PFUser
+       
 //        let providerProfile = providerProfiles[indexPath.row]
+//        if let providerUser = providerProfile["provider"] as? PFUser{
 //        if let imageProviderFile = providerProfile["profilePhotoImageView"] as? PFFileObject{
 //        let urlProviderPhotoString = imageProviderFile.url!
 //        let urlProviderPhoto = URL(string: urlProviderPhotoString)!
-//            
-//            
+//        }
+//
 //    }
         //        let cell = UITableViewCell()
         //        cell.textLabel?.text = "This is Provider"

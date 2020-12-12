@@ -14,8 +14,7 @@ class ParentKidsEventsViewController: UIViewController, UITableViewDelegate, UIT
     //MARK: IBOutlets
     @IBOutlet weak var tableViewParent: UITableView!
     @IBOutlet weak var tableViewParentTopConstraint: NSLayoutConstraint!
- 
-  @IBOutlet weak var searchBarParent: UISearchBar!
+    @IBOutlet weak var searchBarParent: UISearchBar!
     
     
     
@@ -71,11 +70,16 @@ class ParentKidsEventsViewController: UIViewController, UITableViewDelegate, UIT
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableViewParent.dequeueReusableCell(withIdentifier: "ParentEventCell") as! ParentEventCell
         let event = events[indexPath.row]
-        let user = event["provider"] as! PFUser
+        if let user = event["provider"] as? PFUser{
         cell.providerNameParentLabel.text = user.username
         cell.providerNameParentLabel.sizeToFit()
+        }
+        
+        cell.eventTitleParentLabel.text = event["title"] as? String
+        cell.eventTitleParentLabel.sizeToFit()
 
-        cell.synopsisParentLabel.text = event["synopsis"] as! String
+
+        cell.synopsisParentLabel.text = event["synopsis"] as? String
         cell.synopsisParentLabel.sizeToFit()
         cell.synopsisParentLabel.textAlignment = .left
         cell.synopsisParentLabel.textAlignment = .justified
@@ -85,19 +89,19 @@ class ParentKidsEventsViewController: UIViewController, UITableViewDelegate, UIT
 
         
         
-        let imageFile = event["image"] as! PFFileObject
+        if let imageFile = event["image"] as? PFFileObject{
         let urlString = imageFile.url!
         let url = URL(string: urlString)!
         cell.eventPictureParentProvider.af_setImage(withURL: url)
         //To make round corners of the image
                cell.eventPictureParentProvider.layer.cornerRadius = 10
                cell.eventPictureParentProvider.clipsToBounds = true
-
+        }
 //        let cell = UITableViewCell()
 //        cell.textLabel?.text = "row: \(indexPath.row)"
         return cell
     }
-    
+    //to hard code height of the row in TableView
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 220.0
     }
