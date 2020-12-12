@@ -25,6 +25,8 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
     
     //Initiliazers
     var events = [PFObject]()
+    var users = [PFUser]()
+    var images = [PFFileObject]()
     var eventsArray = [PFObject]()
   //  var eventsArray : [Event] = []
     var filteredEvents = [PFObject]()
@@ -172,7 +174,7 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
         //Create query to retreive data
         
         let query = PFQuery(className: "KidsEvents")
-        query.includeKeys(["provider.username", "synopsis" , "title", "date"])
+        query.includeKeys(["provider", "synopsis" , "title", "date"])
       // query.whereKey("providerCity", contains: "San Jose")
      query.order(byDescending: "createdAt")
 
@@ -180,8 +182,8 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
 
         
         //to read providerProfilePhoto
-        let queryProvider = PFQuery(className:"ProviderProfile")
-        queryProvider.includeKeys(["provider.username", "profilePhotoImageView"])
+       
+   //     queryProvider.includeKeys(["provider.username", "profilePhotoImageView"])
 ////        var query = PFQuery(className:"KidsEvents")
 //       let event = PFObject(className: "KidsEvents")
 //
@@ -196,13 +198,28 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
         query.findObjectsInBackground{ (events, error) in
             if (events != nil){
                 self.events = events!
+                self.users = events?.compactMap {
+                    $0["provider"] as? PFUser
+                } ?? []
+                
                // self.eventsArray = events!
                 //self.filteredEvents = events!
                                              
                 self.tableViewProvider.reloadData()
+                for user in self.users{
+                    let queryProvider = PFQuery(className:"ProviderProfile")
+                    queryProvider.includeKey("provider")
+                    queryProvider.findObjectsInBackground{ (providerProfiles, error) in
+                        if (providerProfiles != nil){
+                            self.providerProfiles = providerProfiles!
+                           self.tableViewProvider.reloadData()
+                        }
+                    }
+                }
+               
             }
         }
-        
+      
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         print("55555555555555555555555")
@@ -387,6 +404,9 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
 
                     detailsViewController.event = event //this "event" is referring to the selected event from ProviderKidsEventsViewController
 
+                    
+                    
+                    
                 //Deselect event when transitioning (after tapping and coming back to main screen)
                     tableViewProvider.deselectRow(at: indexPath, animated: true)}
             }

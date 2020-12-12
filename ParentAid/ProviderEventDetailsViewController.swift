@@ -13,7 +13,7 @@ class ProviderEventDetailsViewController: UIViewController {
     //store selected event
     var event : PFObject!
     var events = [PFObject]()
-    var providerUser : PFObject!
+    var providerProfile : PFObject!
     var providerProfiles = [PFObject]()
     
     @IBOutlet weak var eventImageView: UIImageView!
@@ -54,7 +54,7 @@ class ProviderEventDetailsViewController: UIViewController {
     }
 //
 //
-//            if let imageProviderFile = providerUser["profilePhotoImageView"] as? PFFileObject{
+//            if let imageProviderFile = providerProfile["profilePhotoImageView"] as? PFFileObject{
 //                    let urlProviderPhotoString = imageProviderFile.url!
 //                    let urlProviderPhoto = URL(string: urlProviderPhotoString)!
 //                    providerProfilePhoto.af.setImage(withURL: urlProviderPhoto)
@@ -66,14 +66,15 @@ class ProviderEventDetailsViewController: UIViewController {
 //                print ("@@@@@@@@@@@@ No profile picture" )
 //            }
 //        }
-    /*
+//    /*
      // MARK: - Navigation
      
      // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    // override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
      // Get the new view controller using segue.destination.
      // Pass the selected object to the new view controller.
-     }
-     */
+  //   }
+  //   */
     
 }
+
