@@ -759,18 +759,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1146"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RcZ-R3-ito">
-                                <rect key="frame" x="146" y="747" width="134" height="50"/>
-                                <color key="backgroundColor" red="0.1564568435" green="0.78866163479999996" blue="0.86024530440000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="14x-AW-Uho"/>
-                                    <constraint firstAttribute="width" constant="134" id="lw8-gm-neH"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
-                                <state key="normal" title="Join">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="scrollableAxes" translatesAutoresizingMaskIntoConstraints="NO" id="FCy-A9-dyv">
                                 <rect key="frame" x="0.0" y="110" width="418" height="1300"/>
                                 <subviews>
@@ -864,7 +852,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhZ-Pv-4OY">
-                                                <rect key="frame" x="84" y="1152.5" width="250" height="50"/>
+                                                <rect key="frame" x="103" y="1152.5" width="250" height="50"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="250" id="9kS-xs-Aoo"/>
@@ -894,7 +882,7 @@
                                                     <constraint firstAttribute="height" constant="50" id="vbx-uj-AG6"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                                <state key="normal" title="Edit">
+                                                <state key="normal" title="Join">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
@@ -989,7 +977,7 @@
                         <constraints>
                             <constraint firstItem="FCy-A9-dyv" firstAttribute="width" secondItem="wWw-dT-eLY" secondAttribute="width" multiplier="1.00966" id="0Zk-7U-vEc"/>
                             <constraint firstAttribute="trailing" secondItem="FCy-A9-dyv" secondAttribute="trailing" id="4L2-ka-Chn"/>
-                            <constraint firstAttribute="bottom" secondItem="FCy-A9-dyv" secondAttribute="bottom" constant="-230" id="EuC-xU-roe"/>
+                            <constraint firstAttribute="bottom" secondItem="FCy-A9-dyv" secondAttribute="bottom" id="EuC-xU-roe"/>
                             <constraint firstItem="FCy-A9-dyv" firstAttribute="leading" secondItem="xYE-cp-czk" secondAttribute="leading" id="mkK-6n-FeL"/>
                             <constraint firstItem="FCy-A9-dyv" firstAttribute="top" secondItem="wWw-dT-eLY" secondAttribute="top" constant="110" id="sML-LT-rYQ"/>
                         </constraints>
@@ -1010,7 +998,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fAB-u0-q3x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1494" y="1021"/>
+            <point key="canvasLocation" x="-1493" y="846"/>
         </scene>
         <!--Family Profile-->
         <scene sceneID="bKn-vB-lPj">
@@ -2533,7 +2521,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OSq-Ci-fl2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2114" y="798"/>
+            <point key="canvasLocation" x="1697" y="769"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="KsM-5E-fQg">
