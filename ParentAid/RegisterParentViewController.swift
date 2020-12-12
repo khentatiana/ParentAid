@@ -58,7 +58,7 @@ class RegisterParentViewController: UIViewController {
     @IBAction func onJoinButton(_ sender: Any) {
         // Create new object "event" that will be stored in table "KidsEvents"
         let event = PFObject(className: "KidsEvents")
-        //Create properties (arbitrary key) of the object "event" such as "synopsis", "provider", "title" etc.
+        //Create properties (arbitrary key) of the object "event" such as "numberOfRegistrants", "registrant", "title" etc.
         event["numberOfRegistrants"] = numberOfRegistrantsField.text!
         //Create provider of the event will be current user
         event["registrant"] = PFUser.current()!
@@ -86,9 +86,7 @@ class RegisterParentViewController: UIViewController {
               self.dismiss(animated: true, completion: nil)
     }
     
-//    @IBAction func onCancelButton(_ sender: Any) {
 
-//    }
     //MARK: Keyboard functions
     //dismiss keyboard by clicking outside textbox
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

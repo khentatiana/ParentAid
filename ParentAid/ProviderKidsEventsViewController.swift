@@ -248,13 +248,14 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
         cell.photoViewProvider.layer.cornerRadius = 10
         cell.photoViewProvider.clipsToBounds = true
         }
-//      //  let providerUser = providerProfile["provider"] as! PFUser
+       
 //        let providerProfile = providerProfiles[indexPath.row]
+//        if let providerUser = providerProfile["provider"] as? PFUser{
 //        if let imageProviderFile = providerProfile["profilePhotoImageView"] as? PFFileObject{
 //        let urlProviderPhotoString = imageProviderFile.url!
 //        let urlProviderPhoto = URL(string: urlProviderPhotoString)!
-//            
-//            
+//        }
+//
 //    }
         //        let cell = UITableViewCell()
         //        cell.textLabel?.text = "This is Provider"
