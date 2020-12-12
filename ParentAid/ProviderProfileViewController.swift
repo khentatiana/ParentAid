@@ -104,10 +104,37 @@ class ProviderProfileViewController: UIViewController, UIImagePickerControllerDe
         //dismiss camera view
         dismiss(animated: true, completion: nil)
     }
+    
+    
+    @IBAction func onCancelSavingProfileButton(_ sender: Any) {
+                //clean textfields
+                        cleanTextFields()
+                //dismiss keyboard
+                       dismissKeyboard()
+                //dismiss view
+                      self.dismiss(animated: true, completion: nil)
+    }
+    
+
+    //MARK: Keyboard functions
     //dismiss keyboard by clicking outside textbox
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
+    //dismiss keyboard
+    func dismissKeyboard(){
+        self.view.endEditing(false)
+    }
+    //clean textfields
+    func cleanTextFields(){
+        providerNameField.text = ""
+        providerAddressField.text = ""
+        providerCityField.text = ""
+        providerStateField.text = ""
+        providerZipCodeField.text = ""
+        providerWebsiteField.text = ""
+        providerPhoneField.text = ""
+      }
     
     
     @IBAction func kidsEventsTabButton(_ sender: Any) {
