@@ -23,7 +23,7 @@
                                     <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" alignment="center" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="944-go-Bbi">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="266"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Parent - COVID -LoginParentScreen" translatesAutoresizingMaskIntoConstraints="NO" id="Ijh-T9-QOZ">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="parent_login" translatesAutoresizingMaskIntoConstraints="NO" id="Ijh-T9-QOZ">
                                                 <rect key="frame" x="40" y="0.0" width="294" height="171"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="171" id="2Oa-Su-2qg"/>
@@ -32,12 +32,12 @@
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="br6-xb-LL8">
                                                 <rect key="frame" x="117" y="216" width="140" height="50"/>
-                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="ZaX-io-GBL"/>
                                                     <constraint firstAttribute="width" constant="140" id="jZk-Ni-IJI"/>
                                                 </constraints>
-                                                <state key="normal" title="Parent">
+                                                <state key="normal" title="Parent" image="but_parent">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -60,7 +60,7 @@
                                     <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5uS-zD-vCe">
                                         <rect key="frame" x="0.0" y="316" width="374" height="229"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Parent - COVID -LoginParentScreen" translatesAutoresizingMaskIntoConstraints="NO" id="HZq-yr-KKr">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="provider_login" translatesAutoresizingMaskIntoConstraints="NO" id="HZq-yr-KKr">
                                                 <rect key="frame" x="40" y="0.0" width="294" height="171"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="294" id="joh-By-hni"/>
@@ -69,14 +69,14 @@
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f2K-6c-gOX">
                                                 <rect key="frame" x="117" y="179" width="140" height="50"/>
-                                                <color key="backgroundColor" red="0.1564568435" green="0.78866163479999996" blue="0.86024530440000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="140" id="ZTi-8p-kPa"/>
                                                     <constraint firstAttribute="height" constant="50" id="xns-Ph-4w3"/>
                                                 </constraints>
-                                                <state key="normal" title="Event Provider">
+                                                <state key="normal" title="Event Provider" image="but_eventprovider">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <color key="titleShadowColor" red="0.1564568435" green="0.78866163479999996" blue="0.86024530440000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <color key="titleShadowColor" systemColor="systemGray6Color"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="onEventProviderButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D1m-qu-c9R"/>
@@ -156,7 +156,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogInSignUpScreen" translatesAutoresizingMaskIntoConstraints="NO" id="U8o-m7-Hy2">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signin" translatesAutoresizingMaskIntoConstraints="NO" id="U8o-m7-Hy2">
                                 <rect key="frame" x="79" y="52" width="256" height="256"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="256" id="9lh-ZY-F6e"/>
@@ -327,7 +327,7 @@
                                     <constraint firstAttribute="width" constant="150" id="KqG-G5-UCW"/>
                                     <constraint firstAttribute="height" constant="60" id="zGL-Xf-Gm8"/>
                                 </constraints>
-                                <state key="normal" image="login-button">
+                                <state key="normal" image="but_login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -401,7 +401,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogInSignUpScreen" translatesAutoresizingMaskIntoConstraints="NO" id="fC0-UW-mWx">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signin" translatesAutoresizingMaskIntoConstraints="NO" id="fC0-UW-mWx">
                                 <rect key="frame" x="79" y="8" width="256" height="256"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="256" id="Ifz-yM-0O3"/>
@@ -455,7 +455,7 @@
                                     <constraint firstAttribute="height" constant="60" id="Pe5-F5-Wwh"/>
                                     <constraint firstAttribute="width" constant="150" id="XFW-Ja-xEz"/>
                                 </constraints>
-                                <state key="normal" title="Sign Up" image="register-button">
+                                <state key="normal" title="Sign Up" image="but_register">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -853,40 +853,38 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhZ-Pv-4OY">
-                                                <rect key="frame" x="103" y="1152.5" width="250" height="50"/>
-                                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="84" y="1152.5" width="250" height="50"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="250" id="9kS-xs-Aoo"/>
                                                     <constraint firstAttribute="height" constant="50" id="hkf-Qd-E8d"/>
                                                 </constraints>
-                                                <state key="normal" title="Event Location">
+                                                <state key="normal" title="Event Location" image="but_eventloc_1">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
-                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8KQ-DQ-1fi">
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8KQ-DQ-1fi">
                                                 <rect key="frame" x="249" y="1222.5" width="134" height="50"/>
-                                                <color key="backgroundColor" red="0.1564568435" green="0.78866163479999996" blue="0.86024530440000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="3nF-XE-DLJ"/>
                                                     <constraint firstAttribute="width" constant="134" id="9WV-sv-SrH"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                                <state key="normal" title="Cancel">
+                                                <state key="normal" title="Cancel" image="but_cancel">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="onCancelRegistrationButton:" destination="J26-c9-ork" eventType="touchUpInside" id="usV-qp-fCd"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1a5-UF-Wa7">
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1a5-UF-Wa7">
                                                 <rect key="frame" x="35" y="1222.5" width="134" height="50"/>
-                                                <color key="backgroundColor" red="0.1564568435" green="0.78866163479999996" blue="0.86024530440000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="134" id="exl-SA-70j"/>
                                                     <constraint firstAttribute="height" constant="50" id="vbx-uj-AG6"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                                <state key="normal" title="Join">
+                                                <state key="normal" title="Join" image="but_join">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -1016,7 +1014,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="255" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lo5-9z-x0n">
-                                <rect key="frame" x="20" y="333" width="86" height="44"/>
+                                <rect key="frame" x="20" y="333" width="121" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="35l-rp-M9R"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="121" id="AG4-Pv-2hK"/>
@@ -1029,7 +1027,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="9gc-Ps-r7O">
-                                <rect key="frame" x="20" y="220" width="374" height="34"/>
+                                <rect key="frame" x="20" y="220" width="409" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="374" id="0LY-fS-pdZ"/>
                                     <constraint firstAttribute="height" constant="34" id="P5L-6v-r5K"/>
@@ -1038,7 +1036,7 @@
                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="NTQ-ra-Y7G">
-                                <rect key="frame" x="20" y="385" width="374" height="34"/>
+                                <rect key="frame" x="20" y="385" width="409" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="0oA-Hb-hkx"/>
                                     <constraint firstAttribute="width" constant="374" id="idd-d2-rJ4"/>
@@ -1086,7 +1084,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="61" translatesAutoresizingMaskIntoConstraints="NO" id="4gp-Nr-LKh">
-                                <rect key="frame" x="20" y="597.5" width="374" height="34"/>
+                                <rect key="frame" x="20" y="597.5" width="409" height="34"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="OZs-lQ-rPm">
                                         <rect key="frame" x="0.0" y="0.0" width="84" height="34"/>
@@ -1111,7 +1109,7 @@
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Pym-Ex-uxd">
-                                        <rect key="frame" x="290" y="0.0" width="84" height="34"/>
+                                        <rect key="frame" x="290" y="0.0" width="119" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="5z2-Pd-9hh"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="84" id="dCI-mk-LVI"/>
@@ -1137,7 +1135,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="61" translatesAutoresizingMaskIntoConstraints="NO" id="N7l-fY-yAG">
-                                <rect key="frame" x="20" y="639.5" width="374" height="34"/>
+                                <rect key="frame" x="20" y="639.5" width="409" height="34"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="F93-rt-Lau">
                                         <rect key="frame" x="0.0" y="0.0" width="84" height="34"/>
@@ -1162,7 +1160,7 @@
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="F16-hk-715">
-                                        <rect key="frame" x="290" y="0.0" width="84" height="34"/>
+                                        <rect key="frame" x="290" y="0.0" width="119" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="84" id="Bas-pX-ZMz"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="84" id="G4H-nh-Gxq"/>
@@ -1190,7 +1188,7 @@
                                 </constraints>
                             </stackView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="WDZ-m4-t4n">
-                                <rect key="frame" x="20" y="291" width="374" height="34"/>
+                                <rect key="frame" x="20" y="291" width="409" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="3Sh-9l-3J7"/>
                                     <constraint firstAttribute="width" constant="374" id="u9E-99-tSX"/>
@@ -1209,13 +1207,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="255" text="Zip Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I97-Uh-cTT">
-                                <rect key="frame" x="20" y="427" width="86" height="20.5"/>
+                                <rect key="frame" x="20" y="427" width="121" height="20.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="family-placeholder -3" translatesAutoresizingMaskIntoConstraints="NO" id="HeO-a9-RQJ">
-                                <rect key="frame" x="247" y="103" width="124" height="107"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="family_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="HeO-a9-RQJ">
+                                <rect key="frame" x="282" y="103" width="124" height="107"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="107" id="fgr-nJ-fPR"/>
                                     <constraint firstAttribute="width" constant="124" id="sSJ-tH-jG9"/>
@@ -1230,27 +1228,25 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MsW-yj-AtG">
-                                <rect key="frame" x="260" y="693.5" width="134" height="50"/>
-                                <color key="backgroundColor" red="0.1564568435" green="0.78866163479999996" blue="0.86024530440000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MsW-yj-AtG">
+                                <rect key="frame" x="295" y="693.5" width="134" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="8He-ZC-iK7"/>
                                     <constraint firstAttribute="width" constant="134" id="Qrn-ia-rpU"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <state key="normal" title="Cancel">
+                                <state key="normal" title="Cancel" image="but_cancel">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZtT-bs-d2f">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZtT-bs-d2f">
                                 <rect key="frame" x="20" y="693.5" width="134" height="50"/>
-                                <color key="backgroundColor" red="0.1564568435" green="0.78866163479999996" blue="0.86024530440000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Ba8-ZA-9HJ"/>
                                     <constraint firstAttribute="width" constant="134" id="ei2-aj-jsa"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
-                                <state key="normal" title="Save Profile">
+                                <state key="normal" title="Save Profile" image="but_save">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
@@ -1480,15 +1476,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="done" enablesReturnKeyAutomatically="YES" smartInsertDeleteType="yes"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fUr-qa-4ie">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fUr-qa-4ie">
                                 <rect key="frame" x="20" y="702" width="134" height="50"/>
-                                <color key="backgroundColor" red="0.1564568435" green="0.78866163479999996" blue="0.86024530440000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="134" id="DQk-6X-znc"/>
                                     <constraint firstAttribute="height" constant="50" id="oCJ-lc-RQc"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
-                                <state key="normal" title="Save Profile">
+                                <state key="normal" title="Save Profile" image="but_save">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -1500,17 +1495,16 @@
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hT-bc-7bY">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hT-bc-7bY">
                                 <rect key="frame" x="260" y="702" width="134" height="50"/>
-                                <color key="backgroundColor" red="0.1564568435" green="0.78866163479999996" blue="0.86024530440000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Pwr-hX-Eft"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="134" id="X34-LR-HRI"/>
                                     <constraint firstAttribute="width" constant="134" id="nYL-zw-e1a"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="v7a-ef-2ag"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <state key="normal" title="Cancel">
+                                <state key="normal" title="Cancel" image="but_cancel">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -1874,17 +1868,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6f8-uf-mEu">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6f8-uf-mEu">
                                 <rect key="frame" x="140" y="700" width="134" height="50"/>
-                                <color key="backgroundColor" red="0.1564568435" green="0.78866163479999996" blue="0.86024530440000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="UDW-dG-jhm"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="134" id="b5b-iR-hQB"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="bOz-D3-hVf"/>
                                     <constraint firstAttribute="width" constant="134" id="hCr-5M-z28"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
-                                <state key="normal" title="Edit">
+                                <state key="normal" title="Edit" image="but_edit">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -2151,13 +2144,13 @@
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p3D-Il-Pwz">
                                                 <rect key="frame" x="20" y="991" width="134" height="50"/>
-                                                <color key="backgroundColor" red="0.1564568435" green="0.78866163479999996" blue="0.86024530440000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="YMg-Te-Afo"/>
                                                     <constraint firstAttribute="width" constant="134" id="ZwO-R5-syb"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                                <state key="normal" title="Post Event">
+                                                <state key="normal" title="Post Event" image="but_postevent">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -2165,15 +2158,14 @@
                                                     <action selector="onSubmitButton:" destination="3Ya-03-ctZ" eventType="touchUpInside" id="Zka-Io-LFt"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9tB-5o-ikI">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9tB-5o-ikI">
                                                 <rect key="frame" x="252" y="991" width="134" height="50"/>
-                                                <color key="backgroundColor" red="0.1564568435" green="0.78866163479999996" blue="0.86024530440000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="YWw-jx-rNu"/>
                                                     <constraint firstAttribute="width" constant="134" id="i3M-HT-uN4"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                                <state key="normal" title="Cancel">
+                                                <state key="normal" title="Cancel" image="but_cancel">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -2416,39 +2408,37 @@
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Quf-1W-vbd">
                                                 <rect key="frame" x="84" y="1152.5" width="250" height="50"/>
-                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="250" id="aXS-He-VAB"/>
                                                     <constraint firstAttribute="height" constant="50" id="fdR-Mz-eMU"/>
                                                 </constraints>
-                                                <state key="normal" title="Event Location">
+                                                <state key="normal" title="Event Location" image="but_eventloc_1">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <segue destination="0TO-I1-udx" kind="show" id="ehX-8C-ep6"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5P-Ie-WeH">
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5P-Ie-WeH">
                                                 <rect key="frame" x="249" y="1222.5" width="134" height="50"/>
-                                                <color key="backgroundColor" red="0.1564568435" green="0.78866163479999996" blue="0.86024530440000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="134" id="eSg-qR-cpH"/>
                                                     <constraint firstAttribute="height" constant="50" id="lJU-hr-Hlz"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                                <state key="normal" title="Cancel">
+                                                <state key="normal" title="Cancel" image="but_cancel">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
-                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="806-H5-veu">
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="806-H5-veu">
                                                 <rect key="frame" x="35" y="1222.5" width="134" height="50"/>
-                                                <color key="backgroundColor" red="0.1564568435" green="0.78866163479999996" blue="0.86024530440000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="134" id="3cu-77-Zbi"/>
                                                     <constraint firstAttribute="height" constant="50" id="Aae-Em-vJc"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                                <state key="normal" title="Edit">
+                                                <state key="normal" title="Edit" image="but_edit">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
@@ -2798,20 +2788,29 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Customer Support" width="83" height="103"/>
-        <image name="LogInSignUpScreen" width="414.5" height="453.5"/>
-        <image name="Parent - COVID -LoginParentScreen" width="294" height="171"/>
         <image name="Provider Image" width="1600" height="901"/>
-        <image name="family-placeholder -3" width="275" height="183"/>
+        <image name="but_cancel" width="537" height="201"/>
+        <image name="but_edit" width="537" height="201"/>
+        <image name="but_eventloc_1" width="1001" height="201"/>
+        <image name="but_eventprovider" width="561" height="201"/>
+        <image name="but_join" width="537" height="201"/>
+        <image name="but_login" width="601" height="241"/>
+        <image name="but_parent" width="561" height="201"/>
+        <image name="but_postevent" width="537" height="201"/>
+        <image name="but_register" width="601" height="241"/>
+        <image name="but_save" width="537" height="201"/>
+        <image name="family_placeholder" width="497" height="429"/>
         <image name="image_placeholder" width="375" height="375"/>
         <image name="lasso.sparkles" catalog="system" width="122" height="128"/>
-        <image name="login-button" width="320" height="157"/>
         <image name="logo-placeholder" width="300" height="300"/>
+        <image name="parent_login" width="1177" height="684"/>
         <image name="person.3" catalog="system" width="128" height="62"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="plus.square.fill.on.square.fill" catalog="system" width="128" height="113"/>
         <image name="provider" width="600" height="500"/>
+        <image name="provider_login" width="1177" height="684"/>
         <image name="rectangle.stack.person.crop" catalog="system" width="128" height="122"/>
-        <image name="register-button" width="600" height="284"/>
+        <image name="signin" width="1657" height="1977"/>
         <namedColor name="tableViewBackground-3">
             <color red="0.89999997615814209" green="0.89999997615814209" blue="0.89999997615814209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -2820,6 +2819,9 @@
         </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
