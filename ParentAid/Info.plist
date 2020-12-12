@@ -64,8 +64,8 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Welcome to ParentsAid. This allows us to use your location to find kids events nearby.</string>
+	<string>Welcome to ParentAid. This allows us to use your location to find kids events nearby.</string>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Welcome to ParentsAid. This allows us to use your location to find kids events nearby.</string>
+	<string>Welcome to ParentAid. This allows us to use your location to find kids events nearby.</string>
 </dict>
 </plist>

@@ -237,7 +237,7 @@ class LoginViewController: UIViewController {
     //login button change to SignUp
     
     private func updateUIForLogin(login:Bool){
-        loginButtonOutlet.setImage(UIImage(named: login ? "login-button" : "register-button"), for: .normal)
+        loginButtonOutlet.setImage(UIImage(named: login ? "but_login" : "but_register"), for: .normal)
         signupButtonOutlet.setTitle(login ? "Sign Up" : "Login", for: .normal)
         dontOrHaveAcctLabel.text = login ? "Don't have an account?" : "Have an account?"
         //When login view email and confirmPassword are hidden
