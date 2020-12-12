@@ -806,9 +806,9 @@
                                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="26"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" misplaced="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uGK-tS-e2X">
-                                                <rect key="frame" x="20" y="479" width="378" height="429"/>
-                                                <string key="text">Event synopsis Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uGK-tS-e2X">
+                                                <rect key="frame" x="20" y="479" width="378" height="475.5"/>
+                                                <mutableString key="text">Event synopsis Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</mutableString>
                                                 <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="15"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -838,20 +838,6 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="76" id="DS7-iU-l1q"/>
                                                     <constraint firstAttribute="height" constant="36" id="dBS-SK-Ggf"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                                <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IaB-Me-zKU">
-                                                <rect key="frame" x="302" y="1096.5" width="76" height="36"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="36" id="Jma-0Z-Llb"/>
-                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="76" id="Rr0-EG-y1k"/>
-                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="36" id="mkN-Uj-39Y"/>
-                                                    <constraint firstAttribute="width" constant="76" id="mpj-DF-BJm"/>
-                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="36" id="tOj-rv-r6f"/>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="36" id="wEZ-Mw-dcC"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                 <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -922,11 +908,19 @@
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vqD-2j-apL">
+                                                <rect key="frame" x="302" y="1096.5" width="76" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="76" id="3lX-Jv-5Ke"/>
+                                                    <constraint firstAttribute="height" constant="36" id="Pzz-47-8fJ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="uGK-tS-e2X" firstAttribute="top" secondItem="rDu-pj-SIl" secondAttribute="bottom" constant="54.5" id="0Jx-nG-0Xq"/>
-                                            <constraint firstAttribute="trailing" secondItem="IaB-Me-zKU" secondAttribute="trailing" constant="40" id="1LG-bG-4eB"/>
                                             <constraint firstItem="D0F-XB-9V2" firstAttribute="top" secondItem="dE5-GR-Wlv" secondAttribute="top" constant="252" id="1Zg-3C-A2t"/>
                                             <constraint firstItem="WuG-WF-kkK" firstAttribute="leading" secondItem="rDu-pj-SIl" secondAttribute="trailing" constant="20" id="65j-oQ-5RL"/>
                                             <constraint firstAttribute="trailing" secondItem="bS5-G6-IVs" secondAttribute="trailing" constant="40" id="67H-oP-m4U"/>
@@ -936,9 +930,9 @@
                                             <constraint firstItem="1a5-UF-Wa7" firstAttribute="top" secondItem="uhZ-Pv-4OY" secondAttribute="bottom" constant="20" id="CBm-G3-hod"/>
                                             <constraint firstItem="6vj-wn-vqt" firstAttribute="top" secondItem="x9Z-Qk-7XY" secondAttribute="bottom" constant="20" id="CaB-ff-fod"/>
                                             <constraint firstItem="8KQ-DQ-1fi" firstAttribute="top" secondItem="uhZ-Pv-4OY" secondAttribute="bottom" constant="20" id="CfS-ve-1sN"/>
-                                            <constraint firstItem="IaB-Me-zKU" firstAttribute="top" secondItem="bS5-G6-IVs" secondAttribute="bottom" constant="10" id="CvF-J5-Evn"/>
                                             <constraint firstItem="y6R-I1-8YL" firstAttribute="top" secondItem="yVp-jV-GQl" secondAttribute="bottom" constant="10" id="DuU-Rn-c1Z"/>
                                             <constraint firstAttribute="trailing" secondItem="8KQ-DQ-1fi" secondAttribute="trailing" constant="35" id="EI8-S0-ZUb"/>
+                                            <constraint firstItem="vqD-2j-apL" firstAttribute="top" secondItem="bS5-G6-IVs" secondAttribute="bottom" constant="10" id="Eac-l4-oMV"/>
                                             <constraint firstItem="uhZ-Pv-4OY" firstAttribute="centerX" secondItem="dE5-GR-Wlv" secondAttribute="centerX" constant="19" id="Erf-s3-ah5"/>
                                             <constraint firstItem="Vdc-FB-5bZ" firstAttribute="leading" secondItem="dE5-GR-Wlv" secondAttribute="leading" constant="20" id="G9c-NM-dmS"/>
                                             <constraint firstItem="yVp-jV-GQl" firstAttribute="leading" secondItem="dE5-GR-Wlv" secondAttribute="leading" constant="20" id="GFn-dp-wCQ"/>
@@ -948,12 +942,13 @@
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1300" id="JvL-rJ-K3M"/>
                                             <constraint firstItem="WuG-WF-kkK" firstAttribute="top" secondItem="x9Z-Qk-7XY" secondAttribute="bottom" constant="60" id="K5u-ue-PZy"/>
                                             <constraint firstItem="uGK-tS-e2X" firstAttribute="leading" secondItem="dE5-GR-Wlv" secondAttribute="leading" constant="20" id="Lql-Rl-XG9"/>
+                                            <constraint firstItem="uhZ-Pv-4OY" firstAttribute="top" secondItem="vqD-2j-apL" secondAttribute="bottom" constant="20" id="Qoy-68-55N"/>
                                             <constraint firstItem="P1S-T2-ZZs" firstAttribute="top" secondItem="uGK-tS-e2X" secondAttribute="bottom" constant="50" id="RP3-DB-v9r"/>
                                             <constraint firstItem="6vj-wn-vqt" firstAttribute="leading" secondItem="D0F-XB-9V2" secondAttribute="trailing" constant="8" id="Rqf-fl-gZV"/>
                                             <constraint firstItem="uhZ-Pv-4OY" firstAttribute="top" secondItem="y6R-I1-8YL" secondAttribute="bottom" constant="20" id="SS3-er-m3k"/>
                                             <constraint firstItem="YbB-X9-hGY" firstAttribute="top" secondItem="uGK-tS-e2X" secondAttribute="bottom" constant="50" id="TUF-1H-HEO"/>
                                             <constraint firstItem="rDu-pj-SIl" firstAttribute="leading" secondItem="dE5-GR-Wlv" secondAttribute="leading" constant="20" id="UP8-9T-4hS"/>
-                                            <constraint firstItem="IaB-Me-zKU" firstAttribute="top" secondItem="bS5-G6-IVs" secondAttribute="bottom" constant="10" id="WM2-RQ-RUL"/>
+                                            <constraint firstAttribute="trailing" secondItem="vqD-2j-apL" secondAttribute="trailing" constant="40" id="Z9v-CJ-aKP"/>
                                             <constraint firstItem="yVp-jV-GQl" firstAttribute="leading" secondItem="dE5-GR-Wlv" secondAttribute="leading" constant="20" id="ZZ3-pn-dc8"/>
                                             <constraint firstItem="1a5-UF-Wa7" firstAttribute="leading" secondItem="dE5-GR-Wlv" secondAttribute="leading" constant="35" id="aUR-TO-7dr"/>
                                             <constraint firstAttribute="trailing" secondItem="6vj-wn-vqt" secondAttribute="trailing" constant="8" id="bBo-vB-CP2"/>
@@ -1001,6 +996,16 @@
                     </view>
                     <navigationItem key="navigationItem" id="Aig-uY-IRr"/>
                     <size key="freeformSize" width="414" height="1146"/>
+                    <connections>
+                        <outlet property="availableSpotsRegister" destination="bS5-G6-IVs" id="evs-uC-Ran"/>
+                        <outlet property="checkboxCOVIDsafeRegister" destination="YbB-X9-hGY" id="nlK-3R-7DD"/>
+                        <outlet property="eventDateRegister" destination="WuG-WF-kkK" id="0P6-zP-YJp"/>
+                        <outlet property="eventRegisterImageView" destination="x9Z-Qk-7XY" id="x0N-C7-wDM"/>
+                        <outlet property="eventTitleRegisterLabel" destination="6vj-wn-vqt" id="Ayf-Js-JQX"/>
+                        <outlet property="providerNameRegister" destination="rDu-pj-SIl" id="Pko-fN-hvE"/>
+                        <outlet property="providerPhotoRegisterImageView" destination="D0F-XB-9V2" id="3aR-zV-7cU"/>
+                        <outlet property="synopsisLabelRegister" destination="uGK-tS-e2X" id="R0E-nj-rcZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fAB-u0-q3x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

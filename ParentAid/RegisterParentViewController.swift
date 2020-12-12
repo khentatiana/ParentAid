@@ -17,14 +17,15 @@ class RegisterParentViewController: UIViewController {
     var providerUser : PFObject!
    var providerProfiles = [PFObject]()
     
-//    @IBOutlet weak var eventImageView: UIImageView!
-//
-//    @IBOutlet weak var providerProfilePhoto: UIImageView!
-//    @IBOutlet weak var synopsisLabel: UILabel!
-//    @IBOutlet weak var providerName: UILabel!
-//    @IBOutlet weak var eventDate: UILabel!
-//    @IBOutlet weak var eventTitle: UILabel!
-//    @IBOutlet weak var checkboxCOVIDsafe: UILabel!
+    @IBOutlet weak var eventRegisterImageView: UIImageView!
+    @IBOutlet weak var providerPhotoRegisterImageView: UIImageView!
+    @IBOutlet weak var eventTitleRegisterLabel: UILabel!
+    @IBOutlet weak var eventDateRegister: UILabel!
+    @IBOutlet weak var providerNameRegister: UILabel!
+    @IBOutlet weak var synopsisLabelRegister: UILabel!
+    @IBOutlet weak var checkboxCOVIDsafeRegister: UILabel!
+    @IBOutlet weak var availableSpotsRegister: UILabel!
+    //    @IBOutlet weak var checkboxCOVIDsafe: UILabel!
 //    @IBOutlet weak var eventRegistrants: UILabel!
 //    @IBOutlet weak var availableSpots: UILabel!
 //
