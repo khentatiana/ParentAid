@@ -14,8 +14,7 @@ class ParentKidsEventsViewController: UIViewController, UITableViewDelegate, UIT
     //MARK: IBOutlets
     @IBOutlet weak var tableViewParent: UITableView!
     @IBOutlet weak var tableViewParentTopConstraint: NSLayoutConstraint!
- 
-  @IBOutlet weak var searchBarParent: UISearchBar!
+    @IBOutlet weak var searchBarParent: UISearchBar!
     
     
     
@@ -74,6 +73,10 @@ class ParentKidsEventsViewController: UIViewController, UITableViewDelegate, UIT
         let user = event["provider"] as! PFUser
         cell.providerNameParentLabel.text = user.username
         cell.providerNameParentLabel.sizeToFit()
+        
+        cell.eventTitleParentLabel.text = event["title"] as? String
+        cell.eventTitleParentLabel.sizeToFit()
+
 
         cell.synopsisParentLabel.text = event["synopsis"] as! String
         cell.synopsisParentLabel.sizeToFit()
