@@ -563,16 +563,22 @@ Here's a walkthrough of implemented user stories:
 ## Video Walkthrough for DemoDay
 
 Here's a walkthrough of implemented user stories:
+
 ### Login/SignUp:
 <img src='http://g.recordit.co/Msz16TGFoV.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 ### Login/SignUp:
 <img src='http://g.recordit.co/Osn6ojkaUI.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 ### Login/SignUp:
 <img src='http://g.recordit.co/5cYO1VaQDI.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 ### Login/SignUp:
 <img src='http://g.recordit.co/m0ANe0aHtp.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 ### Login/SignUp:
 <img src='http://g.recordit.co/MkRJPQ3hwQ.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 ### Login/SignUp:
 <img src='http://g.recordit.co/EgijV0SyGp.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
