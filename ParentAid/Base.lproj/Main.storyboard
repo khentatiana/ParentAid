@@ -885,6 +885,9 @@
                                                 <state key="normal" title="Join">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="onJoinButton:" destination="J26-c9-ork" eventType="touchUpInside" id="c6r-yg-eg4"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About this Event" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vdc-FB-5bZ">
                                                 <rect key="frame" x="25" y="439.5" width="154" height="36"/>
