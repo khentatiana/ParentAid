@@ -465,7 +465,6 @@ Following are the **required completed** functionalities:
 - [x] Provider name is shown for events posted.
 - [x] Update app logo on homescreen and illustrations across the app.
 
-
 ### User Stories in-progress this week:
 
 Following are the **required in-progress** functionalities for this week:
@@ -515,3 +514,69 @@ Here's a walkthrough of implemented user stories:
 <img src='http://g.recordit.co/AdoFYNfclv.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <img src='http://g.recordit.co/8buxJrL5j6.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+## Build Sprint 3
+
+### User Stories completed this week:
+
+Following are the **required completed** functionalities:
+
+- [x] User is able to swtich between a Parent and Provider.
+- [x] Provider user is able to access the Kids Events.
+- [x] Provider user is able to add/register an event to Kids Events.
+- [x] Parent user is able to access their profile.
+- [x] Illustrations and logo design for the app.
+- [x] Parent user is able to view the selected event of choice.
+- [x] Provider user is able to tag a photo, tag it with a location and then see a mp with tagged event photo.
+- [x] Provider name is shown for events posted.
+- [x] Update app logo on homescreen and illustrations across the app.
+- [x] Provider user is able to preview the added event.
+
+
+### User Stories in-progress this week:
+
+Following are the **required in-progress** functionalities for this week:
+
+- [ ] Provider user is able to receive a confirmation message after adding the event.
+- [ ] Provider user is able to search for an event using the Search Bar.
+- [ ] Provider user is able to add a profile picture.
+- [ ] Provider user is able to load past events infinitely.
+- [ ] Provider user is able to pull to refresh.
+- [ ] Provider profile pictures are shown for events posted.
+
+### User Stories to-do:
+
+Following are the **required to-do** functionalities that are to be worked on after completing the in-progress ones:
+
+- [ ] Parent user is able to view the selected event of choice.
+- [ ] Parent user is able to receive a confirmation for the selected event of choice.
+- [ ] Parent user is able to search for an event using the Search Bar.
+- [ ] Parent user is able to view the selected event of choice.
+- [ ] Parent user is able to view the registration confirmation.
+- [ ] Parent user is able to pull to refresh.
+
+### User Stories nice-to-have:
+
+Following are the **nice-to-have** functionalities that are to be worked on after completing the to-do's:
+
+- [ ] User can view the app on various device sizes and orientations
+- [ ] User is able to regain access by clicking on 'Forgot Password' screen.
+- [ ] User is able to conduct advanced event search.
+- [ ] Parent user cannot register when no more spaces are available.
+- [ ] When Parent user is registered for an event, 'Available Spots' countdown is decreased by 1.
+- [ ] Provider user is able to edit the event on Kids Events with Edit button.
+- [ ] Parent user receives confirmation email after registering to an event.
+- [ ] Provider user receives confirmation email after adding an event to Kids Events.
+- [ ] Provider user is able to edit the event on Kids Events with Edit button.
+- [ ] Provider user is able to delete an event on Kids Events with Cancel button.
+- [ ] A generated list of 'upcoming events' in Provider profile is visible.
+- [ ] A generated list of 'expired events' in Provider profile is visible.
+- [ ] A generated list of 'registered events' in Parent profile is visible.
+- [ ] A generated list of 'attended events' in Parent profile is visible.
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+<img src='http://g.recordit.co/uzsUoD79ma.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
