@@ -564,22 +564,22 @@ Here's a walkthrough of implemented user stories:
 
 Here's a walkthrough of implemented user stories:
 
-### Login/SignUp:
+### Login/Sign Up:
 <img src='http://g.recordit.co/Msz16TGFoV.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-### Login/SignUp:
+### Posting kids events:
 <img src='http://g.recordit.co/Osn6ojkaUI.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-### Login/SignUp:
+### Detail screen of the kids event:
 <img src='http://g.recordit.co/5cYO1VaQDI.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-### Login/SignUp:
+### Save/Edit Provider profile:
 <img src='http://g.recordit.co/m0ANe0aHtp.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-### Login/SignUp:
+### Parent register kids for the events:
 <img src='http://g.recordit.co/MkRJPQ3hwQ.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-### Login/SignUp:
+### Parents can see the number of the available spots left:
 <img src='http://g.recordit.co/EgijV0SyGp.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 
