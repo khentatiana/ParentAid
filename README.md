@@ -560,7 +560,7 @@ Here's a walkthrough of implemented user stories:
 <img src='http://g.recordit.co/aPpS64YXjJ.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 <img src='http://g.recordit.co/uzsUoD79ma.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-## Video Walkthrough for DemoDay
+# Video Walkthrough for Demo Day
 
 Here's a walkthrough of implemented user stories:
 
