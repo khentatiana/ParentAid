@@ -222,9 +222,11 @@ class ProviderKidsEventsViewController: UIViewController, UITableViewDelegate, U
     //   query.order(byDescending: "createdAt")
         let event = events[indexPath.row]
    //     let event = filteredData[indexPath.row]
-        let user = event["provider"] as! PFUser
+        if let user = event["provider"] as? PFUser{
         cell.providerLabel.text = user.username
-        cell.providerLabel.sizeToFit()
+            cell.providerLabel.sizeToFit()
+            
+        }
         
         cell.eventTitleLabel.text = event["title"] as? String
         cell.eventTitleLabel.sizeToFit()
