@@ -570,13 +570,13 @@ Here's a walkthrough of implemented user stories:
 ### Posting kids events:
 <img src='http://g.recordit.co/Osn6ojkaUI.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-### Detail screen of the kids event:
+### Detail screen of the kids event and asking user for location access:
 <img src='http://g.recordit.co/5cYO1VaQDI.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ### Save/Edit Provider profile:
 <img src='http://g.recordit.co/m0ANe0aHtp.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-### Parent register kids for the events:
+### Parent can view details of the kids event and register:
 <img src='http://g.recordit.co/MkRJPQ3hwQ.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ### Parents can see the number of the available spots left:
