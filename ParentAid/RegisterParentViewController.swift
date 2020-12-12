@@ -25,32 +25,31 @@ class RegisterParentViewController: UIViewController {
     @IBOutlet weak var synopsisLabelRegister: UILabel!
     @IBOutlet weak var checkboxCOVIDsafeRegister: UILabel!
     @IBOutlet weak var availableSpotsRegister: UILabel!
-    //    @IBOutlet weak var checkboxCOVIDsafe: UILabel!
-//    @IBOutlet weak var eventRegistrants: UILabel!
-//    @IBOutlet weak var availableSpots: UILabel!
-//
+    @IBOutlet weak var numberOfRegistrantsField: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //display provider name
-//        let user = event["provider"] as! PFUser
-//        providerName.text = user.username
-//      
-//        eventTitle.text = event["title"] as? String
-//        eventTitle.sizeToFit()
-//        
-//        synopsisLabel.text = event["synopsis"] as? String
-//        synopsisLabel.sizeToFit()
-//        
-//        eventDate.text = event["date"] as? String
-//        eventDate.sizeToFit()
-//        
-//        let imageFile = event["image"] as! PFFileObject
-//        let urlString = imageFile.url!
-//        let url = URL(string: urlString)!
-//        eventImageView.af.setImage(withURL: url)
-//        //To make round corners of the image
-//        eventImageView.layer.cornerRadius = 10
-//        eventImageView.clipsToBounds = true
+        let user = event["provider"] as! PFUser
+        providerNameRegister.text = user.username
+      
+        eventTitleRegisterLabel.text = event["title"] as? String
+        eventTitleRegisterLabel.sizeToFit()
+        
+        synopsisLabelRegister.text = event["synopsis"] as? String
+        synopsisLabelRegister.sizeToFit()
+        
+        eventDateRegister.text = event["date"] as? String
+        eventDateRegister.sizeToFit()
+        
+        let imageFile = event["image"] as! PFFileObject
+        let urlString = imageFile.url!
+        let url = URL(string: urlString)!
+        eventRegisterImageView.af.setImage(withURL: url)
+        //To make round corners of the image
+        eventRegisterImageView.layer.cornerRadius = 10
+        eventRegisterImageView.clipsToBounds = true
     }
     /*
     // MARK: - Navigation

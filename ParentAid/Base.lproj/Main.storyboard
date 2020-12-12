@@ -1002,6 +1002,7 @@
                         <outlet property="eventDateRegister" destination="WuG-WF-kkK" id="0P6-zP-YJp"/>
                         <outlet property="eventRegisterImageView" destination="x9Z-Qk-7XY" id="x0N-C7-wDM"/>
                         <outlet property="eventTitleRegisterLabel" destination="6vj-wn-vqt" id="Ayf-Js-JQX"/>
+                        <outlet property="numberOfRegistrantsField" destination="vqD-2j-apL" id="DWY-Ey-Jlz"/>
                         <outlet property="providerNameRegister" destination="rDu-pj-SIl" id="Pko-fN-hvE"/>
                         <outlet property="providerPhotoRegisterImageView" destination="D0F-XB-9V2" id="3aR-zV-7cU"/>
                         <outlet property="synopsisLabelRegister" destination="uGK-tS-e2X" id="R0E-nj-rcZ"/>
