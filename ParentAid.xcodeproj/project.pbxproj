@@ -10,6 +10,8 @@
 		4103C5A1257A294B00E56B30 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4103C5A0257A294B00E56B30 /* MapViewController.swift */; };
 		41674F3A255863C500DFEA6C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41674F39255863C500DFEA6C /* HomeViewController.swift */; };
 		41674F3F2558686E00DFEA6C /* ParentKidsEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41674F3E2558686E00DFEA6C /* ParentKidsEventsViewController.swift */; };
+		417DCA632584EB7000135B06 /* FamilyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417DCA622584EB7000135B06 /* FamilyProfileViewController.swift */; };
+		417DCA682584F34000135B06 /* EditFamilyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417DCA672584F34000135B06 /* EditFamilyProfileViewController.swift */; };
 		4180AC7C2580F1E4008E0A2F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4180AC7B2580F1E4008E0A2F /* User.swift */; };
 		4180AC882580F882008E0A2F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4180AC872580F882008E0A2F /* Constants.swift */; };
 		4180AC8F2581D913008E0A2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4198E1F52555F497009F5092 /* Assets.xcassets */; };
@@ -61,6 +63,8 @@
 		4103C5A0257A294B00E56B30 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		41674F39255863C500DFEA6C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		41674F3E2558686E00DFEA6C /* ParentKidsEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentKidsEventsViewController.swift; sourceTree = "<group>"; };
+		417DCA622584EB7000135B06 /* FamilyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyProfileViewController.swift; sourceTree = "<group>"; };
+		417DCA672584F34000135B06 /* EditFamilyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditFamilyProfileViewController.swift; sourceTree = "<group>"; };
 		4180AC7B2580F1E4008E0A2F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4180AC872580F882008E0A2F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		418D953625840B890019E99C /* ParentEventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentEventCell.swift; sourceTree = "<group>"; };
@@ -202,6 +206,8 @@
 				418D953625840B890019E99C /* ParentEventCell.swift */,
 				4180AC872580F882008E0A2F /* Constants.swift */,
 				418D953E258416400019E99C /* RegisterParentViewController.swift */,
+				417DCA622584EB7000135B06 /* FamilyProfileViewController.swift */,
+				417DCA672584F34000135B06 /* EditFamilyProfileViewController.swift */,
 			);
 			path = ParentAid;
 			sourceTree = "<group>";
@@ -468,6 +474,7 @@
 				D628C5F32551FB6A00BE82A0 /* AppDelegate.swift in Sources */,
 				418EB4492575EC7C00797D28 /* Event.swift in Sources */,
 				41D36808255CFE5C003D6709 /* ProviderKidsEventsViewController.swift in Sources */,
+				417DCA682584F34000135B06 /* EditFamilyProfileViewController.swift in Sources */,
 				41D3680D255D017A003D6709 /* EventCell.swift in Sources */,
 				4180AC7C2580F1E4008E0A2F /* User.swift in Sources */,
 				41CB159F256651F50087EC74 /* SignUpViewController.swift in Sources */,
@@ -480,6 +487,7 @@
 				418EB45725760B9300797D28 /* API.swift in Sources */,
 				41D36812255D0D36003D6709 /* PostEventViewController.swift in Sources */,
 				4103C5A1257A294B00E56B30 /* MapViewController.swift in Sources */,
+				417DCA632584EB7000135B06 /* FamilyProfileViewController.swift in Sources */,
 				4180AC882580F882008E0A2F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

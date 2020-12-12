@@ -1008,7 +1008,7 @@
         <!--Family Profile-->
         <scene sceneID="bKn-vB-lPj">
             <objects>
-                <viewController id="aXo-Lg-uN6" sceneMemberID="viewController">
+                <viewController id="aXo-Lg-uN6" customClass="FamilyProfileViewController" customModule="ParentAid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lj8-dl-TMj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1214,10 +1214,14 @@
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="family_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="HeO-a9-RQJ">
                                 <rect key="frame" x="247" y="103" width="124" height="107"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="107" id="fgr-nJ-fPR"/>
                                     <constraint firstAttribute="width" constant="124" id="sSJ-tH-jG9"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="rJg-7u-IVa" appends="YES" id="ldx-aj-J6A"/>
+                                </connections>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="pkv-iE-h7A">
                                 <rect key="frame" x="20" y="455.5" width="84" height="34"/>
@@ -1238,6 +1242,9 @@
                                 <state key="normal" title="Cancel" image="but_cancel">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="onCancelFamilyProfileButton:" destination="aXo-Lg-uN6" eventType="touchUpInside" id="7fL-E5-uIO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZtT-bs-d2f">
                                 <rect key="frame" x="20" y="693.5" width="134" height="50"/>
@@ -1250,6 +1257,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="saveFamilyProfileButton:" destination="aXo-Lg-uN6" eventType="touchUpInside" id="FCO-Fp-Mm3"/>
                                     <segue destination="9DX-rL-UTx" kind="show" id="75t-lP-8dn"/>
                                 </connections>
                             </button>
@@ -1308,8 +1316,27 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Family Profile" id="vUB-pb-NV3"/>
+                    <connections>
+                        <outlet property="childFiveAgeField" destination="HBn-hN-dHe" id="Llk-UV-YNP"/>
+                        <outlet property="childFourAgeField" destination="F93-rt-Lau" id="E20-Ei-osm"/>
+                        <outlet property="childOneAgeField" destination="OZs-lQ-rPm" id="IS7-0s-l3r"/>
+                        <outlet property="childSixAgeField" destination="F16-hk-715" id="Q5E-xq-sTm"/>
+                        <outlet property="childThreeAgeField" destination="Pym-Ex-uxd" id="lm5-RB-Ip8"/>
+                        <outlet property="childTwoAgeField" destination="HL2-I9-IPV" id="UQ2-ZS-7vf"/>
+                        <outlet property="familyImageView" destination="HeO-a9-RQJ" id="7Lo-cJ-HNo"/>
+                        <outlet property="numberOfKidsField" destination="BVu-rb-ixP" id="lMi-Pu-9ee"/>
+                        <outlet property="parentEmailField" destination="NTQ-ra-Y7G" id="AWr-FN-pcV"/>
+                        <outlet property="parentFirstNameField" destination="9gc-Ps-r7O" id="syo-Vg-29D"/>
+                        <outlet property="parentLastNameField" destination="WDZ-m4-t4n" id="wsa-ar-6bx"/>
+                        <outlet property="parentZipCodeField" destination="pkv-iE-h7A" id="j9i-eo-vVE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BKm-90-Dpg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="rJg-7u-IVa">
+                    <connections>
+                        <action selector="tappedFamilyProfilePhoto:" destination="aXo-Lg-uN6" id="p8k-Cj-rkk"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-671.01449275362324" y="-76.339285714285708"/>
         </scene>
@@ -1331,10 +1358,10 @@
             </objects>
             <point key="canvasLocation" x="-506" y="-1773"/>
         </scene>
-        <!--View Controller-->
+        <!--Edit Family Profile View Controller-->
         <scene sceneID="K1g-mh-3ee">
             <objects>
-                <viewController id="9DX-rL-UTx" sceneMemberID="viewController">
+                <viewController id="9DX-rL-UTx" customClass="EditFamilyProfileViewController" customModule="ParentAid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ys1-BC-cjT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1394,7 +1421,7 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="255" text="Last Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Afv-Tz-46D">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="255" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Afv-Tz-46D">
                                 <rect key="frame" x="20" y="333" width="121" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="Hgs-NF-A9b"/>
@@ -1639,6 +1666,20 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XF0-Qx-Yxx"/>
+                    <connections>
+                        <outlet property="childFiveAgeLabel" destination="UGS-h3-N8v" id="7yj-eD-dqC"/>
+                        <outlet property="childFourAgeLabel" destination="ngO-up-FMq" id="YeJ-wL-Azm"/>
+                        <outlet property="childOneAgeLabel" destination="Kcd-jl-DYd" id="aVX-sB-zcD"/>
+                        <outlet property="childSixAgeLabel" destination="9Zt-Us-Idm" id="cEJ-Ec-KVO"/>
+                        <outlet property="childThreeAgeLabel" destination="ZgF-dV-MDr" id="I5F-l7-wGN"/>
+                        <outlet property="childTwoAgeLabel" destination="FyJ-qY-Tt8" id="JCA-XR-TPf"/>
+                        <outlet property="familyImageView" destination="Y3h-Jf-SO0" id="ekx-QT-TVF"/>
+                        <outlet property="numberOfKidsLabel" destination="xoF-eZ-J2t" id="O7k-gR-Xv7"/>
+                        <outlet property="parentEmailLabel" destination="ciN-6B-AN2" id="qpy-eA-M1M"/>
+                        <outlet property="parentFirstNameLabel" destination="sVH-Bt-dr8" id="7RD-fe-qsM"/>
+                        <outlet property="parentLastNameLabel" destination="7K1-ch-AL9" id="9Ad-Wl-8lV"/>
+                        <outlet property="parentZipCodeLabel" destination="Ehq-Nk-eh2" id="9V3-0g-u5k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="99h-6x-8Ms" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

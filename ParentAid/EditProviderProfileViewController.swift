@@ -10,9 +10,6 @@ import Parse
 import AlamofireImage
 
 class EditProviderProfileViewController: UIViewController {
-    //
-    //    var event : PFObject!
-    //    var events = [PFObject]()
     var provider : PFObject!
     var providers = [PFObject]()
     
